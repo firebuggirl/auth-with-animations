@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+.btn-margin {
+  margin-top: 7px
+}
+
+.container-fluid{
+  padding-left: 0px;
+}
+.navbar{
+  /* position:fixed; */
+  /* background-color: #2d1814; */
+  background-color: #292626;
+  width: 100vw;
+  padding: 10px;
+  margin-left: 0px;
+}
+.nav{
+  padding:10px;
+}
+
+li{
+  font-size: 20px;
+}
+
+h4{
+  margin-left: 15px;
+}
+.body{
+  background-color: #310804;
+  color:beige;
+}
+img{
+  max-width: 100%;
+}
+.main-content{
+
+  background-color: #310804;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top:50px;
+}
+@media(max-width: 600px){
+  .main-content{
+    height: 80vh;
+  }
+}
