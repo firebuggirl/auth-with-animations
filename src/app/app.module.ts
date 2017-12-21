@@ -19,7 +19,7 @@ import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './guard/auth.guard';
 import { UserComponent } from './user/user.component';
 
-import { JwtModule } from '@auth0/angular-jwt';
+//import { JwtModule } from '@auth0/angular-jwt';
 import { HttpClientModule } from '@angular/common/http';
 
 
@@ -39,15 +39,15 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    HttpClientModule,
-    JwtModule.forRoot({
-      config: {
-        tokenGetter: () => {
-          return localStorage.getItem('access_token');
-        },
-        whitelistedDomains: ['localhost:4200', 'http://localhost:4200/home', 'http://localhost:4200/user']
-      }
-    })
+    HttpClientModule
+    // JwtModule.forRoot({
+    //   config: {
+    //     tokenGetter: () => {
+    //       return localStorage.getItem('access_token');
+    //     },
+    //     whitelistedDomains: ['localhost:4200', 'http://localhost:4200/home', 'http://localhost:4200/user']
+    //   }
+    // })
     //  Ng2Bs3ModalModule
     //RouterModule.forRoot(ROUTES)
   //  RouterModule.forRoot(AppRoutingModule)
