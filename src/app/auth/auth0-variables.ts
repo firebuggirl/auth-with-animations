@@ -11,5 +11,5 @@ export const AUTH_CONFIG: AuthConfig = {
   clientID: environment.clientID,
   domain: environment.domain,
   //callbackURL: 'http://localhost:4200/callback'
-  callbackURL:'https://auth-example-with-anim.herokuapp.com/callback'
+  callbackURL:'https://auth-example-with-anim.herokuapp.com'
 };
