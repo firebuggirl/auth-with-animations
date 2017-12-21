@@ -91,4 +91,4 @@ http://easings.net/nb
 
 ` git push heroku master `
 
-https://auth-example-with-anim.herokuapp.com/home
+https://auth-example-with-anim.herokuapp.com/
