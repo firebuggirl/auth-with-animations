@@ -357,8 +357,8 @@ var AUTH_CONFIG = {
     //clientID: 'nAG2jFnP2fqoF6lWtNxIVSYu2tEGC4vW',
     clientID: __WEBPACK_IMPORTED_MODULE_0__environments_environment__["a" /* environment */].clientID,
     domain: __WEBPACK_IMPORTED_MODULE_0__environments_environment__["a" /* environment */].domain,
-    //callbackURL: 'http://localhost:4200/callback'
-    callbackURL: 'https://auth-example-with-anim.herokuapp.com/callback'
+    callbackURL: 'http://localhost:4200/callback'
+    //callbackURL:'https://auth-example-with-anim.herokuapp.com/callback'
 };
 //# sourceMappingURL=auth0-variables.js.map
 
