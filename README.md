@@ -72,3 +72,23 @@ https://medium.com/@ryanchenkie_40935/angular-authentication-using-route-guards-
 ## Easings animation/functions
 
 http://easings.net/nb
+
+## Heroku
+` ng build `
+` heroku create auth-example-with-anim `
+
+* From existing repo:
+
+` heroku git:remote -a auth-with-animations `
+
+`  heroku config:add NODE_ENV=production `
+
+`  git add . `
+
+` git commit -m "ng build" `
+
+` git push -u origin master `
+
+` git push heroku master `
+
+https://auth-example-with-anim.herokuapp.com/home
