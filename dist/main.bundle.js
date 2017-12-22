@@ -39,8 +39,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 var ROUTES = [
     { path: '', component: __WEBPACK_IMPORTED_MODULE_2__home_home_component__["a" /* HomeComponent */] },
-    // { path: 'callback', component: CallbackComponent },
-    // { path: '**', redirectTo: '' }
     // { path: '',
     //   redirectTo: 'home',
     //   pathMatch: 'full'

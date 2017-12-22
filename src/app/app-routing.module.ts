@@ -8,8 +8,6 @@ import { LoginComponent } from "./login/login.component";
 
 export const ROUTES: Routes = [
    { path: '', component: HomeComponent },
-  // { path: 'callback', component: CallbackComponent },
-  // { path: '**', redirectTo: '' }
 
   // { path: '',
   //   redirectTo: 'home',
