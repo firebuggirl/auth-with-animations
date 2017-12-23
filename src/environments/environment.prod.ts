@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  clientID: 'nAG2jFnP2fqoF6lWtNxIVSYu2tEGC4vW',
-  domain: 'juliettet.auth0.com'
+  clientID: process.env.AUTH_CLIENT_ID,
+  domain: process.env.AUTH_DOMAIN
 };
