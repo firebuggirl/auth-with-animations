@@ -1,3 +1,5 @@
+auth0-variables.ts
+
 # compiled output
 
 /tmp
@@ -42,5 +44,3 @@ Thumbs.db
 # Env variables
 
 .env
-
-auth0-variables.ts
