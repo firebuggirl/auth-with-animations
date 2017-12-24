@@ -4,7 +4,6 @@ import { Router } from '@angular/router';
 import * as auth0 from 'auth0-js';
 //import { JwtHelperService } from '@auth0/angular-jwt';
 
-
 @Injectable()
 export class AuthService {
 

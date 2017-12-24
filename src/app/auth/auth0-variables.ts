@@ -1,4 +1,4 @@
-import { environment } from '../../environments/environment';
+//import { environment } from '../../environments/environment';
 
 interface AuthConfig {
   clientID: string;
@@ -7,8 +7,9 @@ interface AuthConfig {
 }
 
 export const AUTH_CONFIG: AuthConfig = {
-  clientID: environment.clientID,
-  domain: environment.domain,
+  clientID: 'nAG2jFnP2fqoF6lWtNxIVSYu2tEGC4vW',
+  domain: 'juliettet.auth0.com',
+
   callbackURL: 'http://localhost:4200/'
   //callbackURL:'https://auth-example-with-anim.herokuapp.com'
 };

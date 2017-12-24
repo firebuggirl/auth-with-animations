@@ -5,7 +5,5 @@
 //require('dotenv').config({ path: '../.env' });
 
 export const environment = {
-  production: false,
-  clientID: 'nAG2jFnP2fqoF6lWtNxIVSYu2tEGC4vW',
-  domain:'juliettet.auth0.com'
+  production: false
 };
