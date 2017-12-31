@@ -37,6 +37,7 @@
     "express": "^4.16.2",
     "express-jwt": "^5.1.0",
     "express-jwt-authz": "^1.0.0",
+    "helmet": "^3.9.0",
     "jwks-rsa": "^1.1.1",
     "ng2-meta": "github:vinaygopinath/ng2-meta",
     "rxjs": "^5.4.2",

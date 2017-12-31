@@ -1,6 +1,6 @@
 
 const express = require("express");
-
+const helmet = require('helmet');//initiate security headers
 const app = express();
 //app.use(bodyParser.json());
 const jwt = require('express-jwt');
@@ -8,6 +8,19 @@ const jwtAuthz = require('express-jwt-authz');
 const jwksRsa = require('jwks-rsa');
 const cors = require('cors');
 require('dotenv').config();
+
+
+
+
+app.use(helmet());//get security report here: https://securityheaders.io/
+app.use(helmet.referrerPolicy({ policy: 'same-origin' }));
+app.use(helmet.contentSecurityPolicy({
+  directives: {
+    defaultSrc: ["'self'"],
+    styleSrc: ["'self'", 'maxcdn.bootstrapcdn.com']
+  }
+}));
+
 
 if (!process.env.AUTH0_DOMAIN || !process.env.AUTH0_AUDIENCE) {
   throw 'Make sure you have AUTH0_DOMAIN, and AUTH0_AUDIENCE in your .env file';
