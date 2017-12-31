@@ -1,0 +1,21 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.10.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - '@angular/cli > webpack-dev-server > chokidar > fsevents > node-pre-gyp > tar-pack > debug':
+        patched: '2017-12-31T03:48:37.734Z'
+    - '@angular/cli > webpack > watchpack > chokidar > fsevents > node-pre-gyp > tar-pack > debug':
+        patched: '2017-12-31T03:48:37.734Z'
+  'npm:tough-cookie:20170905':
+    - '@angular/cli > webpack-dev-server > chokidar > fsevents > node-pre-gyp > request > tough-cookie':
+        patched: '2017-12-31T03:48:37.734Z'
+    - '@angular/cli > webpack > watchpack > chokidar > fsevents > node-pre-gyp > request > tough-cookie':
+        patched: '2017-12-31T03:48:37.734Z'
+  'npm:uglify-js:20150824':
+    - '@angular/cli > postcss-url > directory-encoder > handlebars > uglify-js':
+        patched: '2017-12-31T03:48:37.734Z'
+  'npm:uglify-js:20151024':
+    - '@angular/cli > postcss-url > directory-encoder > handlebars > uglify-js':
+        patched: '2017-12-31T03:48:37.734Z'

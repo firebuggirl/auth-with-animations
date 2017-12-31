@@ -10,17 +10,19 @@
     "start": "ng serve",
     "build": "ng build",
     "serve": "nodemon server.js",
-    "test": "ng test",
+    "test": "snyk test && ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "^4.3.6",
-    "@angular/cli": "1.2.4",
-    "@angular/compiler-cli": "^4.3.1",
+    "@angular/cli": "^1.4.5",
     "@angular/common": "^4.3.1",
     "@angular/compiler": "^4.3.1",
+    "@angular/compiler-cli": "^4.3.1",
     "@angular/core": "^4.3.1",
     "@angular/forms": "^4.3.1",
     "@angular/http": "^4.3.1",
@@ -38,10 +40,10 @@
     "jwks-rsa": "^1.1.1",
     "ng2-meta": "github:vinaygopinath/ng2-meta",
     "rxjs": "^5.4.2",
-    "zone.js": "^0.8.4"
+    "zone.js": "^0.8.4",
+    "snyk": "^1.63.0"
   },
   "devDependencies": {
-
     "@types/jasmine": "2.5.38",
     "@types/node": "~6.0.60",
     "codelyzer": "~2.0.0",
@@ -57,5 +59,6 @@
     "ts-node": "~2.0.0",
     "tslint": "~4.5.0",
     "typescript": "~2.2.0"
-  }
+  },
+  "snyk": true
 }
