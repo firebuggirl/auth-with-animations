@@ -16,8 +16,8 @@ app.use(helmet());//get security report here: https://securityheaders.io/
 app.use(helmet.referrerPolicy({ policy: 'same-origin' }));
 app.use(helmet.contentSecurityPolicy({
   directives: {
-    defaultSrc: ["'self'"],
-    styleSrc: ["'self'", 'maxcdn.bootstrapcdn.com']
+    defaultSrc: ["'self'"]
+  //  styleSrc: ["'self'", 'maxcdn.bootstrapcdn.com']
   }
 }));
 
