@@ -10,6 +10,6 @@ export const AUTH_CONFIG: AuthConfig = {
   clientID: 'nAG2jFnP2fqoF6lWtNxIVSYu2tEGC4vW',
   domain: 'juliettet.auth0.com',
 
-  callbackURL: 'http://localhost:4200/'
-  //callbackURL:'https://auth-example-with-anim.herokuapp.com'
+  //callbackURL: 'http://localhost:4200/'
+  callbackURL:'https://auth-example-with-anim.herokuapp.com'
 };
