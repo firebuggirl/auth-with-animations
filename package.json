@@ -40,8 +40,8 @@
     "jwks-rsa": "^1.1.1",
     "ng2-meta": "github:vinaygopinath/ng2-meta",
     "rxjs": "^5.4.2",
-    "zone.js": "^0.8.4",
-    "snyk": "^1.63.0"
+    "snyk": "^1.63.0",
+    "zone.js": "^0.8.4"
   },
   "devDependencies": {
     "@types/jasmine": "2.5.38",
