@@ -5,6 +5,9 @@ import { CallbackComponent } from './callback/callback.component';
 import { AuthGuard } from "./guard/auth.guard";
 import { UserComponent } from "./user/user.component";
 import { LoginComponent } from "./login/login.component";
+import { ContactListComponent } from "./contacts/contact-list/contact-list.component";
+import { ContactDetailsComponent } from "./contacts/contact-details/contact-details.component";
+
 
 export const ROUTES: Routes = [
    { path: '', component: HomeComponent },
@@ -27,6 +30,11 @@ export const ROUTES: Routes = [
   {
     path: 'login',
     component: LoginComponent
+  },
+  {
+    path: 'contacts',
+    component: ContactListComponent,
+    canActivate: [AuthGuard]
   },
   // {
   //   path: 'callback',

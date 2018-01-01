@@ -1,8 +1,10 @@
-
+'use strict';
 const express = require("express");
 const helmet = require('helmet');//initiate security headers
 const app = express();
-//app.use(bodyParser.json());
+const bodyParser = require("body-parser");
+const mongodb = require("mongodb");
+const ObjectID = mongodb.ObjectID;
 const jwt = require('express-jwt');
 const jwtAuthz = require('express-jwt-authz');
 const jwksRsa = require('jwks-rsa');
@@ -26,7 +28,23 @@ if (!process.env.AUTH0_DOMAIN || !process.env.AUTH0_AUDIENCE) {
   throw 'Make sure you have AUTH0_DOMAIN, and AUTH0_AUDIENCE in your .env file';
 }
 
+app.use(bodyParser.json());
 app.use(cors());
+
+// Create a database variable outside of the database connection callback to reuse the connection pool in your app.
+var db;
+
+// Connect to the database before starting the application server.
+mongodb.MongoClient.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/mean-auth-contact', function (err, database) {
+  if (err) {
+    console.log(err);
+    process.exit(1);
+  }
+
+  // Save database object from the callback for reuse.
+  db = database;
+  console.log('Database connection ready');
+});
 
 const checkJwt = jwt({
   // Dynamically provide a signing key based on the kid in the header and the singing keys provided by the JWKS endpoint.

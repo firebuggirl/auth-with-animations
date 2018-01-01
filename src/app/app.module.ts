@@ -18,6 +18,8 @@ import { CallbackComponent } from './callback/callback.component';
 import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './guard/auth.guard';
 import { UserComponent } from './user/user.component';
+import { ContactDetailsComponent } from './contacts/contact-details/contact-details.component';
+import { ContactListComponent } from './contacts/contact-list/contact-list.component';
 
 //import { JwtModule } from '@auth0/angular-jwt';
 import { HttpClientModule } from '@angular/common/http';
@@ -30,7 +32,9 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     LoginComponent,
     CallbackComponent,
-    UserComponent
+    UserComponent,
+    ContactDetailsComponent,
+    ContactListComponent
 
   ],
   imports: [

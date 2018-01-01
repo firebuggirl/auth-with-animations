@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { AUTH_CONFIG } from './auth0-variables';
+import { AUTH_CONFIG } from './auth0-variables';//note: this file is hidden via .gitignore, cd into directory to view
 import { Router } from '@angular/router';
 import * as auth0 from 'auth0-js';
 //import { JwtHelperService } from '@auth0/angular-jwt';

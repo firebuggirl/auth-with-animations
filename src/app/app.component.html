@@ -4,6 +4,7 @@
           <ul class='nav navbar-nav'>
               <li><a routerLink="/">Home</a></li>
               <li><a [routerLink]="['user']">Users</a></li>
+              <li><a [routerLink]="['contacts']">Contacts</a></li>
               <li><h4 *ngIf="auth.isAuthenticated() ; else nologin">
                 <a (click)="auth.logout()" class="btn btn-warning">Log Out</a>
               </h4>

@@ -92,3 +92,16 @@ http://easings.net/nb
 ` git push heroku master `
 
 https://auth-example-with-anim.herokuapp.com/
+
+# Note: Don't forget to add env variables via Heroku GUI
+
+## Add mLab/MongoDb as add on:
+
+` heroku addons:create mongolab `
+
+## Get connection URI:
+
+` heroku config:get MONGODB_URI `
+
+## URI format Single-node plan:
+` mongodb://dbuser:dbpass@host:port/dbname `
