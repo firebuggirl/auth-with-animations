@@ -9,6 +9,7 @@ const jwt = require('express-jwt');
 const jwtAuthz = require('express-jwt-authz');
 const jwksRsa = require('jwks-rsa');
 const cors = require('cors');
+const routes = require('./routes/index');
 require('dotenv').config();
 
 
@@ -31,14 +32,16 @@ if (!process.env.AUTH0_DOMAIN || !process.env.AUTH0_AUDIENCE) {
 app.use(bodyParser.json());
 app.use(cors());
 
+app.use('/', routes);
 // Create a database variable outside of the database connection callback to reuse the connection pool in your app.
 var db;
 
 // Connect to the database before starting the application server.
-//mongodb.MongoClient.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/mean-auth-contact', function (err, database) {
-mongodb.MongoClient.connect(process.env.DATABASE , function (err, database) {
+//mongodb.MongoClient.connect(process.env.DATABASE || 'mongodb://localhost:27017/mean-auth-contact', function (err, database) {
+mongodb.MongoClient.connect(process.env.LOCAL_DB || process.env.DATABASE, function (err, database) {
   if (err) {
-    console.log(err);
+    console.error(`🙅 🚫 🙅 🚫 🙅 🚫 🙅 🚫 → ${err.message}`);
+    //console.log(err);
     process.exit(1);
   }
 
@@ -78,85 +81,85 @@ const server = app.listen(app.get('port'), () => {
 });
 
 
-app.get('/api/public', function(req, res) {
-  res.json({
-    message: "Hello from a public endpoint! You don't need to be authenticated to see this."
-  });
-});
-
-app.get('/api/private', checkJwt, checkScopes, function(req, res) {
-  res.json({
-    message: 'Hello from a private endpoint! You need to be authenticated and have a scope of read:messages to see this.'
-  });
-});
-// CONTACTS API ROUTES BELOW
-
-app.get("/api/contacts", function(req, res) {
-  db.collection('contacts').find({}).toArray(function(err, docs) {
-    if (err) {
-      handleError(res, err.message, "Failed to get contacts.");
-    } else {
-      res.status(200).json(docs);
-    }
-  });
-});
-
-app.post("/api/contacts", function(req, res) {
-  var newContact = req.body;
-  newContact.createDate = new Date();
-
-  if (!req.body.name) {
-    handleError(res, "Invalid user input", "Must provide a name.", 400);
-  }
-
-  db.collection('contacts').insertOne(newContact, function(err, doc) {
-    if (err) {
-      handleError(res, err.message, "Failed to create new contact.");
-    } else {
-      res.status(201).json(doc.ops[0]);
-    }
-  });
-});
-
-/*  "/api/contacts/:id"
- *    GET: find contact by id
- *    PUT: update contact by id
- *    DELETE: deletes contact by id
- */
-
-app.get("/api/contacts/:id", function(req, res) {
-  db.collection('contacts').findOne({ _id: new ObjectID(req.params.id) }, function(err, doc) {
-    if (err) {
-      handleError(res, err.message, "Failed to get contact");
-    } else {
-      res.status(200).json(doc);
-    }
-  });
-});
-
-app.put("/api/contacts/:id", function(req, res) {
-  var updateDoc = req.body;
-  delete updateDoc._id;
-
-  db.collection('contacts').updateOne({_id: new ObjectID(req.params.id)}, updateDoc, function(err, doc) {
-    if (err) {
-      handleError(res, err.message, "Failed to update contact");
-    } else {
-      updateDoc._id = req.params.id;
-      res.status(200).json(updateDoc);
-    }
-  });
-});
-
-app.delete("/api/contacts/:id", function(req, res) {
-  db.collection('contacts').deleteOne({_id: new ObjectID(req.params.id)}, function(err, result) {
-    if (err) {
-      handleError(res, err.message, "Failed to delete contact");
-    } else {
-      res.status(200).json(req.params.id);
-    }
-  });
-});
+// app.get('/api/public', function(req, res) {
+//   res.json({
+//     message: "Hello from a public endpoint! You don't need to be authenticated to see this."
+//   });
+// });
+//
+// app.get('/api/private', checkJwt, checkScopes, function(req, res) {
+//   res.json({
+//     message: 'Hello from a private endpoint! You need to be authenticated and have a scope of read:messages to see this.'
+//   });
+// });
+// // CONTACTS API ROUTES BELOW
+//
+// app.get("/api/contacts", function(req, res) {
+//   db.collection('contacts').find({}).toArray(function(err, docs) {
+//     if (err) {
+//       handleError(res, err.message, "Failed to get contacts.");
+//     } else {
+//       res.status(200).json(docs);
+//     }
+//   });
+// });
+//
+// app.post("/api/contacts", function(req, res) {
+//   var newContact = req.body;
+//   newContact.createDate = new Date();
+//
+//   if (!req.body.name) {
+//     handleError(res, "Invalid user input", "Must provide a name.", 400);
+//   }
+//
+//   db.collection('contacts').insertOne(newContact, function(err, doc) {
+//     if (err) {
+//       handleError(res, err.message, "Failed to create new contact.");
+//     } else {
+//       res.status(201).json(doc.ops[0]);
+//     }
+//   });
+// });
+//
+// /*  "/api/contacts/:id"
+//  *    GET: find contact by id
+//  *    PUT: update contact by id
+//  *    DELETE: deletes contact by id
+//  */
+//
+// app.get("/api/contacts/:id", function(req, res) {
+//   db.collection('contacts').findOne({ _id: new ObjectID(req.params.id) }, function(err, doc) {
+//     if (err) {
+//       handleError(res, err.message, "Failed to get contact");
+//     } else {
+//       res.status(200).json(doc);
+//     }
+//   });
+// });
+//
+// app.put("/api/contacts/:id", function(req, res) {
+//   var updateDoc = req.body;
+//   delete updateDoc._id;
+//
+//   db.collection('contacts').updateOne({_id: new ObjectID(req.params.id)}, updateDoc, function(err, doc) {
+//     if (err) {
+//       handleError(res, err.message, "Failed to update contact");
+//     } else {
+//       updateDoc._id = req.params.id;
+//       res.status(200).json(updateDoc);
+//     }
+//   });
+// });
+//
+// app.delete("/api/contacts/:id", function(req, res) {
+//   db.collection('contacts').deleteOne({_id: new ObjectID(req.params.id)}, function(err, result) {
+//     if (err) {
+//       handleError(res, err.message, "Failed to delete contact");
+//     } else {
+//       res.status(200).json(req.params.id);
+//     }
+//   });
+// });
 
 // Generic error handler used by all endpoints.
 function handleError(res, reason, message, code) {

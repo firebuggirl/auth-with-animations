@@ -18,6 +18,9 @@ npm install
 
 If you download the sample from the quickstart page, it will come pre-populated with the **client ID** and **domain** for your application. If you clone the repo directly from Github, rename the `auth0-variables.ts.example` file to `auth0-variables.ts` and provide the **client ID** and **domain** there. This file is located in `src/app/auth/`.
 
+NOTE: `auth0-variables.ts` has been added to .gitignore...have to cd into file and ``
+NOTE: `auth0-variables.ts` has been added to .gitignore...have to cd into file and `cat auth0-variables.ts ` to read/see variables and their values.
+
 ## Run the Application
 
 The development server that comes with the Angular CLI can be used to serve the application.
@@ -104,4 +107,24 @@ https://auth-example-with-anim.herokuapp.com/
 ` heroku config:get MONGODB_URI `
 
 ## URI format Single-node plan:
+
 ` mongodb://dbuser:dbpass@host:port/dbname `
+
+
+## Note:
+
+  - To view/run auth0 locally, must switch callbackURL to localhost via `src/app/autho0-variables.ts`...file is hidden via .gitignore...cd into directory and use Vim or Atom to modify.
+
+    - Run `npm run build` + `npm start`
+    - visit `localhost:4200`
+
+
+## SNYK test for vulnerabilities:
+
+  ` snyk test `
+
+  - Run ` snyk wizard ` to explore remediation options
+
+  -OR-
+
+  - ` nsp check `
