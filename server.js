@@ -12,7 +12,24 @@ const routes = require('./routes/index');
 //const helpers = require('./helpers');
 require('dotenv').config();
 
+const mongoose = require('mongoose');
+//const cors = require('cors');
+//const cookieParser = require('cookie-parser');
 
+const mongodb = require("mongodb");
+const ObjectID = mongodb.ObjectID;
+
+//mongoose.connect(process.env.LOCAL_DB || process.env.DATABASE);
+mongoose.connect(process.env.DATABASE);
+mongoose.set('debug', true);
+mongoose.Promise = global.Promise; // Tell Mongoose to use ES6 promises
+mongoose.connection.on('error', (err) => {
+  console.error(`🙅 🚫 🙅 🚫 🙅 🚫 🙅 🚫 → ${err.message}`);
+});
+
+var db = mongoose.connection;
+// mongo error
+db.on('error', console.error.bind(console, 'connection error:'));
 app.use('/', routes);
 
 // app.use((req, res, next) => {
