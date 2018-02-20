@@ -19,8 +19,8 @@ const mongoose = require('mongoose');
 const mongodb = require("mongodb");
 const ObjectID = mongodb.ObjectID;
 
-//mongoose.connect(process.env.LOCAL_DB || process.env.DATABASE);
-mongoose.connect(process.env.DATABASE);
+mongoose.connect(process.env.LOCAL_DB || process.env.DATABASE);
+//mongoose.connect(process.env.DATABASE);
 mongoose.set('debug', true);
 mongoose.Promise = global.Promise; // Tell Mongoose to use ES6 promises
 mongoose.connection.on('error', (err) => {
