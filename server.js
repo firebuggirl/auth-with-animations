@@ -14,12 +14,12 @@ require('dotenv').config();
 
 app.use(helmet());//get security report here: https://securityheaders.io/
 app.use(helmet.referrerPolicy({ policy: 'same-origin' }));
-app.use(helmet.contentSecurityPolicy({
-  directives: {
-    defaultSrc: ["'self'"],
-    styleSrc: ["'self'", 'maxcdn.bootstrapcdn.com']
-  }
-}));
+// app.use(helmet.contentSecurityPolicy({
+//   directives: {
+//     defaultSrc: ["'self'"],
+//     styleSrc: ["'self'", 'maxcdn.bootstrapcdn.com']
+//   }
+// }));
 
 
 if (!process.env.AUTH0_DOMAIN || !process.env.AUTH0_AUDIENCE) {
