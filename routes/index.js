@@ -32,7 +32,7 @@ const Contact = require('../models/contacts');
 
 
 // router.use(require('express-session')({ secret: 'keyboard cat', resave: true, saveUninitialized: true }));
-// router.use(bodyParser.json());
+ router.use(bodyParser.json());
 // router.use(bodyParser.urlencoded({ extended: true }));
 // router.use(cookieParser());
 
