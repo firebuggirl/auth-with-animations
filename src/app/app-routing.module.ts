@@ -34,7 +34,7 @@ export const ROUTES: Routes = [
   {
     path: 'contacts',
     component: ContactListComponent,
-    // canActivate: [AuthGuard]
+    canActivate: [AuthGuard]
   },
   // {
   //   path: 'callback',

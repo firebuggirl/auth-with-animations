@@ -65,6 +65,7 @@ var ROUTES = [
     {
         path: 'contacts',
         component: __WEBPACK_IMPORTED_MODULE_6__contacts_contact_list_contact_list_component__["a" /* ContactListComponent */],
+        canActivate: [__WEBPACK_IMPORTED_MODULE_3__guard_auth_guard__["a" /* AuthGuard */]]
     },
 ];
 var AppRoutingModule = (function () {
