@@ -8,33 +8,33 @@ const router = express.Router();
 //const jwksRsa = require('jwks-rsa');
 var CONTACTS_COLLECTION = "contacts";
 const bodyParser = require("body-parser");
-// const mongoose = require('mongoose');
-// //const cors = require('cors');
-// //const cookieParser = require('cookie-parser');
-//
-// const mongodb = require("mongodb");
-// const ObjectID = mongodb.ObjectID;
-//
-// //mongoose.connect(process.env.LOCAL_DB || process.env.DATABASE);
-// mongoose.connect(process.env.DATABASE);
-// mongoose.set('debug', true);
-// mongoose.Promise = global.Promise; // Tell Mongoose to use ES6 promises
-// mongoose.connection.on('error', (err) => {
-//   console.error(`🙅 🚫 🙅 🚫 🙅 🚫 🙅 🚫 → ${err.message}`);
-// });
-//
-// var db = mongoose.connection;
-// // mongo error
-// db.on('error', console.error.bind(console, 'connection error:'));
+const mongoose = require('mongoose');
+//const cors = require('cors');
+//const cookieParser = require('cookie-parser');
+
+const mongodb = require("mongodb");
+const ObjectID = mongodb.ObjectID;
+
+//mongoose.connect(process.env.LOCAL_DB || process.env.DATABASE);
+mongoose.connect(process.env.DATABASE);
+mongoose.set('debug', true);
+mongoose.Promise = global.Promise; // Tell Mongoose to use ES6 promises
+mongoose.connection.on('error', (err) => {
+  console.error(`🙅 🚫 🙅 🚫 🙅 🚫 🙅 🚫 → ${err.message}`);
+});
+
+var db = mongoose.connection;
+// mongo error
+db.on('error', console.error.bind(console, 'connection error:'));
 
 const Contact = require('../models/contacts');
 
 
 
-router.use(require('express-session')({ secret: 'keyboard cat', resave: true, saveUninitialized: true }));
-router.use(bodyParser.json());
-router.use(bodyParser.urlencoded({ extended: true }));
-router.use(cookieParser());
+// router.use(require('express-session')({ secret: 'keyboard cat', resave: true, saveUninitialized: true }));
+// router.use(bodyParser.json());
+// router.use(bodyParser.urlencoded({ extended: true }));
+// router.use(cookieParser());
 
 // const checkJwt = jwt({
 //   // Dynamically provide a signing key based on the kid in the header and the singing keys provided by the JWKS endpoint.
