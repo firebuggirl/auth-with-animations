@@ -8,12 +8,12 @@ const jwtAuthz = require('express-jwt-authz');
 const jwksRsa = require('jwks-rsa');
 const cors = require('cors');
 
-//const routes = require('./routes/index');
+const routes = require('./routes/index');
 //const helpers = require('./helpers');
 require('dotenv').config();
 
 
-//app.use('/', routes);
+app.use('/', routes);
 
 // app.use((req, res, next) => {
 //   res.locals.h = helpers;
