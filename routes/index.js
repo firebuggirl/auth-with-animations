@@ -1,5 +1,5 @@
 require('dotenv').config({ path: __dirname + '/../variables.env' });
-const fs = require('fs');
+//const fs = require('fs');
 
 const express = require('express');
 const router = express.Router();
@@ -9,8 +9,8 @@ const router = express.Router();
 var CONTACTS_COLLECTION = "contacts";
 const bodyParser = require("body-parser");
 const mongoose = require('mongoose');
-const cors = require('cors');
-const cookieParser = require('cookie-parser');
+//const cors = require('cors');
+//const cookieParser = require('cookie-parser');
 
 const mongodb = require("mongodb");
 const ObjectID = mongodb.ObjectID;
@@ -31,7 +31,7 @@ const Contact = require('../models/contacts');
 
 
 
-router.use(require('express-session')({ secret: 'keyboard cat', resave: true, saveUninitialized: true }));
+//router.use(require('express-session')({ secret: 'keyboard cat', resave: true, saveUninitialized: true }));
 router.use(bodyParser.json());
 router.use(bodyParser.urlencoded({ extended: true }));
 router.use(cookieParser());
