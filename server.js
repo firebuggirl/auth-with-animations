@@ -13,7 +13,7 @@ const routes = require('./routes/index');
 require('dotenv').config();
 
 const mongoose = require('mongoose');
-//const cors = require('cors');
+
 //const cookieParser = require('cookie-parser');
 //
 

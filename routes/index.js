@@ -1,12 +1,8 @@
 require('dotenv').config({ path: __dirname + '/../variables.env' });
 //const fs = require('fs');
-
 const express = require('express');
 const router = express.Router();
-//const jwt = require('express-jwt');
-//const jwtAuthz = require('express-jwt-authz');
-//const jwksRsa = require('jwks-rsa');
-var CONTACTS_COLLECTION = "contacts";
+const CONTACTS_COLLECTION = "contacts";
 const bodyParser = require("body-parser");
 const mongoose = require('mongoose');
 //const cors = require('cors');
@@ -36,24 +32,6 @@ const Contact = require('../models/contacts');
 // router.use(bodyParser.urlencoded({ extended: true }));
 // router.use(cookieParser());
 
-// const checkJwt = jwt({
-//   // Dynamically provide a signing key based on the kid in the header and the singing keys provided by the JWKS endpoint.
-//   secret: jwksRsa.expressJwtSecret({
-//     cache: true,
-//     rateLimit: true,
-//     jwksRequestsPerMinute: 5,
-//     jwksUri: `https://${process.env.AUTH0_DOMAIN}/.well-known/jwks.json`
-//   }),
-//
-//   // Validate the audience and the issuer.
-//   audience: process.env.AUTH0_AUDIENCE,
-//   issuer: `https://${process.env.AUTH0_DOMAIN}/`,
-//   algorithms: ['RS256']
-// });
-//
-// const checkScopes = jwtAuthz(['read:messages']);
-
-
 
 // router.use(function (req, res, next) {
 //    res.locals.currentContact = req.session.contactId;
@@ -64,17 +42,7 @@ function handleError(res, reason, message, code) {
   console.log("ERROR: " + reason);
   res.status(code || 500).json({"error": message});
 }
-// router.get('/api/public', function(req, res) {
-//   res.json({
-//     message: "Hello from a public endpoint! You don't need to be authenticated to see this."
-//   });
-// });
-//
-// router.get('/api/private', checkJwt, checkScopes, function(req, res) {
-//   res.json({
-//     message: 'Hello from a private endpoint! You need to be authenticated and have a scope of read:messages to see this.'
-//   });
-// });
+
 // CONTACTS API ROUTES BELOW
 
 router.get("/api/contacts", function(req, res) {
@@ -112,8 +80,7 @@ router.post("/api/contacts", function(req, res) {
 
 router.get("/api/contacts/:id", function(req, res) {
   const contactid = req.params.contactid;
-  //db.collection('contacts').findOne({ _id: new ObjectID(req.params.id) }, function(err, doc) {
-  //db.collection('contacts').findOne({ _id: new ObjectID(req.session.contactId) }, function(err, doc) {
+
   db.collection('contacts').findOne( contactid , function(err, doc) {
     if (err) {
       handleError(res, err.message, "Failed to get contact");
@@ -167,9 +134,9 @@ router.put("/api/contacts/:id", function(req, res) {
 });
 
 router.delete("/api/contacts/:id", function(req, res) {
+
   const contactid = req.params.contactid;
-  // db.collection('contacts').deleteOne({_id: new ObjectID(req.params.id)}, function(err, result) {
-  //db.collection('contacts').deleteOne({_id: new ObjectID(req.session.contactId) }, function(err, result) {
+
   db.collection('contacts').deleteOne(contactid, function(err, result) {
     if (err) {
       handleError(res, err.message, "Failed to delete contact");
