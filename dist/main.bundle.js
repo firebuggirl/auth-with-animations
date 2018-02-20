@@ -180,13 +180,14 @@ var _a, _b;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__home_home_component__ = __webpack_require__("./src/app/home/home.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_routing_module__ = __webpack_require__("./src/app/app-routing.module.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__auth_auth_service__ = __webpack_require__("./src/app/auth/auth.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__callback_callback_component__ = __webpack_require__("./src/app/callback/callback.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__login_login_component__ = __webpack_require__("./src/app/login/login.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__guard_auth_guard__ = __webpack_require__("./src/app/guard/auth.guard.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__user_user_component__ = __webpack_require__("./src/app/user/user.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__contacts_contact_details_contact_details_component__ = __webpack_require__("./src/app/contacts/contact-details/contact-details.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__contacts_contact_list_contact_list_component__ = __webpack_require__("./src/app/contacts/contact-list/contact-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__angular_common_http__ = __webpack_require__("./node_modules/@angular/common/@angular/common/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__contacts_contact_service__ = __webpack_require__("./src/app/contacts/contact.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__callback_callback_component__ = __webpack_require__("./src/app/callback/callback.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__login_login_component__ = __webpack_require__("./src/app/login/login.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__guard_auth_guard__ = __webpack_require__("./src/app/guard/auth.guard.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__user_user_component__ = __webpack_require__("./src/app/user/user.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__contacts_contact_details_contact_details_component__ = __webpack_require__("./src/app/contacts/contact-details/contact-details.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__contacts_contact_list_contact_list_component__ = __webpack_require__("./src/app/contacts/contact-list/contact-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__angular_common_http__ = __webpack_require__("./node_modules/@angular/common/@angular/common/http.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -212,6 +213,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 //import { JwtModule } from '@auth0/angular-jwt';
 
 var AppModule = (function () {
@@ -224,11 +226,11 @@ AppModule = __decorate([
         declarations: [
             __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
             __WEBPACK_IMPORTED_MODULE_6__home_home_component__["a" /* HomeComponent */],
-            __WEBPACK_IMPORTED_MODULE_10__login_login_component__["a" /* LoginComponent */],
-            __WEBPACK_IMPORTED_MODULE_9__callback_callback_component__["a" /* CallbackComponent */],
-            __WEBPACK_IMPORTED_MODULE_12__user_user_component__["a" /* UserComponent */],
-            __WEBPACK_IMPORTED_MODULE_13__contacts_contact_details_contact_details_component__["a" /* ContactDetailsComponent */],
-            __WEBPACK_IMPORTED_MODULE_14__contacts_contact_list_contact_list_component__["a" /* ContactListComponent */]
+            __WEBPACK_IMPORTED_MODULE_11__login_login_component__["a" /* LoginComponent */],
+            __WEBPACK_IMPORTED_MODULE_10__callback_callback_component__["a" /* CallbackComponent */],
+            __WEBPACK_IMPORTED_MODULE_13__user_user_component__["a" /* UserComponent */],
+            __WEBPACK_IMPORTED_MODULE_14__contacts_contact_details_contact_details_component__["a" /* ContactDetailsComponent */],
+            __WEBPACK_IMPORTED_MODULE_15__contacts_contact_list_contact_list_component__["a" /* ContactListComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -236,7 +238,7 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormsModule */],
             __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* HttpModule */],
             __WEBPACK_IMPORTED_MODULE_7__app_routing_module__["a" /* AppRoutingModule */],
-            __WEBPACK_IMPORTED_MODULE_15__angular_common_http__["b" /* HttpClientModule */]
+            __WEBPACK_IMPORTED_MODULE_16__angular_common_http__["b" /* HttpClientModule */]
             // JwtModule.forRoot({
             //   config: {
             //     tokenGetter: () => {
@@ -249,7 +251,7 @@ AppModule = __decorate([
             //RouterModule.forRoot(ROUTES)
             //  RouterModule.forRoot(AppRoutingModule)
         ],
-        providers: [__WEBPACK_IMPORTED_MODULE_8__auth_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_11__guard_auth_guard__["a" /* AuthGuard */]],
+        providers: [__WEBPACK_IMPORTED_MODULE_8__auth_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_12__guard_auth_guard__["a" /* AuthGuard */], __WEBPACK_IMPORTED_MODULE_9__contacts_contact_service__["a" /* ContactService */]],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
@@ -359,7 +361,8 @@ var _a;
 var AUTH_CONFIG = {
     clientID: 'nAG2jFnP2fqoF6lWtNxIVSYu2tEGC4vW',
     domain: 'juliettet.auth0.com',
-    //callbackURL: 'http://localhost:4200/'
+    // callbackURL: 'http://localhost:4200/'
+    //  callbackURL: 'http://localhost:7777'
     callbackURL: 'https://auth-example-with-anim.herokuapp.com'
 };
 //# sourceMappingURL=auth0-variables.js.map
@@ -419,7 +422,7 @@ CallbackComponent = __decorate([
 /***/ "./src/app/contacts/contact-details/contact-details.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".form-control{\n  background-color: #cec3af;\n\n}\n\n.form-control:focus{\n  border: 3px solid #f0ad4e;\n  background-color: #1b1408;\n}\n\n.form-control[type=text]{\n  color:red;\n}\n\ninput::-webkit-input-placeholder{/* Chrome/Opera/Safari */\n  color:red;\n}\n\ninput::-moz-placeholder{/* Firefox 19+ */\n  color:red;\n}\n\ninput:-ms-input-placeholder{/* IE 10+ */\n  color:red;\n  }\n\ninput:-moz-placeholder{/* Firefox 18- */\n    color:red;\n  }\n"
 
 /***/ }),
 
@@ -507,7 +510,7 @@ var _a, _b;
 /***/ "./src/app/contacts/contact-list/contact-list.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".list-group-item{\n  background-color: #cec3af;\n  color: red;\n}\n\n.list-group-item.active{\n  border: 3px solid #f0ad4e;\n  background-color: #1b1408;\n}\n"
 
 /***/ }),
 
@@ -535,7 +538,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
 
 
 
@@ -613,8 +615,9 @@ ContactListComponent = __decorate([
         template: __webpack_require__("./src/app/contacts/contact-list/contact-list.component.html"),
         styles: [__webpack_require__("./src/app/contacts/contact-list/contact-list.component.css")],
         providers: [__WEBPACK_IMPORTED_MODULE_1__contact_service__["a" /* ContactService */]]
-    }),
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
+    })
+    // @Injectable()
+    ,
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__contact_service__["a" /* ContactService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__contact_service__["a" /* ContactService */]) === "function" && _a || Object])
 ], ContactListComponent);
 

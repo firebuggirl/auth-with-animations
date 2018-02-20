@@ -14,6 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
 //import { AppRoutingModule } from './app-routing.module';
 
 import { AuthService } from './auth/auth.service';
+import { ContactService } from './contacts/contact.service';
 import { CallbackComponent } from './callback/callback.component';
 import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './guard/auth.guard';
@@ -57,7 +58,7 @@ import { HttpClientModule } from '@angular/common/http';
     //RouterModule.forRoot(ROUTES)
   //  RouterModule.forRoot(AppRoutingModule)
   ],
-  providers: [AuthService, AuthGuard],
+  providers: [AuthService, AuthGuard, ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
