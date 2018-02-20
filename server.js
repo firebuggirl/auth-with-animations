@@ -7,9 +7,21 @@ const jwt = require('express-jwt');
 const jwtAuthz = require('express-jwt-authz');
 const jwksRsa = require('jwks-rsa');
 const cors = require('cors');
+
+const routes = require('./routes/index');
+const helpers = require('./helpers');
 require('dotenv').config();
 
 
+app.use('/', routes);
+
+app.use((req, res, next) => {
+  res.locals.h = helpers;
+  res.locals.contact = req.contact || null;
+  res.locals.currentContact = req.session.contactId;
+
+  next();
+});
 
 
 app.use(helmet());//get security report here: https://securityheaders.io/
