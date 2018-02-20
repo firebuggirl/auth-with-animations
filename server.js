@@ -12,6 +12,21 @@ const helpers = require('./helpers');
 const cookieParser = require('cookie-parser');
 require('dotenv').config();
 
+const mongoose = require('mongoose');
+const mongodb = require("mongodb");
+const ObjectID = mongodb.ObjectID;
+
+mongoose.connect(process.env.LOCAL_DB || process.env.DATABASE);
+mongoose.set('debug', true);
+mongoose.Promise = global.Promise; // Tell Mongoose to use ES6 promises
+mongoose.connection.on('error', (err) => {
+  console.error(`🙅 🚫 🙅 🚫 🙅 🚫 🙅 🚫 → ${err.message}`);
+});
+
+var db = mongoose.connection;
+// mongo error
+db.on('error', console.error.bind(console, 'connection error:'));
+
 app.use(bodyParser.json());
 app.use(cors());
 
