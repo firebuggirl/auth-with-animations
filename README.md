@@ -115,9 +115,12 @@ https://auth-example-with-anim.herokuapp.com/
 
   - To view/run auth0 locally, must switch callbackURL to localhost via `src/app/autho0-variables.ts`...file is hidden via .gitignore...cd into directory and use Vim or Atom to modify.
 
-    - Run `npm run build` + `npm start`
-    - visit `localhost:4200`
+    - Run `npm run build` + `npm run serve`
+    <!-- - visit `localhost:4200` -->
 
+    - set `callbackURL: 'http://localhost:7777'` //ie., to run locally via `npm run serve`..after running `npm run build`
+
+    - set back to `callbackURL:'https://auth-example-with-anim.herokuapp.com'` before running/re-deploying back to Heroku
 
 ## SNYK test for vulnerabilities:
 

@@ -45,7 +45,7 @@ if (!process.env.AUTH0_DOMAIN || !process.env.AUTH0_AUDIENCE) {
 app.use(cors());
 
 const checkJwt = jwt({
-  // Dynamically provide a signing key based on the kid in the header and the singing keys provided by the JWKS endpoint.
+  // Dynamically provide a signing key based on the kid in the header and the signing keys provided by the JWKS endpoint.
   secret: jwksRsa.expressJwtSecret({
     cache: true,
     rateLimit: true,
@@ -70,6 +70,7 @@ app.use(express.static(distDir));
 
 
 app.set('port', process.env.PORT || 7777);
+//app.set('port', process.env.PORT || 4200);
 const server = app.listen(app.get('port'), () => {
   console.log(`Express running → PORT ${server.address().port}`);
 });

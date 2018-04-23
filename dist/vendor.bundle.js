@@ -24,7 +24,7 @@ webpackJsonp(["vendor"],{
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return AnimationGroupPlayer; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return ɵPRE_STYLE; });
 /**
- * @license Angular v4.4.6
+ * @license Angular v4.4.7
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -1361,7 +1361,7 @@ var ɵPRE_STYLE = '!';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_animations__ = __webpack_require__("./node_modules/@angular/animations/@angular/animations.es5.js");
 
 /**
- * @license Angular v4.4.6
+ * @license Angular v4.4.7
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -6332,7 +6332,7 @@ function supportsWebAnimations() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
 
 /**
- * @license Angular v4.4.6
+ * @license Angular v4.4.7
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -10299,7 +10299,7 @@ function isPlatformWorkerUi(platformId) {
 /**
  * \@stable
  */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* Version */]('4.4.6');
+var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* Version */]('4.4.7');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -10378,7 +10378,7 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* Version *
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_Observable__ = __webpack_require__("./node_modules/rxjs/_esm5/Observable.js");
 
 /**
- * @license Angular v4.4.6
+ * @license Angular v4.4.7
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -12757,7 +12757,7 @@ HttpClientJsonpModule.ctorParameters = function () { return []; };
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
 
 /**
- * @license Angular v4.4.6
+ * @license Angular v4.4.7
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -12777,7 +12777,7 @@ HttpClientJsonpModule.ctorParameters = function () { return []; };
 /**
  * \@stable
  */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* Version */]('4.4.6');
+var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* Version */]('4.4.7');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -40635,7 +40635,7 @@ function _mergeArrays(parts) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__ = __webpack_require__("./node_modules/rxjs/_esm5/Subject.js");
 
 /**
- * @license Angular v4.4.6
+ * @license Angular v4.4.7
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -41431,7 +41431,7 @@ var Version = (function () {
 /**
  * \@stable
  */
-var VERSION = new Version('4.4.6');
+var VERSION = new Version('4.4.7');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -55544,7 +55544,7 @@ function transition$$1(stateChangeExpr, steps) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__ = __webpack_require__("./node_modules/@angular/platform-browser/@angular/platform-browser.es5.js");
 
 /**
- * @license Angular v4.4.6
+ * @license Angular v4.4.7
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -61476,7 +61476,7 @@ FormBuilder.ctorParameters = function () { return []; };
 /**
  * \@stable
  */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* Version */]('4.4.6');
+var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* Version */]('4.4.7');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -61688,7 +61688,7 @@ ReactiveFormsModule.ctorParameters = function () { return []; };
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__ = __webpack_require__("./node_modules/@angular/platform-browser/@angular/platform-browser.es5.js");
 
 /**
- * @license Angular v4.4.6
+ * @license Angular v4.4.7
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -63843,7 +63843,7 @@ JsonpModule.ctorParameters = function () { return []; };
 /**
  * \@stable
  */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* Version */]('4.4.6');
+var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* Version */]('4.4.7');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -63889,7 +63889,7 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* Version *
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser__ = __webpack_require__("./node_modules/@angular/platform-browser/@angular/platform-browser.es5.js");
 
 /**
- * @license Angular v4.4.6
+ * @license Angular v4.4.7
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -64022,7 +64022,7 @@ var CachedResourceLoader = (function (_super) {
 /**
  * @stable
  */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["_15" /* Version */]('4.4.6');
+var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["_15" /* Version */]('4.4.7');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -64110,7 +64110,7 @@ var platformBrowserDynamic = Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__[
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
 
 /**
- * @license Angular v4.4.6
+ * @license Angular v4.4.7
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -67461,6 +67461,174 @@ KeyEventsPlugin.ctorParameters = function () { return [
  * found in the LICENSE file at https://angular.io/license
  */
 /**
+ * This helper class is used to get hold of an inert tree of DOM elements containing dirty HTML
+ * that needs sanitizing.
+ * Depending upon browser support we must use one of three strategies for doing this.
+ * Support: Safari 10.x -> XHR strategy
+ * Support: Firefox -> DomParser strategy
+ * Default: InertDocument strategy
+ */
+var InertBodyHelper = (function () {
+    /**
+     * @param {?} defaultDoc
+     * @param {?} DOM
+     */
+    function InertBodyHelper(defaultDoc, DOM) {
+        this.defaultDoc = defaultDoc;
+        this.DOM = DOM;
+        var inertDocument = this.DOM.createHtmlDocument();
+        this.inertBodyElement = inertDocument.body;
+        if (this.inertBodyElement == null) {
+            // usually there should be only one body element in the document, but IE doesn't have any, so
+            // we need to create one.
+            var inertHtml = this.DOM.createElement('html', inertDocument);
+            this.inertBodyElement = this.DOM.createElement('body', inertDocument);
+            this.DOM.appendChild(inertHtml, this.inertBodyElement);
+            this.DOM.appendChild(inertDocument, inertHtml);
+        }
+        this.DOM.setInnerHTML(this.inertBodyElement, '<svg><g onload="this.parentNode.remove()"></g></svg>');
+        if (this.inertBodyElement.querySelector && !this.inertBodyElement.querySelector('svg')) {
+            // We just hit the Safari 10.1 bug - which allows JS to run inside the SVG G element
+            // so use the XHR strategy.
+            this.getInertBodyElement = this.getInertBodyElement_XHR;
+            return;
+        }
+        this.DOM.setInnerHTML(this.inertBodyElement, '<svg><p><style><img src="</style><img src=x onerror=alert(1)//">');
+        if (this.inertBodyElement.querySelector && this.inertBodyElement.querySelector('svg img')) {
+            // We just hit the Firefox bug - which prevents the inner img JS from being sanitized
+            // so use the DOMParser strategy, if it is available.
+            // If the DOMParser is not available then we are not in Firefox (Server/WebWorker?) so we
+            // fall through to the default strategy below.
+            if (isDOMParserAvailable()) {
+                this.getInertBodyElement = this.getInertBodyElement_DOMParser;
+                return;
+            }
+        }
+        // None of the bugs were hit so it is safe for us to use the default InertDocument strategy
+        this.getInertBodyElement = this.getInertBodyElement_InertDocument;
+    }
+    /**
+     * Use XHR to create and fill an inert body element (on Safari 10.1)
+     * See
+     * https://github.com/cure53/DOMPurify/blob/a992d3a75031cb8bb032e5ea8399ba972bdf9a65/src/purify.js#L439-L449
+     * @param {?} html
+     * @return {?}
+     */
+    InertBodyHelper.prototype.getInertBodyElement_XHR = function (html) {
+        // We add these extra elements to ensure that the rest of the content is parsed as expected
+        // e.g. leading whitespace is maintained and tags like `<meta>` do not get hoisted to the
+        // `<head>` tag.
+        html = '<body><remove></remove>' + html + '</body>';
+        try {
+            html = encodeURI(html);
+        }
+        catch (e) {
+            return null;
+        }
+        var /** @type {?} */ xhr = new XMLHttpRequest();
+        xhr.responseType = 'document';
+        xhr.open('GET', 'data:text/html;charset=utf-8,' + html, false);
+        xhr.send(null);
+        var /** @type {?} */ body = xhr.response.body;
+        body.removeChild(/** @type {?} */ ((body.firstChild)));
+        return body;
+    };
+    /**
+     * Use DOMParser to create and fill an inert body element (on Firefox)
+     * See https://github.com/cure53/DOMPurify/releases/tag/0.6.7
+     *
+     * @param {?} html
+     * @return {?}
+     */
+    InertBodyHelper.prototype.getInertBodyElement_DOMParser = function (html) {
+        // We add these extra elements to ensure that the rest of the content is parsed as expected
+        // e.g. leading whitespace is maintained and tags like `<meta>` do not get hoisted to the
+        // `<head>` tag.
+        html = '<body><remove></remove>' + html + '</body>';
+        try {
+            var /** @type {?} */ body = (new ((window))
+                .DOMParser()
+                .parseFromString(html, 'text/html')
+                .body);
+            body.removeChild(/** @type {?} */ ((body.firstChild)));
+            return body;
+        }
+        catch (e) {
+            return null;
+        }
+    };
+    /**
+     * Use an HTML5 `template` element, if supported, or an inert body element created via
+     * `createHtmlDocument` to create and fill an inert DOM element.
+     * This is the default sane strategy to use if the browser does not require one of the specialised
+     * strategies above.
+     * @param {?} html
+     * @return {?}
+     */
+    InertBodyHelper.prototype.getInertBodyElement_InertDocument = function (html) {
+        // Prefer using <template> element if supported.
+        var /** @type {?} */ templateEl = this.DOM.createElement('template');
+        if ('content' in templateEl) {
+            this.DOM.setInnerHTML(templateEl, html);
+            return templateEl;
+        }
+        this.DOM.setInnerHTML(this.inertBodyElement, html);
+        // Support: IE 9-11 only
+        // strip custom-namespaced attributes on IE<=11
+        if (this.defaultDoc.documentMode) {
+            this.stripCustomNsAttrs(this.inertBodyElement);
+        }
+        return this.inertBodyElement;
+    };
+    /**
+     * When IE9-11 comes across an unknown namespaced attribute e.g. 'xlink:foo' it adds 'xmlns:ns1'
+     * attribute to declare ns1 namespace and prefixes the attribute with 'ns1' (e.g.
+     * 'ns1:xlink:foo').
+     *
+     * This is undesirable since we don't want to allow any of these custom attributes. This method
+     * strips them all.
+     * @param {?} el
+     * @return {?}
+     */
+    InertBodyHelper.prototype.stripCustomNsAttrs = function (el) {
+        var _this = this;
+        this.DOM.attributeMap(el).forEach(function (_, attrName) {
+            if (attrName === 'xmlns:ns1' || attrName.indexOf('ns1:') === 0) {
+                _this.DOM.removeAttribute(el, attrName);
+            }
+        });
+        for (var _i = 0, _a = this.DOM.childNodesAsList(el); _i < _a.length; _i++) {
+            var n = _a[_i];
+            if (this.DOM.isElementNode(n))
+                this.stripCustomNsAttrs(/** @type {?} */ (n));
+        }
+    };
+    return InertBodyHelper;
+}());
+/**
+ * We need to determine whether the DOMParser exists in the global context.
+ * The try-catch is because, on some browsers, trying to access this property
+ * on window can actually throw an error.
+ *
+ * @suppress {uselessCode}
+ * @return {?}
+ */
+function isDOMParserAvailable() {
+    try {
+        return !!((window)).DOMParser;
+    }
+    catch (e) {
+        return false;
+    }
+}
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
  * A pattern that recognizes a commonly useful subset of URLs that are safe.
  *
  * This regular expression matches a subset of URLs that will not cause script
@@ -67519,38 +67687,6 @@ function sanitizeSrcset(srcset) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-/**
- * A <body> element that can be safely used to parse untrusted HTML. Lazily initialized below.
- */
-var inertElement = null;
-/**
- * Lazily initialized to make sure the DOM adapter gets set before use.
- */
-var DOM = null;
-/**
- * Returns an HTML element that is guaranteed to not execute code when creating elements in it.
- * @return {?}
- */
-function getInertElement() {
-    if (inertElement)
-        return inertElement;
-    DOM = getDOM();
-    // Prefer using <template> element if supported.
-    var /** @type {?} */ templateEl = DOM.createElement('template');
-    if ('content' in templateEl)
-        return templateEl;
-    var /** @type {?} */ doc = DOM.createHtmlDocument();
-    inertElement = DOM.querySelector(doc, 'body');
-    if (inertElement == null) {
-        // usually there should be only one body element in the document, but IE doesn't have any, so we
-        // need to create one.
-        var /** @type {?} */ html = DOM.createElement('html', doc);
-        inertElement = DOM.createElement('body', doc);
-        DOM.appendChild(html, inertElement);
-        DOM.appendChild(doc, html);
-    }
-    return inertElement;
-}
 /**
  * @param {?} tags
  * @return {?}
@@ -67626,6 +67762,7 @@ var SanitizingHtmlSerializer = (function () {
     function SanitizingHtmlSerializer() {
         this.sanitizedSomething = false;
         this.buf = [];
+        this.DOM = getDOM();
     }
     /**
      * @param {?} el
@@ -67635,33 +67772,33 @@ var SanitizingHtmlSerializer = (function () {
         // This cannot use a TreeWalker, as it has to run on Angular's various DOM adapters.
         // However this code never accesses properties off of `document` before deleting its contents
         // again, so it shouldn't be vulnerable to DOM clobbering.
-        var /** @type {?} */ current = ((el.firstChild));
+        var /** @type {?} */ current = ((this.DOM.firstChild(el)));
         while (current) {
-            if (DOM.isElementNode(current)) {
+            if (this.DOM.isElementNode(current)) {
                 this.startElement(/** @type {?} */ (current));
             }
-            else if (DOM.isTextNode(current)) {
-                this.chars(/** @type {?} */ ((DOM.nodeValue(current))));
+            else if (this.DOM.isTextNode(current)) {
+                this.chars(/** @type {?} */ ((this.DOM.nodeValue(current))));
             }
             else {
                 // Strip non-element, non-text nodes.
                 this.sanitizedSomething = true;
             }
-            if (DOM.firstChild(current)) {
-                current = ((DOM.firstChild(current)));
+            if (this.DOM.firstChild(current)) {
+                current = ((this.DOM.firstChild(current)));
                 continue;
             }
             while (current) {
                 // Leaving the element. Walk up and to the right, closing tags as we go.
-                if (DOM.isElementNode(current)) {
+                if (this.DOM.isElementNode(current)) {
                     this.endElement(/** @type {?} */ (current));
                 }
-                var /** @type {?} */ next = checkClobberedElement(current, /** @type {?} */ ((DOM.nextSibling(current))));
+                var /** @type {?} */ next = this.checkClobberedElement(current, /** @type {?} */ ((this.DOM.nextSibling(current))));
                 if (next) {
                     current = next;
                     break;
                 }
-                current = checkClobberedElement(current, /** @type {?} */ ((DOM.parentElement(current))));
+                current = this.checkClobberedElement(current, /** @type {?} */ ((this.DOM.parentElement(current))));
             }
         }
         return this.buf.join('');
@@ -67672,14 +67809,14 @@ var SanitizingHtmlSerializer = (function () {
      */
     SanitizingHtmlSerializer.prototype.startElement = function (element) {
         var _this = this;
-        var /** @type {?} */ tagName = DOM.nodeName(element).toLowerCase();
+        var /** @type {?} */ tagName = this.DOM.nodeName(element).toLowerCase();
         if (!VALID_ELEMENTS.hasOwnProperty(tagName)) {
             this.sanitizedSomething = true;
             return;
         }
         this.buf.push('<');
         this.buf.push(tagName);
-        DOM.attributeMap(element).forEach(function (value, attrName) {
+        this.DOM.attributeMap(element).forEach(function (value, attrName) {
             var /** @type {?} */ lower = attrName.toLowerCase();
             if (!VALID_ATTRS.hasOwnProperty(lower)) {
                 _this.sanitizedSomething = true;
@@ -67703,7 +67840,7 @@ var SanitizingHtmlSerializer = (function () {
      * @return {?}
      */
     SanitizingHtmlSerializer.prototype.endElement = function (current) {
-        var /** @type {?} */ tagName = DOM.nodeName(current).toLowerCase();
+        var /** @type {?} */ tagName = this.DOM.nodeName(current).toLowerCase();
         if (VALID_ELEMENTS.hasOwnProperty(tagName) && !VOID_ELEMENTS.hasOwnProperty(tagName)) {
             this.buf.push('</');
             this.buf.push(tagName);
@@ -67715,19 +67852,19 @@ var SanitizingHtmlSerializer = (function () {
      * @return {?}
      */
     SanitizingHtmlSerializer.prototype.chars = function (chars) { this.buf.push(encodeEntities(chars)); };
+    /**
+     * @param {?} node
+     * @param {?} nextNode
+     * @return {?}
+     */
+    SanitizingHtmlSerializer.prototype.checkClobberedElement = function (node, nextNode) {
+        if (nextNode && this.DOM.contains(node, nextNode)) {
+            throw new Error("Failed to sanitize html because the element is clobbered: " + this.DOM.getOuterHTML(node));
+        }
+        return nextNode;
+    };
     return SanitizingHtmlSerializer;
 }());
-/**
- * @param {?} node
- * @param {?} nextNode
- * @return {?}
- */
-function checkClobberedElement(node, nextNode) {
-    if (nextNode && DOM.contains(node, nextNode)) {
-        throw new Error("Failed to sanitize html because the element is clobbered: " + DOM.getOuterHTML(node));
-    }
-    return nextNode;
-}
 // Regular Expressions for parsing tags and attributes
 var SURROGATE_PAIR_REGEXP = /[\uD800-\uDBFF][\uDC00-\uDFFF]/g;
 // ! to ~ is the ASCII range.
@@ -67750,27 +67887,7 @@ function encodeEntities(value) {
         .replace(/</g, '&lt;')
         .replace(/>/g, '&gt;');
 }
-/**
- * When IE9-11 comes across an unknown namespaced attribute e.g. 'xlink:foo' it adds 'xmlns:ns1'
- * attribute to declare ns1 namespace and prefixes the attribute with 'ns1' (e.g. 'ns1:xlink:foo').
- *
- * This is undesirable since we don't want to allow any of these custom attributes. This method
- * strips them all.
- * @param {?} el
- * @return {?}
- */
-function stripCustomNsAttrs(el) {
-    DOM.attributeMap(el).forEach(function (_, attrName) {
-        if (attrName === 'xmlns:ns1' || attrName.indexOf('ns1:') === 0) {
-            DOM.removeAttribute(el, attrName);
-        }
-    });
-    for (var _i = 0, _a = DOM.childNodesAsList(el); _i < _a.length; _i++) {
-        var n = _a[_i];
-        if (DOM.isElementNode(n))
-            stripCustomNsAttrs(/** @type {?} */ (n));
-    }
-}
+var inertBodyHelper;
 /**
  * Sanitizes the given unsafe, untrusted HTML fragment, and returns HTML text that is safe to add to
  * the DOM in a browser environment.
@@ -67779,10 +67896,13 @@ function stripCustomNsAttrs(el) {
  * @return {?}
  */
 function sanitizeHtml(defaultDoc, unsafeHtmlInput) {
+    var /** @type {?} */ DOM = getDOM();
+    var /** @type {?} */ inertBodyElement = null;
     try {
-        var /** @type {?} */ containerEl = getInertElement();
+        inertBodyHelper = inertBodyHelper || new InertBodyHelper(defaultDoc, DOM);
         // Make sure unsafeHtml is actually a string (TypeScript types are not enforced at runtime).
         var /** @type {?} */ unsafeHtml = unsafeHtmlInput ? String(unsafeHtmlInput) : '';
+        inertBodyElement = inertBodyHelper.getInertBodyElement(unsafeHtml);
         // mXSS protection. Repeatedly parse the document to make sure it stabilizes, so that a browser
         // trying to auto-correct incorrect HTML cannot cause formerly inert HTML to become dangerous.
         var /** @type {?} */ mXSSAttempts = 5;
@@ -67793,30 +67913,25 @@ function sanitizeHtml(defaultDoc, unsafeHtmlInput) {
             }
             mXSSAttempts--;
             unsafeHtml = parsedHtml;
-            DOM.setInnerHTML(containerEl, unsafeHtml);
-            if (defaultDoc.documentMode) {
-                // strip custom-namespaced attributes on IE<=11
-                stripCustomNsAttrs(containerEl);
-            }
-            parsedHtml = DOM.getInnerHTML(containerEl);
+            parsedHtml = DOM.getInnerHTML(inertBodyElement);
+            inertBodyElement = inertBodyHelper.getInertBodyElement(unsafeHtml);
         } while (unsafeHtml !== parsedHtml);
         var /** @type {?} */ sanitizer = new SanitizingHtmlSerializer();
-        var /** @type {?} */ safeHtml = sanitizer.sanitizeChildren(DOM.getTemplateContent(containerEl) || containerEl);
-        // Clear out the body element.
-        var /** @type {?} */ parent = DOM.getTemplateContent(containerEl) || containerEl;
-        for (var _i = 0, _a = DOM.childNodesAsList(parent); _i < _a.length; _i++) {
-            var child = _a[_i];
-            DOM.removeChild(parent, child);
-        }
+        var /** @type {?} */ safeHtml = sanitizer.sanitizeChildren(DOM.getTemplateContent(inertBodyElement) || inertBodyElement);
         if (Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["_27" /* isDevMode */])() && sanitizer.sanitizedSomething) {
             DOM.log('WARNING: sanitizing HTML stripped some content (see http://g.co/ng/security#xss).');
         }
         return safeHtml;
     }
-    catch (e) {
+    finally {
         // In case anything goes wrong, clear out inertElement to reset the entire DOM structure.
-        inertElement = null;
-        throw e;
+        if (inertBodyElement) {
+            var /** @type {?} */ parent = DOM.getTemplateContent(inertBodyElement) || inertBodyElement;
+            for (var _i = 0, _a = DOM.childNodesAsList(parent); _i < _a.length; _i++) {
+                var child = _a[_i];
+                DOM.removeChild(parent, child);
+            }
+        }
     }
 }
 /**
@@ -68513,7 +68628,7 @@ var By = (function () {
 /**
  * \@stable
  */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["_15" /* Version */]('4.4.6');
+var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["_15" /* Version */]('4.4.7');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -68567,7 +68682,7 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["_15" /* Version *
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_animations_browser__ = __webpack_require__("./node_modules/@angular/animations/@angular/animations/browser.es5.js");
 
 /**
- * @license Angular v4.4.6
+ * @license Angular v4.4.7
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -69393,7 +69508,7 @@ NoopAnimationsModule.ctorParameters = function () { return []; };
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_rxjs_operator_filter__ = __webpack_require__("./node_modules/rxjs/_esm5/operator/filter.js");
 
 /**
- * @license Angular v4.4.6
+ * @license Angular v4.4.7
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -75646,7 +75761,7 @@ function provideRouterInitializer() {
 /**
  * \@stable
  */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["_15" /* Version */]('4.4.6');
+var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["_15" /* Version */]('4.4.7');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -75760,7 +75875,7 @@ DBConnection.prototype.signup = function(options, cb) {
  *
  * @method changePassword
  * @param {Object} options
- * @param {String} options.email address where the user will recieve the change password email. It should match the user's email in Auth0
+ * @param {String} options.email address where the user will receive the change password email. It should match the user's email in Auth0
  * @param {String} options.connection name of the connection where the user was created
  * @param {changePasswordCallback} cb
  * @see   {@link https://auth0.com/docs/api/authentication#change-password}
@@ -75802,6 +75917,7 @@ var RequestBuilder = __webpack_require__("./node_modules/auth0-js/src/helper/req
 var qs = __webpack_require__("./node_modules/qs/lib/index.js");
 var objectHelper = __webpack_require__("./node_modules/auth0-js/src/helper/object.js");
 var assert = __webpack_require__("./node_modules/auth0-js/src/helper/assert.js");
+var ssodata = __webpack_require__("./node_modules/auth0-js/src/helper/ssodata.js");
 var responseHandler = __webpack_require__("./node_modules/auth0-js/src/helper/response-handler.js");
 var parametersWhitelist = __webpack_require__("./node_modules/auth0-js/src/helper/parameters-whitelist.js");
 var Warn = __webpack_require__("./node_modules/auth0-js/src/helper/warn.js");
@@ -75822,7 +75938,16 @@ var DBConnection = __webpack_require__("./node_modules/auth0-js/src/authenticati
  * @param {String} [options.audience] identifier of the resource server who will consume the access token issued after Auth
  * @see {@link https://auth0.com/docs/api/authentication}
  */
-function Authentication(options) {
+function Authentication(auth0, options) {
+  // If we have two arguments, the first one is a WebAuth instance, so we assign that
+  // if not, it's an options object and then we should use that as options instead
+  // this is here because we don't want to break people coming from v8
+  if (arguments.length === 2) {
+    this.auth0 = auth0;
+  } else {
+    options = auth0;
+  }
+
   /* eslint-disable */
   assert.check(
     options,
@@ -75855,7 +75980,6 @@ function Authentication(options) {
   /* eslint-enable */
 
   this.baseOptions = options;
-
   this.baseOptions._sendTelemetry = this.baseOptions._sendTelemetry === false
     ? this.baseOptions._sendTelemetry
     : true;
@@ -75936,6 +76060,13 @@ Authentication.prototype.buildAuthorizeUrl = function(options) {
     params.connection_scope = params.connection_scope.join(',');
   }
 
+  params = objectHelper.blacklist(params, [
+    'username',
+    'popupOptions',
+    'domain',
+    'tenant',
+    'timeout'
+  ]);
   params = objectHelper.toSnakeCase(params, ['auth0Client']);
   params = parametersWhitelist.oauthAuthorizeParams(this.warn, params);
 
@@ -75977,7 +76108,15 @@ Authentication.prototype.buildLogoutUrl = function(options) {
 
   params = objectHelper.toSnakeCase(params, ['auth0Client', 'returnTo']);
 
-  qString = qs.stringify(params);
+  qString = qs.stringify(objectHelper.blacklist(params, ['federated']));
+  if (
+    options &&
+    options.federated !== undefined &&
+    options.federated !== false &&
+    options.federated !== 'false'
+  ) {
+    qString += '&federated';
+  }
 
   return urljoin(this.baseOptions.rootUrl, 'v2', 'logout', '?' + qString);
 };
@@ -76012,7 +76151,7 @@ Authentication.prototype.buildLogoutUrl = function(options) {
  * @param {String} [options.scope] scopes to be requested during Auth. e.g. `openid email`
  * @param {String} [options.audience] identifier of the resource server who will consume the access token issued after Auth
  * @param {tokenCallback} cb function called with the result of the request
- * @see   {@link https://auth0.com/docs/api-auth/grant/password}
+ * @see Requires [`password` grant]{@link https://auth0.com/docs/api-auth/grant/password}. For more information, read {@link https://auth0.com/docs/clients/client-grant-types}.
  */
 Authentication.prototype.loginWithDefaultDirectory = function(options, cb) {
   assert.check(
@@ -76042,7 +76181,7 @@ Authentication.prototype.loginWithDefaultDirectory = function(options, cb) {
  * @param {String} [options.audience] identifier of the resource server who will consume the access token issued after Auth
  * @param {Object} options.realm the HRD domain or the connection name where the user belongs to. e.g. `Username-Password-Authentication`
  * @param {tokenCallback} cb function called with the result of the request
- * @see   {@link https://auth0.com/docs/api-auth/grant/password}
+ * @see Requires [`http://auth0.com/oauth/grant-type/password-realm` grant]{@link https://auth0.com/docs/api-auth/grant/password#realm-support}. For more information, read {@link https://auth0.com/docs/clients/client-grant-types}.
  */
 Authentication.prototype.login = function(options, cb) {
   assert.check(
@@ -76093,8 +76232,6 @@ Authentication.prototype.oauthToken = function(options, cb) {
   body = objectHelper.toSnakeCase(body, ['auth0Client']);
   body = parametersWhitelist.oauthTokenParams(this.warn, body);
 
-  body.grant_type = body.grant_type;
-
   return this.request.post(url).send(body).end(responseHandler(cb));
 };
 
@@ -76144,40 +76281,62 @@ Authentication.prototype.loginWithResourceOwner = function(options, cb) {
 };
 
 /**
- * Makes a call to the `/ssodata` endpoint.
- * We recommend to avoid using this method and rely on your tenant hosted login page and using prompt=none via {@link renewAuth} method.
+ * Uses {@link checkSession} and localStorage to return data from the last successful authentication request.
  *
  * @method getSSOData
- * @param {Boolean} withActiveDirectories tells Auth0 to return AD data
+ * @param {Boolean} withActiveDirectories this parameter is not used anymore. It's here to be backward compatible
  * @param {Function} cb
  */
 Authentication.prototype.getSSOData = function(withActiveDirectories, cb) {
-  var url;
-  var params = '';
-
+  /* istanbul ignore if  */
+  if (!this.auth0) {
+    // we can't import this in the constructor because it'd be a ciclic dependency
+    var WebAuth = __webpack_require__("./node_modules/auth0-js/src/web-auth/index.js"); // eslint-disable-line
+    this.auth0 = new WebAuth(this.baseOptions);
+  }
   if (typeof withActiveDirectories === 'function') {
     cb = withActiveDirectories;
-    withActiveDirectories = false;
   }
-
-  assert.check(withActiveDirectories, {
-    type: 'boolean',
-    message: 'withActiveDirectories parameter is not valid'
-  });
   assert.check(cb, { type: 'function', message: 'cb parameter is not valid' });
+  var clientId = this.baseOptions.clientID;
+  var ssodataInformation = ssodata.get() || {};
 
-  if (withActiveDirectories) {
-    params =
-      '?' +
-      qs.stringify({
-        ldaps: 1,
-        client_id: this.baseOptions.clientID
+  this.auth0.checkSession(
+    {
+      responseType: 'token id_token',
+      scope: 'openid profile email',
+      connection: ssodataInformation.lastUsedConnection,
+      timeout: 5000
+    },
+    function(err, result) {
+      if (err) {
+        if (err.error === 'login_required') {
+          return cb(null, { sso: false });
+        }
+        if (err.error === 'consent_required') {
+          err.error_description =
+            'Consent required. When using `getSSOData`, the user has to be authenticated with the following scope: `openid profile email`.';
+        }
+        return cb(err, { sso: false });
+      }
+      if (
+        ssodataInformation.lastUsedSub &&
+        ssodataInformation.lastUsedSub !== result.idTokenPayload.sub
+      ) {
+        return cb(err, { sso: false });
+      }
+      return cb(null, {
+        lastUsedConnection: {
+          name: ssodataInformation.lastUsedConnection
+        },
+        lastUsedUserID: result.idTokenPayload.sub,
+        lastUsedUsername: result.idTokenPayload.email || result.idTokenPayload.name,
+        lastUsedClientID: clientId,
+        sessionClients: [clientId],
+        sso: true
       });
-  }
-
-  url = urljoin(this.baseOptions.rootUrl, 'user', 'ssodata', params);
-
-  return this.request.get(url, { noHeaders: true }).withCredentials().end(responseHandler(cb));
+    }
+  );
 };
 
 /**
@@ -76228,6 +76387,7 @@ Authentication.prototype.userInfo = function(accessToken, cb) {
  * @param {String} [options.apiType] the api to be called
  * @param {delegationCallback} cb
  * @see   {@link https://auth0.com/docs/api/authentication#delegation}
+ * @see Requires [http://auth0.com/oauth/grant-type/password-realm]{@link https://auth0.com/docs/api-auth/grant/password#realm-support}. For more information, read {@link https://auth0.com/docs/clients/client-grant-types}.
  */
 Authentication.prototype.delegation = function(options, cb) {
   var url;
@@ -76679,13 +76839,13 @@ function buildResponse(error, description) {
   };
 }
 
-function invalidJwt(description) {
+function invalidToken(description) {
   return buildResponse('invalid_token', description);
 }
 
 module.exports = {
   buildResponse: buildResponse,
-  invalidJwt: invalidJwt
+  invalidToken: invalidToken
 };
 
 
@@ -76745,8 +76905,9 @@ IframeHandler.prototype.init = function() {
   this.eventSourceObject.addEventListener(this.eventListenerType, this.proxyEventListener, false);
 
   _window.document.body.appendChild(this.iframe);
+  
   this.iframe.src = this.url;
-
+  
   this.timeoutHandle = setTimeout(function() {
     _this.timeoutHandler();
   }, this.timeout);
@@ -76959,6 +77120,36 @@ function toCamelCase(object, exceptions) {
   }, {});
 }
 
+function getLocationFromUrl(href) {
+  var match = href.match(
+    /^(https?:)\/\/(([^:/?#]*)(?::([0-9]+))?)([/]{0,1}[^?#]*)(\?[^#]*|)(#.*|)$/
+  );
+  return (
+    match && {
+      href: href,
+      protocol: match[1],
+      host: match[2],
+      hostname: match[3],
+      port: match[4],
+      pathname: match[5],
+      search: match[6],
+      hash: match[7]
+    }
+  );
+}
+
+function getOriginFromUrl(url) {
+  if (!url) {
+    return undefined;
+  }
+  var parsed = getLocationFromUrl(url);
+  var origin = parsed.protocol + '//' + parsed.hostname;
+  if (parsed.port) {
+    origin += ':' + parsed.port;
+  }
+  return origin;
+}
+
 module.exports = {
   toSnakeCase: toSnakeCase,
   toCamelCase: toCamelCase,
@@ -76966,7 +77157,9 @@ module.exports = {
   merge: merge,
   pick: pick,
   getKeysNotIn: getKeysNotIn,
-  extend: extend
+  extend: extend,
+  getOriginFromUrl: getOriginFromUrl,
+  getLocationFromUrl: getLocationFromUrl
 };
 
 
@@ -77311,6 +77504,10 @@ function RequestBuilder(options) {
 RequestBuilder.prototype.setCommonConfiguration = function(ongoingRequest, options) {
   options = options || {};
 
+  if (this._timesToRetryFailedRequests > 0) {
+    ongoingRequest = ongoingRequest.retry(this._timesToRetryFailedRequests);
+  }
+
   if (options.noHeaders) {
     return ongoingRequest;
   }
@@ -77327,9 +77524,7 @@ RequestBuilder.prototype.setCommonConfiguration = function(ongoingRequest, optio
   if (this._sendTelemetry) {
     ongoingRequest = ongoingRequest.set('Auth0-Client', this.getTelemetryData());
   }
-  if (this._timesToRetryFailedRequests > 0) {
-    ongoingRequest = ongoingRequest.retry(this._timesToRetryFailedRequests);
-  }
+
   return ongoingRequest;
 };
 
@@ -77403,7 +77598,6 @@ function wrapCallback(cb, options) {
       if (err.err) {
         err = err.err;
       }
-
       errObj.code = err.error || err.code || err.error_code || err.status || null;
       errObj.description =
         err.errorDescription ||
@@ -77413,6 +77607,10 @@ function wrapCallback(cb, options) {
         err.details ||
         err.err ||
         null;
+      if (options.forceLegacyError) {
+        errObj.error = errObj.code;
+        errObj.error_description = errObj.description;
+      }
 
       if (err.name) {
         errObj.name = err.name;
@@ -77438,6 +77636,31 @@ function wrapCallback(cb, options) {
 }
 
 module.exports = wrapCallback;
+
+
+/***/ }),
+
+/***/ "./node_modules/auth0-js/src/helper/ssodata.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+var storage = __webpack_require__("./node_modules/auth0-js/src/helper/storage.js");
+
+module.exports = {
+  set: function(connection, sub) {
+    var ssodata = {
+      lastUsedConnection: connection,
+      lastUsedSub: sub
+    };
+    storage.setItem('auth0.ssodata', JSON.stringify(ssodata));
+  },
+  get: function() {
+    var ssodata = storage.getItem('auth0.ssodata');
+    if (!ssodata) {
+      return;
+    }
+    return JSON.parse(ssodata);
+  }
+};
 
 
 /***/ }),
@@ -77527,7 +77750,15 @@ var Warn = __webpack_require__("./node_modules/auth0-js/src/helper/warn.js");
 
 function StorageHandler() {
   this.warn = new Warn({});
-  this.storage = windowHandler.getWindow().localStorage || new CookieStorage();
+  this.storage = new CookieStorage();
+  try {
+    // some browsers throw an error when trying to access localStorage
+    // when localStorage is disabled.
+    this.storage = windowHandler.getWindow().localStorage;
+  } catch (e) {
+    this.warn.warning(e);
+    this.warn.warning("Can't use localStorage. Using CookieStorage instead.");
+  }
 }
 
 StorageHandler.prototype.failover = function() {
@@ -77621,7 +77852,9 @@ module.exports = Warn;
 /***/ "./node_modules/auth0-js/src/helper/window.js":
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(global) {function redirect(url) {
+/* WEBPACK VAR INJECTION */(function(global) {var objectHelper = __webpack_require__("./node_modules/auth0-js/src/helper/object.js");
+
+function redirect(url) {
   global.window.location = url;
 }
 
@@ -77633,10 +77866,20 @@ function getWindow() {
   return global.window;
 }
 
+function getOrigin() {
+  var location = global.window.location;
+  var origin = location.origin;
+  if (!origin) {
+    origin = objectHelper.getOriginFromUrl(location.href);
+  }
+  return origin;
+}
+
 module.exports = {
   redirect: redirect,
   getDocument: getDocument,
-  getWindow: getWindow
+  getWindow: getWindow,
+  getOrigin: getOrigin
 };
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__("./node_modules/webpack/buildin/global.js")))
@@ -77793,7 +78036,7 @@ module.exports = Management;
 /***/ "./node_modules/auth0-js/src/version.js":
 /***/ (function(module, exports) {
 
-module.exports = { raw: '8.12.2' };
+module.exports = { raw: '9.4.2' };
 
 
 /***/ }),
@@ -77806,11 +78049,14 @@ var urljoin = __webpack_require__("./node_modules/url-join/lib/url-join.js");
 var windowHelper = __webpack_require__("./node_modules/auth0-js/src/helper/window.js");
 var objectHelper = __webpack_require__("./node_modules/auth0-js/src/helper/object.js");
 var RequestBuilder = __webpack_require__("./node_modules/auth0-js/src/helper/request-builder.js");
+var WebMessageHandler = __webpack_require__("./node_modules/auth0-js/src/web-auth/web-message-handler.js");
+var responseHandler = __webpack_require__("./node_modules/auth0-js/src/helper/response-handler.js");
 
 function CrossOriginAuthentication(webAuth, options) {
   this.webAuth = webAuth;
   this.baseOptions = options;
   this.request = new RequestBuilder(options);
+  this.webMessageHandler = new WebMessageHandler(webAuth);
 }
 
 function getFragment(name) {
@@ -77828,7 +78074,8 @@ function createKey(origin, coId) {
 
 /**
  * Logs in the user with username and password using the cross origin authentication (/co/authenticate) flow. You can use either `username` or `email` to identify the user, but `username` will take precedence over `email`.
- * This only works when 3rd party cookies are enabled in the browser. After the /co/authenticate call, you'll have to use the {@link parseHash} function at the `redirectUri` specified in the constructor.
+ * Some browsers might not be able to successfully authenticate if 3rd party cookies are disabled in your browser. [See here for more information.]{@link https://auth0.com/docs/cross-origin-authentication}.
+ * After the /co/authenticate call, you'll have to use the {@link parseHash} function at the `redirectUri` specified in the constructor.
  *
  * @method login
  * @param {Object} options options used in the {@link authorize} call after the login_ticket is acquired
@@ -77842,9 +78089,12 @@ CrossOriginAuthentication.prototype.login = function(options, cb) {
   var _this = this;
   var theWindow = windowHelper.getWindow();
   var url = urljoin(this.baseOptions.rootUrl, '/co/authenticate');
+  options.username = options.username || options.email;
+  delete options.email;
+
   var authenticateBody = {
     client_id: options.clientID || this.baseOptions.clientID,
-    username: options.username || options.email
+    username: options.username
   };
   if (options.password) {
     authenticateBody.password = options.password;
@@ -77870,15 +78120,23 @@ CrossOriginAuthentication.prototype.login = function(options, cb) {
         error: 'request_error',
         error_description: JSON.stringify(err)
       };
-      return cb(errorObject);
+      return responseHandler(cb, { forceLegacyError: true })(errorObject);
     }
-    options = objectHelper.blacklist(options, ['username', 'password', 'credentialType', 'otp']);
+    var popupMode = options.popup === true;
+    options = objectHelper.blacklist(options, ['password', 'credentialType', 'otp', 'popup']);
     var authorizeOptions = objectHelper
       .merge(options)
       .with({ loginTicket: data.body.login_ticket });
     var key = createKey(_this.baseOptions.rootUrl, data.body.co_id);
     theWindow.sessionStorage[key] = data.body.co_verifier;
-    _this.webAuth.authorize(authorizeOptions);
+    if (popupMode) {
+      _this.webMessageHandler.run(
+        authorizeOptions,
+        responseHandler(cb, { forceLegacyError: true })
+      );
+    } else {
+      _this.webAuth.authorize(authorizeOptions);
+    }
   });
 };
 
@@ -77927,6 +78185,111 @@ module.exports = CrossOriginAuthentication;
 
 /***/ }),
 
+/***/ "./node_modules/auth0-js/src/web-auth/hosted-pages.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+var UsernamePassword = __webpack_require__("./node_modules/auth0-js/src/web-auth/username-password.js");
+var objectHelper = __webpack_require__("./node_modules/auth0-js/src/helper/object.js");
+var windowHelper = __webpack_require__("./node_modules/auth0-js/src/helper/window.js");
+var Warn = __webpack_require__("./node_modules/auth0-js/src/helper/warn.js");
+var assert = __webpack_require__("./node_modules/auth0-js/src/helper/assert.js");
+
+function HostedPages(client, options) {
+  this.baseOptions = options;
+  this.client = client;
+
+  this.warn = new Warn({
+    disableWarnings: !!options._disableDeprecationWarnings
+  });
+}
+
+/**
+ * @callback credentialsCallback
+ * @param {Error} [err] error returned by Auth0 with the reason of the Auth failure
+ * @param {Object} [result] result of the AuthN request
+ * @param {String} result.accessToken token that can be used with {@link userinfo}
+ * @param {String} [result.idToken] token that identifies the user
+ * @param {String} [result.refreshToken] token that can be used to get new access tokens from Auth0. Note that not all clients can request them or the resource server might not allow them.
+ */
+
+/**
+ * Performs authentication with username/email and password with a database connection
+ *
+ * This method is not compatible with API Auth so if you need to fetch API tokens with audience
+ * you should use {@link authorize} or {@link login}.
+ *
+ * @method loginWithCredentials
+ * @param {Object} options
+ * @param {String} [options.redirectUri] url that the Auth0 will redirect after Auth with the Authorization Response
+ * @param {String} [options.responseType] type of the response used. It can be any of the values `code` and `token`
+ * @param {String} [options.responseMode] how the AuthN response is encoded and redirected back to the client. Supported values are `query` and `fragment`
+ * @param {String} [options.scope] scopes to be requested during AuthN. e.g. `openid email`
+ * @param {credentialsCallback} cb
+ */
+HostedPages.prototype.login = function(options, cb) {
+  if (windowHelper.getWindow().location.host !== this.baseOptions.domain) {
+    throw new Error('This method is meant to be used only inside the Universal Login Page.');
+  }
+  var usernamePassword;
+
+  var params = objectHelper
+    .merge(this.baseOptions, [
+      'clientID',
+      'redirectUri',
+      'tenant',
+      'responseType',
+      'responseMode',
+      'scope',
+      'audience',
+      '_csrf',
+      'state',
+      '_intstate',
+      'nonce'
+    ])
+    .with(options);
+
+  assert.check(
+    params,
+    { type: 'object', message: 'options parameter is not valid' },
+    {
+      responseType: { type: 'string', message: 'responseType option is required' }
+    }
+  );
+
+  usernamePassword = new UsernamePassword(this.baseOptions);
+  return usernamePassword.login(params, function(err, data) {
+    if (err) {
+      return cb(err);
+    }
+    return usernamePassword.callback(data);
+  });
+};
+
+/**
+ * Signs up a new user and automatically logs the user in after the signup.
+ *
+ * @method signupAndLogin
+ * @param {Object} options
+ * @param {String} options.email user email address
+ * @param {String} options.password user password
+ * @param {String} options.connection name of the connection where the user will be created
+ * @param {credentialsCallback} cb
+ */
+HostedPages.prototype.signupAndLogin = function(options, cb) {
+  var _this = this;
+  return _this.client.client.dbConnection.signup(options, function(err) {
+    if (err) {
+      return cb(err);
+    }
+    return _this.login(options, cb);
+  });
+};
+
+module.exports = HostedPages;
+
+
+/***/ }),
+
 /***/ "./node_modules/auth0-js/src/web-auth/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -77938,6 +78301,7 @@ var qs = __webpack_require__("./node_modules/qs/lib/index.js");
 var PluginHandler = __webpack_require__("./node_modules/auth0-js/src/helper/plugins.js");
 var windowHelper = __webpack_require__("./node_modules/auth0-js/src/helper/window.js");
 var objectHelper = __webpack_require__("./node_modules/auth0-js/src/helper/object.js");
+var ssodata = __webpack_require__("./node_modules/auth0-js/src/helper/ssodata.js");
 var TransactionManager = __webpack_require__("./node_modules/auth0-js/src/web-auth/transaction-manager.js");
 var Authentication = __webpack_require__("./node_modules/auth0-js/src/authentication/index.js");
 var Redirect = __webpack_require__("./node_modules/auth0-js/src/web-auth/redirect.js");
@@ -77945,6 +78309,7 @@ var Popup = __webpack_require__("./node_modules/auth0-js/src/web-auth/popup.js")
 var SilentAuthenticationHandler = __webpack_require__("./node_modules/auth0-js/src/web-auth/silent-authentication-handler.js");
 var CrossOriginAuthentication = __webpack_require__("./node_modules/auth0-js/src/web-auth/cross-origin-authentication.js");
 var WebMessageHandler = __webpack_require__("./node_modules/auth0-js/src/web-auth/web-message-handler.js");
+var HostedPages = __webpack_require__("./node_modules/auth0-js/src/web-auth/hosted-pages.js");
 
 /**
  * Handles all the browser's AuthN/AuthZ flows
@@ -78005,8 +78370,13 @@ function WebAuth(options) {
       options.overrides,
       { type: 'object', message: 'overrides option is not valid' },
       {
-        __tenant: { type: 'string', message: '__tenant option is required' },
-        __token_issuer: { type: 'string', message: '__token_issuer option is required' }
+        __tenant: { optional: true, type: 'string', message: '__tenant option is required' },
+        __token_issuer: {
+          optional: true,
+          type: 'string',
+          message: '__token_issuer option is required'
+        },
+        __jwks_uri: { optional: true, type: 'string', message: '__jwks_uri is required' }
       }
     );
   }
@@ -78031,13 +78401,16 @@ function WebAuth(options) {
     (this.baseOptions.overrides && this.baseOptions.overrides.__token_issuer) ||
     'https://' + this.baseOptions.domain + '/';
 
+  this.baseOptions.jwksURI = this.baseOptions.overrides && this.baseOptions.overrides.__jwks_uri;
+
   this.transactionManager = new TransactionManager(this.baseOptions.transaction);
 
   this.client = new Authentication(this.baseOptions);
-  this.redirect = new Redirect(this.client, this.baseOptions);
+  this.redirect = new Redirect(this, this.baseOptions);
   this.popup = new Popup(this, this.baseOptions);
   this.crossOriginAuthentication = new CrossOriginAuthentication(this, this.baseOptions);
   this.webMessageHandler = new WebMessageHandler(this);
+  this._universalLogin = new HostedPages(this, this.baseOptions);
 }
 
 /**
@@ -78052,6 +78425,7 @@ function WebAuth(options) {
  * @param {String} options.hash the url hash. If not provided it will extract from window.location.hash
  * @param {String} [options.state] value originally sent in `state` parameter to {@link authorize} to mitigate XSRF
  * @param {String} [options.nonce] value originally sent in `nonce` parameter to {@link authorize} to prevent replay attacks
+ * @param {String} [options.responseType] type of the response used by OAuth 2.0 flow. It can be any space separated list of the values `token`, `id_token`. For this specific method, we'll only use this value to check if the hash contains the tokens requested in the responseType.
  * @param {authorizeCallback} cb
  */
 WebAuth.prototype.parseHash = function(options, cb) {
@@ -78089,6 +78463,31 @@ WebAuth.prototype.parseHash = function(options, cb) {
   ) {
     return cb(null, null);
   }
+  var responseTypes = (this.baseOptions.responseType || options.responseType || '').split(' ');
+  if (
+    responseTypes.length > 0 &&
+    responseTypes.indexOf('token') !== -1 &&
+    !parsedQs.hasOwnProperty('access_token')
+  ) {
+    return cb(
+      error.buildResponse(
+        'invalid_hash',
+        'response_type contains `token`, but the parsed hash does not contain an `access_token` property'
+      )
+    );
+  }
+  if (
+    responseTypes.length > 0 &&
+    responseTypes.indexOf('id_token') !== -1 &&
+    !parsedQs.hasOwnProperty('id_token')
+  ) {
+    return cb(
+      error.buildResponse(
+        'invalid_hash',
+        'response_type contains `id_token`, but the parsed hash does not contain an `id_token` property'
+      )
+    );
+  }
   return this.validateAuthenticationResponse(options, parsedQs, cb);
 };
 
@@ -78108,11 +78507,16 @@ WebAuth.prototype.parseHash = function(options, cb) {
  */
 WebAuth.prototype.validateAuthenticationResponse = function(options, parsedHash, cb) {
   var _this = this;
+  options.__enableIdPInitiatedLogin =
+    options.__enableIdPInitiatedLogin || options.__enableImpersonation;
   var state = parsedHash.state;
   var transaction = this.transactionManager.getStoredTransaction(state);
   var transactionState = options.state || (transaction && transaction.state) || null;
+
   var transactionStateMatchesState = transactionState === state;
-  if (state && !transactionStateMatchesState) {
+  var shouldBypassStateChecking = !state && !transactionState && options.__enableIdPInitiatedLogin;
+
+  if (!shouldBypassStateChecking && !transactionStateMatchesState) {
     return cb({
       error: 'invalid_token',
       errorDescription: '`state` does not match.'
@@ -78122,32 +78526,65 @@ WebAuth.prototype.validateAuthenticationResponse = function(options, parsedHash,
 
   var appState = options.state || (transaction && transaction.appState) || null;
 
+  var callback = function(err, payload) {
+    if (err) {
+      return cb(err);
+    }
+    if (transaction && transaction.lastUsedConnection) {
+      var sub;
+      if (payload) {
+        sub = payload.sub;
+      }
+      ssodata.set(transaction.lastUsedConnection, sub);
+    }
+    return cb(null, buildParseHashResponse(parsedHash, appState, payload));
+  };
+
   if (!parsedHash.id_token) {
-    return cb(null, buildParseHashResponse(parsedHash, appState, null));
+    return callback(null, null);
   }
   return this.validateToken(parsedHash.id_token, transactionNonce, function(
     validationError,
     payload
   ) {
     if (!validationError) {
-      return cb(null, buildParseHashResponse(parsedHash, appState, payload));
+      if (!parsedHash.access_token) {
+        return callback(null, payload);
+      }
+      // id_token's generated by non-oidc clients don't have at_hash
+      if (!payload.at_hash) {
+        return callback(null, payload);
+      }
+      // here we're absolutely sure that the id_token's alg is RS256
+      // and that the id_token is valid, so we can check the access_token
+      return new IdTokenVerifier().validateAccessToken(
+        parsedHash.access_token,
+        'RS256',
+        payload.at_hash,
+        function(err) {
+          if (err) {
+            return callback(error.invalidToken(err.message));
+          }
+          return callback(null, payload);
+        }
+      );
     }
     if (validationError.error !== 'invalid_token') {
-      return cb(validationError);
+      return callback(validationError);
     }
     // if it's an invalid_token error, decode the token
     var decodedToken = new IdTokenVerifier().decode(parsedHash.id_token);
     // if the alg is not HS256, return the raw error
     if (decodedToken.header.alg !== 'HS256') {
-      return cb(validationError);
+      return callback(validationError);
     }
     // if the alg is HS256, use the /userinfo endpoint to build the payload
     return _this.client.userInfo(parsedHash.access_token, function(errUserInfo, profile) {
       // if the /userinfo request fails, use the validationError instead
       if (errUserInfo) {
-        return cb(validationError);
+        return callback(validationError);
       }
-      return cb(null, buildParseHashResponse(parsedHash, appState, profile));
+      return callback(null, profile);
     });
   });
 };
@@ -78184,6 +78621,7 @@ function buildParseHashResponse(qsParams, appState, token) {
 WebAuth.prototype.validateToken = function(token, nonce, cb) {
   var verifier = new IdTokenVerifier({
     issuer: this.baseOptions.token_issuer,
+    jwksURI: this.baseOptions.jwksURI,
     audience: this.baseOptions.clientID,
     leeway: this.baseOptions.leeway || 0,
     __disableExpirationCheck: this.baseOptions.__disableExpirationCheck
@@ -78191,7 +78629,7 @@ WebAuth.prototype.validateToken = function(token, nonce, cb) {
 
   verifier.verify(token, nonce, function(err, payload) {
     if (err) {
-      return cb(error.invalidJwt(err.message));
+      return cb(error.invalidToken(err.message));
     }
 
     cb(null, payload);
@@ -78217,6 +78655,8 @@ WebAuth.prototype.validateToken = function(token, nonce, cb) {
  * @param {String} [options.postMessageDataType] identifier data type to look for in postMessage event data, where events are initiated from silent callback urls, before accepting a message event is the event expected. A value of false means any postMessage event will trigger a callback.
  * @param {String} [options.postMessageOrigin] origin of redirectUri to expect postMessage response from.  Defaults to the origin of the receiving window. Only used if usePostMessage is truthy.
  * @param {String} [options.timeout] value in milliseconds used to timeout when the `/authorize` call is failing as part of the silent authentication with postmessage enabled due to a configuration.
+ * @param {Boolean} [options.usePostMessage] use postMessage to comunicate between the silent callback and the SPA. When false the SDK will attempt to parse the url hash should ignore the url hash and no extra behaviour is needed
+ * @param {authorizeCallback} cb
  * @see {@link https://auth0.com/docs/api/authentication#authorize-client}
  */
 WebAuth.prototype.renewAuth = function(options, cb) {
@@ -78281,7 +78721,6 @@ WebAuth.prototype.renewAuth = function(options, cb) {
  * @param {Object} options
  * @param {String} [options.domain] your Auth0 domain
  * @param {String} [options.clientID] your Auth0 client identifier obtained when creating the client in the Auth0 Dashboard
- * @param {String} [options.redirectUri] url that the Auth0 will redirect after Auth with the Authorization Response
  * @param {String} [options.responseType] type of the response used by OAuth 2.0 flow. It can be any space separated list of the values `code`, `token`, `id_token`. {@link https://openid.net/specs/oauth-v2-multiple-response-types-1_0}
  * @param {String} [options.state] value used to mitigate XSRF attacks. {@link https://auth0.com/docs/protocols/oauth2/oauth-state}
  * @param {String} [options.nonce] value used to mitigate replay attacks when using Implicit Grant. {@link https://auth0.com/docs/api-auth/tutorials/nonce}
@@ -78293,8 +78732,8 @@ WebAuth.prototype.checkSession = function(options, cb) {
   var params = objectHelper
     .merge(this.baseOptions, [
       'clientID',
-      'redirectUri',
       'responseType',
+      'redirectUri',
       'scope',
       'audience',
       '_csrf',
@@ -78303,6 +78742,10 @@ WebAuth.prototype.checkSession = function(options, cb) {
       'nonce'
     ])
     .with(options);
+
+  if (params.responseType === 'code') {
+    return cb({ error: 'error', error_description: "responseType can't be `code`" });
+  }
 
   if (!options.nonce) {
     params = this.transactionManager.process(params);
@@ -78320,7 +78763,7 @@ WebAuth.prototype.checkSession = function(options, cb) {
  *
  * @method changePassword
  * @param {Object} options
- * @param {String} options.email address where the user will recieve the change password email. It should match the user's email in Auth0
+ * @param {String} options.email address where the user will receive the change password email. It should match the user's email in Auth0
  * @param {String} options.connection name of the connection where the user was created
  * @param {changePasswordCallback} cb
  * @see   {@link https://auth0.com/docs/api/authentication#change-password}
@@ -78418,6 +78861,7 @@ WebAuth.prototype.authorize = function(options) {
   );
 
   params = this.transactionManager.process(params);
+  params.scope = params.scope || 'openid profile email';
 
   windowHelper.redirect(this.client.buildAuthorizeUrl(params));
 };
@@ -78462,8 +78906,9 @@ WebAuth.prototype.signupAndAuthorize = function(options, cb) {
  * Logs in the user with username and password using the cross origin authentication (/co/authenticate) flow. You can use either `username` or `email` to identify the user, but `username` will take precedence over `email`.
  * Some browsers might not be able to successfully authenticate if 3rd party cookies are disabled in your browser. [See here for more information.]{@link https://auth0.com/docs/cross-origin-authentication}.
  * After the /co/authenticate call, you'll have to use the {@link parseHash} function at the `redirectUri` specified in the constructor.
- *
+ * 
  * @method login
+ * @see Requires [`Implicit` grant]{@link https://auth0.com/docs/api-auth/grant/implicit}. For more information, read {@link https://auth0.com/docs/clients/client-grant-types}.
  * @param {Object} options options used in the {@link authorize} call after the login_ticket is acquired
  * @param {String} [options.username] Username (mutually exclusive with email)
  * @param {String} [options.email] Email (mutually exclusive with username)
@@ -78472,7 +78917,14 @@ WebAuth.prototype.signupAndAuthorize = function(options, cb) {
  * @param {crossOriginLoginCallback} cb Callback function called only when an authentication error, like invalid username or password, occurs. For other types of errors, there will be a redirect to the `redirectUri`.
  */
 WebAuth.prototype.login = function(options, cb) {
-  this.crossOriginAuthentication.login(options, cb);
+  var isHostedLoginPage = windowHelper.getWindow().location.host === this.baseOptions.domain;
+  if (isHostedLoginPage) {
+    options.connection = options.realm;
+    delete options.realm;
+    this._universalLogin.login(options, cb);
+  } else {
+    this.crossOriginAuthentication.login(options, cb);
+  }
 };
 
 /**
@@ -78488,24 +78940,39 @@ WebAuth.prototype.login = function(options, cb) {
  * @param {crossOriginLoginCallback} cb Callback function called only when an authentication error, like invalid username or password, occurs. For other types of errors, there will be a redirect to the `redirectUri`.
  */
 WebAuth.prototype.passwordlessLogin = function(options, cb) {
-  var loginOptions = objectHelper.extend(
-    {
-      credentialType: 'http://auth0.com/oauth/grant-type/passwordless/otp',
-      realm: options.connection,
-      username: options.email || options.phoneNumber,
-      otp: options.verificationCode
-    },
-    objectHelper.blacklist(options, ['connection', 'email', 'phoneNumber', 'verificationCode'])
-  );
-  this.crossOriginAuthentication.login(loginOptions, cb);
+  var isHostedLoginPage = windowHelper.getWindow().location.host === this.baseOptions.domain;
+  if (isHostedLoginPage) {
+    this.passwordlessVerify(options, cb);
+  } else {
+    var crossOriginOptions = objectHelper.extend(
+      {
+        credentialType: 'http://auth0.com/oauth/grant-type/passwordless/otp',
+        realm: options.connection,
+        username: options.email || options.phoneNumber,
+        otp: options.verificationCode
+      },
+      objectHelper.blacklist(options, ['connection', 'email', 'phoneNumber', 'verificationCode'])
+    );
+    this.crossOriginAuthentication.login(crossOriginOptions, cb);
+  }
 };
 
 /**
  * Runs the callback code for the cross origin authentication call. This method is meant to be called by the cross origin authentication callback url.
  *
  * @method crossOriginAuthenticationCallback
+ * @deprecated Use {@link crossOriginVerification} instead.
  */
 WebAuth.prototype.crossOriginAuthenticationCallback = function() {
+  this.crossOriginVerification();
+};
+
+/**
+ * Runs the callback code for the cross origin authentication call. This method is meant to be called by the cross origin authentication callback url.
+ *
+ * @method crossOriginVerification
+ */
+WebAuth.prototype.crossOriginVerification = function() {
   this.crossOriginAuthentication.callback();
 };
 
@@ -78583,6 +79050,7 @@ module.exports = WebAuth;
 /***/ (function(module, exports, __webpack_require__) {
 
 var urljoin = __webpack_require__("./node_modules/url-join/lib/url-join.js");
+var WinChan = __webpack_require__("./node_modules/winchan/winchan.js");
 
 var urlHelper = __webpack_require__("./node_modules/auth0-js/src/helper/url.js");
 var assert = __webpack_require__("./node_modules/auth0-js/src/helper/assert.js");
@@ -78592,6 +79060,7 @@ var objectHelper = __webpack_require__("./node_modules/auth0-js/src/helper/objec
 var windowHelper = __webpack_require__("./node_modules/auth0-js/src/helper/window.js");
 var Warn = __webpack_require__("./node_modules/auth0-js/src/helper/warn.js");
 var TransactionManager = __webpack_require__("./node_modules/auth0-js/src/web-auth/transaction-manager.js");
+var CrossOriginAuthentication = __webpack_require__("./node_modules/auth0-js/src/web-auth/cross-origin-authentication.js");
 
 function Popup(webAuth, options) {
   this.baseOptions = options;
@@ -78600,6 +79069,7 @@ function Popup(webAuth, options) {
   this.webAuth = webAuth;
 
   this.transactionManager = new TransactionManager(this.baseOptions.transaction);
+  this.crossOriginAuthentication = new CrossOriginAuthentication(webAuth, this.baseOptions);
   this.warn = new Warn({
     disableWarnings: !!options._disableDeprecationWarnings
   });
@@ -78662,22 +79132,45 @@ Popup.prototype.getPopupHandler = function(options, preload) {
  * @param {String} options.hash the url hash. If not provided it will extract from window.location.hash
  * @param {String} [options.state] value originally sent in `state` parameter to {@link authorize} to mitigate XSRF
  * @param {String} [options.nonce] value originally sent in `nonce` parameter to {@link authorize} to prevent replay attacks
- * @param {String} [options._idTokenVerification] makes parseHash perform or skip `id_token` verification. We **strongly** recommend validating the `id_token` yourself if you disable the verification.
  * @see   {@link parseHash}
  */
 Popup.prototype.callback = function(options) {
   var _this = this;
+  var theWindow = windowHelper.getWindow();
   options = options || {};
-  var originUrl =
-    options.popupOrigin || this.baseOptions.popupOrigin || windowHelper.getWindow().origin;
-  _this.webAuth.parseHash(options || {}, function(err, data) {
-    // {a, d} is WinChan's message format.
-    // We have to keep the same format because we're opening the popup with WinChan.
-    var response = { a: 'response', d: data };
-    if (err) {
-      response = { a: 'error', d: err };
+  var originUrl = options.popupOrigin || this.baseOptions.popupOrigin || windowHelper.getOrigin();
+
+  /*
+    in IE 11, there's a bug that makes window.opener return undefined.
+    The callback page will still call `popup.callback()` which will run this method
+    in the relay page. WinChan expects the relay page to have a global `doPost` function,
+    which will be called with the response.
+
+    IE11 Bug: https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/110920/
+   */
+  if (!theWindow.opener) {
+    theWindow.doPost = function(msg) {
+      if (theWindow.parent) {
+        theWindow.parent.postMessage(msg, originUrl);
+      }
+    };
+    return;
+  }
+
+  WinChan.onOpen(function(popupOrigin, r, cb) {
+    if (popupOrigin !== originUrl) {
+      return cb({
+        error: 'origin_mismatch',
+        error_description: "The popup's origin (" +
+          popupOrigin +
+          ') should match the `popupOrigin` parameter (' +
+          originUrl +
+          ').'
+      });
     }
-    windowHelper.getWindow().opener.postMessage(JSON.stringify(response), originUrl);
+    _this.webAuth.parseHash(options || {}, function(err, data) {
+      return cb(err || data);
+    });
   });
 };
 
@@ -78690,7 +79183,7 @@ Popup.prototype.callback = function(options) {
  * @param {String} [options.clientID] your Auth0 client identifier obtained when creating the client in the Auth0 Dashboard
  * @param {String} options.redirectUri url that the Auth0 will redirect after Auth with the Authorization Response
  * @param {String} options.responseType type of the response used by OAuth 2.0 flow. It can be any space separated list of the values `code`, `token`, `id_token`. {@link https://openid.net/specs/oauth-v2-multiple-response-types-1_0}
- * @param {String} [options.responseMode] how the Auth response is encoded and redirected back to the client. Supported values are `query`, `fragment` and `form_post`. {@link https://openid.net/specs/oauth-v2-multiple-response-types-1_0.html#ResponseModes}
+ * @param {String} [options.responseMode] how the Auth response is encoded and redirected back to the client. Supported values are `query`, `fragment` and `form_post`. The `query` value is only supported when `responseType` is `code`. {@link https://openid.net/specs/oauth-v2-multiple-response-types-1_0.html#ResponseModes}
  * @param {String} [options.state] value used to mitigate XSRF attacks. {@link https://auth0.com/docs/protocols/oauth2/oauth-state}
  * @param {String} [options.nonce] value used to mitigate replay attacks when using Implicit Grant. {@link https://auth0.com/docs/api-auth/tutorials/nonce}
  * @param {String} [options.scope] scopes to be requested during Auth. e.g. `openid email`
@@ -78731,8 +79224,8 @@ Popup.prototype.authorize = function(options, cb) {
     }
   );
 
-  // the relay page should not be necesary as long it happens in the same domain
-  // (a redirectUri shoul be provided). It is necesary when using OWP
+  // the relay page should not be necessary as long it happens in the same domain
+  // (a redirectUri shoul be provided). It is necessary when using OWP
   relayUrl = urljoin(this.baseOptions.rootUrl, 'relay.html');
 
   // if a owp is enabled, it should use the owp flag
@@ -78754,7 +79247,7 @@ Popup.prototype.authorize = function(options, cb) {
   }
 
   params = this.transactionManager.process(params);
-
+  params.scope = params.scope || 'openid profile email';
   delete params.domain;
 
   url = this.client.buildAuthorizeUrl(params);
@@ -78774,55 +79267,18 @@ Popup.prototype.authorize = function(options, cb) {
  * @param {Object} options
  * @param {String} [options.redirectUri] url that the Auth0 will redirect after Auth with the Authorization Response
  * @param {String} [options.responseType] type of the response used. It can be any of the values `code` and `token`
- * @param {String} [options.responseMode] how the AuthN response is encoded and redirected back to the client. Supported values are `query` and `fragment`
+ * @param {String} [options.responseMode] how the AuthN response is encoded and redirected back to the client. Supported values are `query` and `fragment`. The `query` value is only supported when `responseType` is `code`.
  * @param {String} [options.scope] scopes to be requested during AuthN. e.g. `openid email`
  * @param {credentialsCallback} cb
  */
 Popup.prototype.loginWithCredentials = function(options, cb) {
-  var params;
-  var popup;
-  var url;
-  var relayUrl;
-
-  /* eslint-disable */
-  assert.check(
-    options,
-    { type: 'object', message: 'options parameter is not valid' },
-    {
-      clientID: { optional: true, type: 'string', message: 'clientID option is required' },
-      redirectUri: { optional: true, type: 'string', message: 'redirectUri option is required' },
-      responseType: { optional: true, type: 'string', message: 'responseType option is required' },
-      scope: { optional: true, type: 'string', message: 'scope option is required' },
-      audience: { optional: true, type: 'string', message: 'audience option is required' }
-    }
-  );
-  /* eslint-enable */
-
-  popup = this.getPopupHandler(options);
-
+  options.realm = options.realm || options.connection;
+  options.popup = true;
   options = objectHelper
-    .merge(this.baseOptions, [
-      'clientID',
-      'scope',
-      'domain',
-      'audience',
-      '_csrf',
-      'state',
-      '_intstate',
-      'nonce'
-    ])
-    .with(objectHelper.blacklist(options, ['popupHandler']));
-
-  params = objectHelper.pick(options, ['clientID', 'domain']);
-  params.options = objectHelper.toSnakeCase(
-    objectHelper.pick(options, ['password', 'connection', 'state', 'scope', '_csrf', 'device'])
-  );
-  params.options.username = options.username || options.email;
-
-  url = urljoin(this.baseOptions.rootUrl, 'sso_dbconnection_popup', options.clientID);
-  relayUrl = urljoin(this.baseOptions.rootUrl, 'relay.html');
-
-  return popup.load(url, relayUrl, { params: params }, responseHandler(cb));
+    .merge(this.baseOptions, ['redirectUri', 'responseType', 'state', 'nonce'])
+    .with(objectHelper.blacklist(options, ['popupHandler', 'connection']));
+  options = this.transactionManager.process(options);
+  this.crossOriginAuthentication.login(options, cb);
 };
 
 /**
@@ -78901,14 +79357,13 @@ module.exports = Popup;
 /***/ "./node_modules/auth0-js/src/web-auth/redirect.js":
 /***/ (function(module, exports, __webpack_require__) {
 
-var UsernamePassword = __webpack_require__("./node_modules/auth0-js/src/web-auth/username-password.js");
-var objectHelper = __webpack_require__("./node_modules/auth0-js/src/helper/object.js");
+var CrossOriginAuthentication = __webpack_require__("./node_modules/auth0-js/src/web-auth/cross-origin-authentication.js");
 var Warn = __webpack_require__("./node_modules/auth0-js/src/helper/warn.js");
-var assert = __webpack_require__("./node_modules/auth0-js/src/helper/assert.js");
 
-function Redirect(client, options) {
+function Redirect(auth0, options) {
+  this.webAuth = auth0;
   this.baseOptions = options;
-  this.client = client;
+  this.crossOriginAuthentication = new CrossOriginAuthentication(auth0, this.baseOptions);
 
   this.warn = new Warn({
     disableWarnings: !!options._disableDeprecationWarnings
@@ -78916,62 +79371,23 @@ function Redirect(client, options) {
 }
 
 /**
- * @callback credentialsCallback
- * @param {Error} [err] error returned by Auth0 with the reason of the Auth failure
- * @param {Object} [result] result of the AuthN request
- * @param {String} result.accessToken token that can be used with {@link userinfo}
- * @param {String} [result.idToken] token that identifies the user
- * @param {String} [result.refreshToken] token that can be used to get new access tokens from Auth0. Note that not all clients can request them or the resource server might not allow them.
- */
-
-/**
- * Performs authentication with username/email and password with a database connection
- *
- * This method is not compatible with API Auth so if you need to fetch API tokens with audience
- * you should use {@link authorize} or {@link login}.
+ * Logs in the user with username and password using the cross origin authentication (/co/authenticate) flow. You can use either `username` or `email` to identify the user, but `username` will take precedence over `email`.
+ * Some browsers might not be able to successfully authenticate if 3rd party cookies are disabled in your browser. [See here for more information.]{@link https://auth0.com/docs/cross-origin-authentication}.
+ * After the /co/authenticate call, you'll have to use the {@link parseHash} function at the `redirectUri` specified in the constructor.
  *
  * @method loginWithCredentials
- * @param {Object} options
- * @param {String} [options.redirectUri] url that the Auth0 will redirect after Auth with the Authorization Response
- * @param {String} [options.responseType] type of the response used. It can be any of the values `code` and `token`
- * @param {String} [options.responseMode] how the AuthN response is encoded and redirected back to the client. Supported values are `query` and `fragment`
- * @param {String} [options.scope] scopes to be requested during AuthN. e.g. `openid email`
- * @param {credentialsCallback} cb
+ * @deprecated This method will be released in the next major version. Use `webAuth.login` instead.
+ * @param {Object} options options used in the {@link authorize} call after the login_ticket is acquired
+ * @param {String} [options.username] Username (mutually exclusive with email)
+ * @param {String} [options.email] Email (mutually exclusive with username)
+ * @param {String} options.password Password
+ * @param {String} [options.connection] Connection used to authenticate the user, it can be a realm name or a database connection name
+ * @param {crossOriginLoginCallback} cb Callback function called only when an authentication error, like invalid username or password, occurs. For other types of errors, there will be a redirect to the `redirectUri`.
  */
 Redirect.prototype.loginWithCredentials = function(options, cb) {
-  var usernamePassword;
-
-  var params = objectHelper
-    .merge(this.baseOptions, [
-      'clientID',
-      'redirectUri',
-      'tenant',
-      'responseType',
-      'responseMode',
-      'scope',
-      'audience',
-      '_csrf',
-      'state',
-      '_intstate',
-      'nonce'
-    ])
-    .with(options);
-
-  assert.check(
-    params,
-    { type: 'object', message: 'options parameter is not valid' },
-    {
-      responseType: { type: 'string', message: 'responseType option is required' }
-    }
-  );
-
-  usernamePassword = new UsernamePassword(this.baseOptions);
-  return usernamePassword.login(params, function(err, data) {
-    if (err) {
-      return cb(err);
-    }
-    return usernamePassword.callback(data);
-  });
+  options.realm = options.realm || options.connection;
+  delete options.connection;
+  this.crossOriginAuthentication.login(options, cb);
 };
 
 /**
@@ -78982,15 +79398,17 @@ Redirect.prototype.loginWithCredentials = function(options, cb) {
  * @param {String} options.email user email address
  * @param {String} options.password user password
  * @param {String} options.connection name of the connection where the user will be created
- * @param {credentialsCallback} cb
+ * @param {crossOriginLoginCallback} cb
  */
 Redirect.prototype.signupAndLogin = function(options, cb) {
   var _this = this;
-  return this.client.dbConnection.signup(options, function(err) {
+  return this.webAuth.client.dbConnection.signup(options, function(err) {
     if (err) {
       return cb(err);
     }
-    return _this.loginWithCredentials(options, cb);
+    options.realm = options.realm || options.connection;
+    delete options.connection;
+    return _this.webAuth.login(options, cb);
   });
 };
 
@@ -79113,12 +79531,14 @@ TransactionManager.prototype.process = function(options) {
   if (!options.responseType) {
     throw new Error('responseType is required');
   }
+  var lastUsedConnection = options.realm || options.connection;
   var responseTypeIncludesIdToken = options.responseType.indexOf('id_token') !== -1;
 
   var transaction = this.generateTransaction(
     options.appState,
     options.state,
     options.nonce,
+    lastUsedConnection,
     responseTypeIncludesIdToken
   );
   if (!options.state) {
@@ -79132,16 +79552,22 @@ TransactionManager.prototype.process = function(options) {
   return options;
 };
 
-TransactionManager.prototype.generateTransaction = function(appState, state, nonce, generateNonce) {
+TransactionManager.prototype.generateTransaction = function(
+  appState,
+  state,
+  nonce,
+  lastUsedConnection,
+  generateNonce
+) {
   state = state || random.randomString(this.keyLength);
   nonce = nonce || (generateNonce ? random.randomString(this.keyLength) : null);
 
   storage.setItem(this.namespace + state, {
     nonce: nonce,
     appState: appState,
-    state: state
+    state: state,
+    lastUsedConnection: lastUsedConnection
   });
-
   return {
     state: state,
     nonce: nonce
@@ -79228,6 +79654,8 @@ module.exports = UsernamePassword;
 
 var IframeHandler = __webpack_require__("./node_modules/auth0-js/src/helper/iframe-handler.js");
 var objectHelper = __webpack_require__("./node_modules/auth0-js/src/helper/object.js");
+var windowHelper = __webpack_require__("./node_modules/auth0-js/src/helper/window.js");
+var Warn = __webpack_require__("./node_modules/auth0-js/src/helper/warn.js");
 
 function runWebMessageFlow(authorizeUrl, options, callback) {
   var handler = new IframeHandler({
@@ -79239,7 +79667,10 @@ function runWebMessageFlow(authorizeUrl, options, callback) {
     timeout: options.timeout,
     eventValidator: {
       isValid: function(eventData) {
-        return eventData.event.data.type === 'authorization_response';
+        return (
+          eventData.event.data.type === 'authorization_response' &&
+          options.state === eventData.event.data.response.state
+        );
       }
     },
     timeoutCallback: function() {
@@ -79254,12 +79685,27 @@ function runWebMessageFlow(authorizeUrl, options, callback) {
 
 function WebMessageHandler(webAuth) {
   this.webAuth = webAuth;
+  this.warn = new Warn(webAuth.baseOptions);
 }
 
 WebMessageHandler.prototype.run = function(options, cb) {
   var _this = this;
   options.responseMode = 'web_message';
   options.prompt = 'none';
+
+  var currentOrigin = windowHelper.getOrigin();
+  var redirectUriOrigin = objectHelper.getOriginFromUrl(options.redirectUri);
+  if (redirectUriOrigin && currentOrigin !== redirectUriOrigin) {
+    return cb({
+      error: 'origin_mismatch',
+      error_description: "The redirectUri's origin (" +
+        redirectUriOrigin +
+        ") should match the window's origin (" +
+        currentOrigin +
+        ').'
+    });
+  }
+
   runWebMessageFlow(this.webAuth.client.buildAuthorizeUrl(options), options, function(
     err,
     eventData
@@ -79267,6 +79713,15 @@ WebMessageHandler.prototype.run = function(options, cb) {
     var error = err;
     if (!err && eventData.event.data.response.error) {
       error = objectHelper.pick(eventData.event.data.response, ['error', 'error_description']);
+    }
+    if (
+      error &&
+      error.error === 'consent_required' &&
+      windowHelper.getWindow().location.hostname === 'localhost'
+    ) {
+      _this.warn.warning(
+        "Consent Required. Consent can't be skipped on localhost. Read more here: https://auth0.com/docs/api-auth/user-consent#skipping-consent-for-first-party-clients"
+      );
     }
     if (error) {
       return cb(error);
@@ -79306,65 +79761,97 @@ for (var i = 0, len = code.length; i < len; ++i) {
 revLookup['-'.charCodeAt(0)] = 62
 revLookup['_'.charCodeAt(0)] = 63
 
-function placeHoldersCount (b64) {
+function getLens (b64) {
   var len = b64.length
+
   if (len % 4 > 0) {
     throw new Error('Invalid string. Length must be a multiple of 4')
   }
 
-  // the number of equal signs (place holders)
-  // if there are two placeholders, than the two characters before it
-  // represent one byte
-  // if there is only one, then the three characters before it represent 2 bytes
-  // this is just a cheap hack to not do indexOf twice
-  return b64[len - 2] === '=' ? 2 : b64[len - 1] === '=' ? 1 : 0
+  // Trim off extra bytes after placeholder bytes are found
+  // See: https://github.com/beatgammit/base64-js/issues/42
+  var validLen = b64.indexOf('=')
+  if (validLen === -1) validLen = len
+
+  var placeHoldersLen = validLen === len
+    ? 0
+    : 4 - (validLen % 4)
+
+  return [validLen, placeHoldersLen]
 }
 
+// base64 is 4/3 + up to two characters of the original data
 function byteLength (b64) {
-  // base64 is 4/3 + up to two characters of the original data
-  return (b64.length * 3 / 4) - placeHoldersCount(b64)
+  var lens = getLens(b64)
+  var validLen = lens[0]
+  var placeHoldersLen = lens[1]
+  return ((validLen + placeHoldersLen) * 3 / 4) - placeHoldersLen
+}
+
+function _byteLength (b64, validLen, placeHoldersLen) {
+  return ((validLen + placeHoldersLen) * 3 / 4) - placeHoldersLen
 }
 
 function toByteArray (b64) {
-  var i, l, tmp, placeHolders, arr
-  var len = b64.length
-  placeHolders = placeHoldersCount(b64)
+  var tmp
+  var lens = getLens(b64)
+  var validLen = lens[0]
+  var placeHoldersLen = lens[1]
 
-  arr = new Arr((len * 3 / 4) - placeHolders)
+  var arr = new Arr(_byteLength(b64, validLen, placeHoldersLen))
+
+  var curByte = 0
 
   // if there are placeholders, only get up to the last complete 4 chars
-  l = placeHolders > 0 ? len - 4 : len
+  var len = placeHoldersLen > 0
+    ? validLen - 4
+    : validLen
 
-  var L = 0
-
-  for (i = 0; i < l; i += 4) {
-    tmp = (revLookup[b64.charCodeAt(i)] << 18) | (revLookup[b64.charCodeAt(i + 1)] << 12) | (revLookup[b64.charCodeAt(i + 2)] << 6) | revLookup[b64.charCodeAt(i + 3)]
-    arr[L++] = (tmp >> 16) & 0xFF
-    arr[L++] = (tmp >> 8) & 0xFF
-    arr[L++] = tmp & 0xFF
+  for (var i = 0; i < len; i += 4) {
+    tmp =
+      (revLookup[b64.charCodeAt(i)] << 18) |
+      (revLookup[b64.charCodeAt(i + 1)] << 12) |
+      (revLookup[b64.charCodeAt(i + 2)] << 6) |
+      revLookup[b64.charCodeAt(i + 3)]
+    arr[curByte++] = (tmp >> 16) & 0xFF
+    arr[curByte++] = (tmp >> 8) & 0xFF
+    arr[curByte++] = tmp & 0xFF
   }
 
-  if (placeHolders === 2) {
-    tmp = (revLookup[b64.charCodeAt(i)] << 2) | (revLookup[b64.charCodeAt(i + 1)] >> 4)
-    arr[L++] = tmp & 0xFF
-  } else if (placeHolders === 1) {
-    tmp = (revLookup[b64.charCodeAt(i)] << 10) | (revLookup[b64.charCodeAt(i + 1)] << 4) | (revLookup[b64.charCodeAt(i + 2)] >> 2)
-    arr[L++] = (tmp >> 8) & 0xFF
-    arr[L++] = tmp & 0xFF
+  if (placeHoldersLen === 2) {
+    tmp =
+      (revLookup[b64.charCodeAt(i)] << 2) |
+      (revLookup[b64.charCodeAt(i + 1)] >> 4)
+    arr[curByte++] = tmp & 0xFF
+  }
+
+  if (placeHoldersLen === 1) {
+    tmp =
+      (revLookup[b64.charCodeAt(i)] << 10) |
+      (revLookup[b64.charCodeAt(i + 1)] << 4) |
+      (revLookup[b64.charCodeAt(i + 2)] >> 2)
+    arr[curByte++] = (tmp >> 8) & 0xFF
+    arr[curByte++] = tmp & 0xFF
   }
 
   return arr
 }
 
 function tripletToBase64 (num) {
-  return lookup[num >> 18 & 0x3F] + lookup[num >> 12 & 0x3F] + lookup[num >> 6 & 0x3F] + lookup[num & 0x3F]
+  return lookup[num >> 18 & 0x3F] +
+    lookup[num >> 12 & 0x3F] +
+    lookup[num >> 6 & 0x3F] +
+    lookup[num & 0x3F]
 }
 
 function encodeChunk (uint8, start, end) {
   var tmp
   var output = []
   for (var i = start; i < end; i += 3) {
-    tmp = ((uint8[i] << 16) & 0xFF0000) + ((uint8[i + 1] << 8) & 0xFF00) + (uint8[i + 2] & 0xFF)
+    tmp =
+      ((uint8[i] << 16) & 0xFF0000) +
+      ((uint8[i + 1] << 8) & 0xFF00) +
+      (uint8[i + 2] & 0xFF)
     output.push(tripletToBase64(tmp))
   }
   return output.join('')
@@ -79374,30 +79861,33 @@ function fromByteArray (uint8) {
   var tmp
   var len = uint8.length
   var extraBytes = len % 3 // if we have 1 byte left, pad 2 bytes
-  var output = ''
   var parts = []
   var maxChunkLength = 16383 // must be multiple of 3
 
   // go through the array every three bytes, we'll deal with trailing stuff later
   for (var i = 0, len2 = len - extraBytes; i < len2; i += maxChunkLength) {
-    parts.push(encodeChunk(uint8, i, (i + maxChunkLength) > len2 ? len2 : (i + maxChunkLength)))
+    parts.push(encodeChunk(
+      uint8, i, (i + maxChunkLength) > len2 ? len2 : (i + maxChunkLength)
+    ))
   }
 
   // pad the end with zeros, but make sure to not forget the extra bytes
   if (extraBytes === 1) {
     tmp = uint8[len - 1]
-    output += lookup[tmp >> 2]
-    output += lookup[(tmp << 4) & 0x3F]
-    output += '=='
+    parts.push(
+      lookup[tmp >> 2] +
+      lookup[(tmp << 4) & 0x3F] +
+      '=='
+    )
   } else if (extraBytes === 2) {
-    tmp = (uint8[len - 2] << 8) + (uint8[len - 1])
-    output += lookup[tmp >> 10]
-    output += lookup[(tmp >> 4) & 0x3F]
-    output += lookup[(tmp << 2) & 0x3F]
-    output += '='
+    tmp = (uint8[len - 2] << 8) + uint8[len - 1]
+    parts.push(
+      lookup[tmp >> 10] +
+      lookup[(tmp >> 4) & 0x3F] +
+      lookup[(tmp << 2) & 0x3F] +
+      '='
+    )
   }
-
-  parts.push(output)
 
   return parts.join('')
 }
@@ -80341,6 +80831,171 @@ Emitter.prototype.hasListeners = function(event){
 
 /***/ }),
 
+/***/ "./node_modules/crypto-js/enc-base64.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+;(function (root, factory) {
+	if (true) {
+		// CommonJS
+		module.exports = exports = factory(__webpack_require__("./node_modules/crypto-js/core.js"));
+	}
+	else if (typeof define === "function" && define.amd) {
+		// AMD
+		define(["./core"], factory);
+	}
+	else {
+		// Global (browser)
+		factory(root.CryptoJS);
+	}
+}(this, function (CryptoJS) {
+
+	(function () {
+	    // Shortcuts
+	    var C = CryptoJS;
+	    var C_lib = C.lib;
+	    var WordArray = C_lib.WordArray;
+	    var C_enc = C.enc;
+
+	    /**
+	     * Base64 encoding strategy.
+	     */
+	    var Base64 = C_enc.Base64 = {
+	        /**
+	         * Converts a word array to a Base64 string.
+	         *
+	         * @param {WordArray} wordArray The word array.
+	         *
+	         * @return {string} The Base64 string.
+	         *
+	         * @static
+	         *
+	         * @example
+	         *
+	         *     var base64String = CryptoJS.enc.Base64.stringify(wordArray);
+	         */
+	        stringify: function (wordArray) {
+	            // Shortcuts
+	            var words = wordArray.words;
+	            var sigBytes = wordArray.sigBytes;
+	            var map = this._map;
+
+	            // Clamp excess bits
+	            wordArray.clamp();
+
+	            // Convert
+	            var base64Chars = [];
+	            for (var i = 0; i < sigBytes; i += 3) {
+	                var byte1 = (words[i >>> 2]       >>> (24 - (i % 4) * 8))       & 0xff;
+	                var byte2 = (words[(i + 1) >>> 2] >>> (24 - ((i + 1) % 4) * 8)) & 0xff;
+	                var byte3 = (words[(i + 2) >>> 2] >>> (24 - ((i + 2) % 4) * 8)) & 0xff;
+
+	                var triplet = (byte1 << 16) | (byte2 << 8) | byte3;
+
+	                for (var j = 0; (j < 4) && (i + j * 0.75 < sigBytes); j++) {
+	                    base64Chars.push(map.charAt((triplet >>> (6 * (3 - j))) & 0x3f));
+	                }
+	            }
+
+	            // Add padding
+	            var paddingChar = map.charAt(64);
+	            if (paddingChar) {
+	                while (base64Chars.length % 4) {
+	                    base64Chars.push(paddingChar);
+	                }
+	            }
+
+	            return base64Chars.join('');
+	        },
+
+	        /**
+	         * Converts a Base64 string to a word array.
+	         *
+	         * @param {string} base64Str The Base64 string.
+	         *
+	         * @return {WordArray} The word array.
+	         *
+	         * @static
+	         *
+	         * @example
+	         *
+	         *     var wordArray = CryptoJS.enc.Base64.parse(base64String);
+	         */
+	        parse: function (base64Str) {
+	            // Shortcuts
+	            var base64StrLength = base64Str.length;
+	            var map = this._map;
+	            var reverseMap = this._reverseMap;
+
+	            if (!reverseMap) {
+	                    reverseMap = this._reverseMap = [];
+	                    for (var j = 0; j < map.length; j++) {
+	                        reverseMap[map.charCodeAt(j)] = j;
+	                    }
+	            }
+
+	            // Ignore padding
+	            var paddingChar = map.charAt(64);
+	            if (paddingChar) {
+	                var paddingIndex = base64Str.indexOf(paddingChar);
+	                if (paddingIndex !== -1) {
+	                    base64StrLength = paddingIndex;
+	                }
+	            }
+
+	            // Convert
+	            return parseLoop(base64Str, base64StrLength, reverseMap);
+
+	        },
+
+	        _map: 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/='
+	    };
+
+	    function parseLoop(base64Str, base64StrLength, reverseMap) {
+	      var words = [];
+	      var nBytes = 0;
+	      for (var i = 0; i < base64StrLength; i++) {
+	          if (i % 4) {
+	              var bits1 = reverseMap[base64Str.charCodeAt(i - 1)] << ((i % 4) * 2);
+	              var bits2 = reverseMap[base64Str.charCodeAt(i)] >>> (6 - (i % 4) * 2);
+	              words[nBytes >>> 2] |= (bits1 | bits2) << (24 - (nBytes % 4) * 8);
+	              nBytes++;
+	          }
+	      }
+	      return WordArray.create(words, nBytes);
+	    }
+	}());
+
+
+	return CryptoJS.enc.Base64;
+
+}));
+
+/***/ }),
+
+/***/ "./node_modules/crypto-js/enc-hex.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+;(function (root, factory) {
+	if (true) {
+		// CommonJS
+		module.exports = exports = factory(__webpack_require__("./node_modules/crypto-js/core.js"));
+	}
+	else if (typeof define === "function" && define.amd) {
+		// AMD
+		define(["./core"], factory);
+	}
+	else {
+		// Global (browser)
+		factory(root.CryptoJS);
+	}
+}(this, function (CryptoJS) {
+
+	return CryptoJS.enc.Hex;
+
+}));
+
+/***/ }),
+
 /***/ "./node_modules/crypto-js/sha256.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -80590,9 +81245,9 @@ function byteArrayToHex(raw) {
 }
 
 function encodeString(str) {
-  return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, function (match, p1) {
+  return base64.fromByteArray(stringToByteArray(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, function (match, p1) {
     return String.fromCharCode('0x' + p1);
-  }))
+  })))
   .replace(/\+/g, '-') // Convert '+' to '-'
   .replace(/\//g, '_'); // Convert '/' to '_';
 }
@@ -80602,13 +81257,25 @@ function decodeToString(str) {
     .replace(/\-/g, '+') // Convert '-' to '+'
     .replace(/_/g, '/'); // Convert '_' to '/'
 
-  return decodeURIComponent(atob(str).split('').map(function (c) {
+  return decodeURIComponent(byteArrayToString(base64.toByteArray(str)).split('').map(function (c) {
     return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
   }).join(''));
 }
 
 function decodeToHEX(str) {
   return byteArrayToHex(base64.toByteArray(padding(str)));
+}
+
+function base64ToBase64Url(base64String) {
+  var SAFE_URL_ENCODING_MAPPING = {
+    "+": "-",
+    "/": "_",
+    "=": ""
+  };
+
+  return base64String.replace(/[+/=]/g, function(m) {
+    return SAFE_URL_ENCODING_MAPPING[m];
+  });
 }
 
 module.exports = {
@@ -80618,7 +81285,8 @@ module.exports = {
   stringToByteArray: stringToByteArray,
   padding: padding,
   byteArrayToHex: byteArrayToHex,
-  decodeToHEX: decodeToHEX
+  decodeToHEX: decodeToHEX,
+  base64ToBase64Url: base64ToBase64Url
 };
 
 
@@ -80686,7 +81354,7 @@ function process(jwks) {
 }
 
 function getJWKS(options, cb) {
-  var url = urljoin(options.iss, '.well-known', 'jwks.json');
+  var url = options.jwksURI || urljoin(options.iss, '.well-known', 'jwks.json');
 
   return request
     .get(url)
@@ -80696,7 +81364,7 @@ function getJWKS(options, cb) {
       var key;
 
       if (err) {
-        cb(err);
+        return cb(err);
       }
 
       // eslint-disable-next-line no-plusplus
@@ -80707,7 +81375,7 @@ function getJWKS(options, cb) {
         }
       }
 
-      cb(null, process(matchingKey));
+      return cb(null, process(matchingKey));
     });
 }
 
@@ -80806,6 +81474,10 @@ module.exports = RSAVerifier;
 /***/ "./node_modules/idtoken-verifier/src/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
+var sha256 = __webpack_require__("./node_modules/crypto-js/sha256.js");
+var cryptoBase64 = __webpack_require__("./node_modules/crypto-js/enc-base64.js");
+var cryptoHex = __webpack_require__("./node_modules/crypto-js/enc-hex.js");
+
 var RSAVerifier = __webpack_require__("./node_modules/idtoken-verifier/src/helpers/rsa-verifier.js");
 var base64 = __webpack_require__("./node_modules/idtoken-verifier/src/helpers/base64.js");
 var jwks = __webpack_require__("./node_modules/idtoken-verifier/src/helpers/jwks.js");
@@ -80822,6 +81494,7 @@ var supportedAlgs = ['RS256'];
  * @param {String} parameters.audience identifies the recipients that the JWT is intended for
  * and should match the `aud` claim
  * @param {Object} [parameters.jwksCache] cache for JSON Web Token Keys. By default it has no cache
+ * @param {String} [parameters.jwksURI] A valid, direct URI to fetch the JSON Web Key Set (JWKS).
  * @param {String} [parameters.expectedAlg='RS256'] algorithm in which the id_token was signed
  * and will be used to validate
  * @param {number} [parameters.leeway=0] number of seconds that the clock can be out of sync
@@ -80836,6 +81509,7 @@ function IdTokenVerifier(parameters) {
   this.audience = options.audience;
   this.leeway = options.leeway || 0;
   this.__disableExpirationCheck = options.__disableExpirationCheck || false;
+  this.jwksURI = options.jwksURI;
 
   if (this.leeway < 0 || this.leeway > 60) {
     throw new error.ConfigurationError('The leeway should be positive and lower than a minute.');
@@ -80995,14 +81669,15 @@ IdTokenVerifier.prototype.getRsaVerifier = function (iss, kid, cb) {
 
   if (!this.jwksCache.has(cachekey)) {
     jwks.getJWKS({
+      jwksURI: this.jwksURI,
       iss: iss,
       kid: kid
     }, function (err, keyInfo) {
       if (err) {
-        cb(err);
+        return cb(err);
       }
       _this.jwksCache.set(cachekey, keyInfo);
-      cb(null, new RSAVerifier(keyInfo.modulus, keyInfo.exp));
+      return cb(null, new RSAVerifier(keyInfo.modulus, keyInfo.exp));
     });
   } else {
     var keyInfo = this.jwksCache.get(cachekey); // eslint-disable-line vars-on-top
@@ -81051,6 +81726,42 @@ IdTokenVerifier.prototype.decode = function (token) {
       signature: parts[2]
     }
   };
+};
+
+/**
+ * @callback validateAccessTokenCallback
+ * @param {Error} [err] error returned if the validation cannot be performed
+ * or the token is invalid. If there is no error, then the access_token is valid.
+ */
+
+/**
+ * Validates an access_token based on {@link http://openid.net/specs/openid-connect-core-1_0.html#ImplicitTokenValidation}.
+ * The id_token from where the alg and atHash parameters are taken,
+ * should be decoded and verified before using thisfunction
+ *
+ * @method validateAccessToken
+ * @param {String} access_token the access_token
+ * @param {String} alg The algorithm defined in the header of the
+ * previously verified id_token under the "alg" claim.
+ * @param {String} atHash The "at_hash" value included in the payload
+ * of the previously verified id_token.
+ * @param {validateAccessTokenCallback} cb callback used to notify the results of the validation.
+ */
+IdTokenVerifier.prototype.validateAccessToken = function (accessToken, alg, atHash, cb) {
+  if (this.expectedAlg !== alg) {
+    return cb(new error.TokenValidationError('Algorithm ' + alg +
+      ' is not supported. (Expected alg: ' + this.expectedAlg + ')'));
+  }
+  var sha256AccessToken = sha256(accessToken);
+  var hashToHex = cryptoHex.stringify(sha256AccessToken);
+  var hashToHexFirstHalf = hashToHex.substring(0, hashToHex.length / 2);
+  var hashFirstHalfWordArray = cryptoHex.parse(hashToHexFirstHalf);
+  var hashFirstHalfBase64 = cryptoBase64.stringify(hashFirstHalfWordArray);
+  var hashFirstHalfBase64SafeUrl = base64.base64ToBase64Url(hashFirstHalfBase64);
+  if (hashFirstHalfBase64SafeUrl !== atHash) {
+    return cb(new error.TokenValidationError('Invalid access_token'));
+  }
+  return cb(null);
 };
 
 module.exports = IdTokenVerifier;
@@ -83080,7 +83791,7 @@ var BehaviorSubject = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
         enumerable: true,
         configurable: true
     });
-    BehaviorSubject.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ BehaviorSubject.prototype._subscribe = function (subscriber) {
         var subscription = _super.prototype._subscribe.call(this, subscriber);
         if (subscription && !subscription.closed) {
             subscriber.next(this._value);
@@ -83103,7 +83814,7 @@ var BehaviorSubject = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
     };
     return BehaviorSubject;
 }(__WEBPACK_IMPORTED_MODULE_0__Subject__["a" /* Subject */]));
-//# sourceMappingURL=BehaviorSubject.js.map 
+//# sourceMappingURL=BehaviorSubject.js.map
 
 
 /***/ }),
@@ -83150,7 +83861,7 @@ var InnerSubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
     };
     return InnerSubscriber;
 }(__WEBPACK_IMPORTED_MODULE_0__Subscriber__["a" /* Subscriber */]));
-//# sourceMappingURL=InnerSubscriber.js.map 
+//# sourceMappingURL=InnerSubscriber.js.map
 
 
 /***/ }),
@@ -83286,7 +83997,7 @@ var Notification = /*@__PURE__*/ (/*@__PURE__*/ function () {
     Notification.undefinedValueNotification = new Notification('N', undefined);
     return Notification;
 }());
-//# sourceMappingURL=Notification.js.map 
+//# sourceMappingURL=Notification.js.map
 
 
 /***/ }),
@@ -83529,7 +84240,7 @@ var Observable = /*@__PURE__*/ (/*@__PURE__*/ function () {
             }, reject, resolve);
         });
     };
-    Observable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ Observable.prototype._subscribe = function (subscriber) {
         return this.source.subscribe(subscriber);
     };
     /**
@@ -83603,7 +84314,7 @@ var Observable = /*@__PURE__*/ (/*@__PURE__*/ function () {
     };
     return Observable;
 }());
-//# sourceMappingURL=Observable.js.map 
+//# sourceMappingURL=Observable.js.map
 
 
 /***/ }),
@@ -83620,7 +84331,7 @@ var empty = {
     error: function (err) { throw err; },
     complete: function () { }
 };
-//# sourceMappingURL=Observer.js.map 
+//# sourceMappingURL=Observer.js.map
 
 
 /***/ }),
@@ -83661,7 +84372,7 @@ var OuterSubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
     };
     return OuterSubscriber;
 }(__WEBPACK_IMPORTED_MODULE_0__Subscriber__["a" /* Subscriber */]));
-//# sourceMappingURL=OuterSubscriber.js.map 
+//# sourceMappingURL=OuterSubscriber.js.map
 
 
 /***/ }),
@@ -83779,7 +84490,7 @@ var Subject = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
             return _super.prototype._trySubscribe.call(this, subscriber);
         }
     };
-    Subject.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ Subject.prototype._subscribe = function (subscriber) {
         if (this.closed) {
             throw new __WEBPACK_IMPORTED_MODULE_3__util_ObjectUnsubscribedError__["a" /* ObjectUnsubscribedError */]();
         }
@@ -83834,7 +84545,7 @@ var AnonymousSubject = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
             this.destination.complete();
         }
     };
-    AnonymousSubject.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ AnonymousSubject.prototype._subscribe = function (subscriber) {
         var source = this.source;
         if (source) {
             return this.source.subscribe(subscriber);
@@ -83845,7 +84556,7 @@ var AnonymousSubject = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
     };
     return AnonymousSubject;
 }(Subject));
-//# sourceMappingURL=Subject.js.map 
+//# sourceMappingURL=Subject.js.map
 
 
 /***/ }),
@@ -83896,7 +84607,7 @@ var SubjectSubscription = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
     };
     return SubjectSubscription;
 }(__WEBPACK_IMPORTED_MODULE_0__Subscription__["a" /* Subscription */]));
-//# sourceMappingURL=SubjectSubscription.js.map 
+//# sourceMappingURL=SubjectSubscription.js.map
 
 
 /***/ }),
@@ -83958,10 +84669,13 @@ var Subscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
                     break;
                 }
                 if (typeof destinationOrNext === 'object') {
-                    if (destinationOrNext instanceof Subscriber) {
-                        this.syncErrorThrowable = destinationOrNext.syncErrorThrowable;
-                        this.destination = destinationOrNext;
-                        this.destination.add(this);
+                    // HACK(benlesh): To resolve an issue where Node users may have multiple
+                    // copies of rxjs in their node_modules directory.
+                    if (isTrustedSubscriber(destinationOrNext)) {
+                        var trustedSubscriber = destinationOrNext[__WEBPACK_IMPORTED_MODULE_3__symbol_rxSubscriber__["a" /* rxSubscriber */]]();
+                        this.syncErrorThrowable = trustedSubscriber.syncErrorThrowable;
+                        this.destination = trustedSubscriber;
+                        trustedSubscriber.add(this);
                     }
                     else {
                         this.syncErrorThrowable = true;
@@ -84047,7 +84761,7 @@ var Subscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
         this.destination.complete();
         this.unsubscribe();
     };
-    Subscriber.prototype._unsubscribeAndRecycle = function () {
+    /** @deprecated internal use only */ Subscriber.prototype._unsubscribeAndRecycle = function () {
         var _a = this, _parent = _a._parent, _parents = _a._parents;
         this._parent = null;
         this._parents = null;
@@ -84167,7 +84881,7 @@ var SafeSubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
         }
         return false;
     };
-    SafeSubscriber.prototype._unsubscribe = function () {
+    /** @deprecated internal use only */ SafeSubscriber.prototype._unsubscribe = function () {
         var _parentSubscriber = this._parentSubscriber;
         this._context = null;
         this._parentSubscriber = null;
@@ -84175,7 +84889,10 @@ var SafeSubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
     };
     return SafeSubscriber;
 }(Subscriber));
-//# sourceMappingURL=Subscriber.js.map 
+function isTrustedSubscriber(obj) {
+    return obj instanceof Subscriber || ('syncErrorThrowable' in obj && obj[__WEBPACK_IMPORTED_MODULE_3__symbol_rxSubscriber__["a" /* rxSubscriber */]]);
+}
+//# sourceMappingURL=Subscriber.js.map
 
 
 /***/ }),
@@ -84382,7 +85099,7 @@ var Subscription = /*@__PURE__*/ (/*@__PURE__*/ function () {
 function flattenUnsubscriptionErrors(errors) {
     return errors.reduce(function (errs, err) { return errs.concat((err instanceof __WEBPACK_IMPORTED_MODULE_5__util_UnsubscriptionError__["a" /* UnsubscriptionError */]) ? err.errors : err); }, []);
 }
-//# sourceMappingURL=Subscription.js.map 
+//# sourceMappingURL=Subscription.js.map
 
 
 /***/ }),
@@ -84397,7 +85114,7 @@ function flattenUnsubscriptionErrors(errors) {
 
 
 __WEBPACK_IMPORTED_MODULE_0__Observable__["a" /* Observable */].prototype.map = __WEBPACK_IMPORTED_MODULE_1__operator_map__["a" /* map */];
-//# sourceMappingURL=map.js.map 
+//# sourceMappingURL=map.js.map
 
 
 /***/ }),
@@ -84407,7 +85124,7 @@ __WEBPACK_IMPORTED_MODULE_0__Observable__["a" /* Observable */].prototype.map = 
 
 // HACK: does nothing, because `toPromise` now lives on the `Observable` itself.
 // leaving this module here to prevent breakage.
-//# sourceMappingURL=toPromise.js.map 
+//# sourceMappingURL=toPromise.js.map
 
 
 /***/ }),
@@ -84472,7 +85189,7 @@ var ArrayLikeObservable = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
         state.index = index + 1;
         this.schedule(state);
     };
-    ArrayLikeObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ ArrayLikeObservable.prototype._subscribe = function (subscriber) {
         var index = 0;
         var _a = this, arrayLike = _a.arrayLike, scheduler = _a.scheduler;
         var length = arrayLike.length;
@@ -84490,7 +85207,7 @@ var ArrayLikeObservable = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
     };
     return ArrayLikeObservable;
 }(__WEBPACK_IMPORTED_MODULE_0__Observable__["a" /* Observable */]));
-//# sourceMappingURL=ArrayLikeObservable.js.map 
+//# sourceMappingURL=ArrayLikeObservable.js.map
 
 
 /***/ }),
@@ -84607,7 +85324,7 @@ var ArrayObservable = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
         state.index = index + 1;
         this.schedule(state);
     };
-    ArrayObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ ArrayObservable.prototype._subscribe = function (subscriber) {
         var index = 0;
         var array = this.array;
         var count = array.length;
@@ -84626,7 +85343,7 @@ var ArrayObservable = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
     };
     return ArrayObservable;
 }(__WEBPACK_IMPORTED_MODULE_0__Observable__["a" /* Observable */]));
-//# sourceMappingURL=ArrayObservable.js.map 
+//# sourceMappingURL=ArrayObservable.js.map
 
 
 /***/ }),
@@ -84660,17 +85377,18 @@ var __extends = (this && this.__extends) || function (d, b) {
  */
 var ConnectableObservable = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
     __extends(ConnectableObservable, _super);
-    function ConnectableObservable(source, subjectFactory) {
+    function ConnectableObservable(/** @deprecated internal use only */ source, 
+    /** @deprecated internal use only */ subjectFactory) {
         _super.call(this);
         this.source = source;
         this.subjectFactory = subjectFactory;
-        this._refCount = 0;
+        /** @deprecated internal use only */ this._refCount = 0;
         this._isComplete = false;
     }
-    ConnectableObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ ConnectableObservable.prototype._subscribe = function (subscriber) {
         return this.getSubject().subscribe(subscriber);
     };
-    ConnectableObservable.prototype.getSubject = function () {
+    /** @deprecated internal use only */ ConnectableObservable.prototype.getSubject = function () {
         var subject = this._subject;
         if (!subject || subject.isStopped) {
             this._subject = this.subjectFactory();
@@ -84726,7 +85444,7 @@ var ConnectableSubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
         this._unsubscribe();
         _super.prototype._complete.call(this);
     };
-    ConnectableSubscriber.prototype._unsubscribe = function () {
+    /** @deprecated internal use only */ ConnectableSubscriber.prototype._unsubscribe = function () {
         var connectable = this.connectable;
         if (connectable) {
             this.connectable = null;
@@ -84763,7 +85481,7 @@ var RefCountSubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
         _super.call(this, destination);
         this.connectable = connectable;
     }
-    RefCountSubscriber.prototype._unsubscribe = function () {
+    /** @deprecated internal use only */ RefCountSubscriber.prototype._unsubscribe = function () {
         var connectable = this.connectable;
         if (!connectable) {
             this.connection = null;
@@ -84812,7 +85530,7 @@ var RefCountSubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
     };
     return RefCountSubscriber;
 }(__WEBPACK_IMPORTED_MODULE_2__Subscriber__["a" /* Subscriber */]));
-//# sourceMappingURL=ConnectableObservable.js.map 
+//# sourceMappingURL=ConnectableObservable.js.map
 
 
 /***/ }),
@@ -84893,7 +85611,7 @@ var EmptyObservable = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
         var subscriber = arg.subscriber;
         subscriber.complete();
     };
-    EmptyObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ EmptyObservable.prototype._subscribe = function (subscriber) {
         var scheduler = this.scheduler;
         if (scheduler) {
             return scheduler.schedule(EmptyObservable.dispatch, 0, { subscriber: subscriber });
@@ -84904,7 +85622,7 @@ var EmptyObservable = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
     };
     return EmptyObservable;
 }(__WEBPACK_IMPORTED_MODULE_0__Observable__["a" /* Observable */]));
-//# sourceMappingURL=EmptyObservable.js.map 
+//# sourceMappingURL=EmptyObservable.js.map
 
 
 /***/ }),
@@ -85064,7 +85782,7 @@ var ForkJoinObservable = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
         }
         return new ForkJoinObservable(sources, resultSelector);
     };
-    ForkJoinObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ ForkJoinObservable.prototype._subscribe = function (subscriber) {
         return new ForkJoinSubscriber(subscriber, this.sources, this.resultSelector);
     };
     return ForkJoinObservable;
@@ -85121,7 +85839,7 @@ var ForkJoinSubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
     };
     return ForkJoinSubscriber;
 }(__WEBPACK_IMPORTED_MODULE_4__OuterSubscriber__["a" /* OuterSubscriber */]));
-//# sourceMappingURL=ForkJoinObservable.js.map 
+//# sourceMappingURL=ForkJoinObservable.js.map
 
 
 /***/ }),
@@ -85252,7 +85970,7 @@ var FromObservable = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
         }
         throw new TypeError((ish !== null && typeof ish || ish) + ' is not observable');
     };
-    FromObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ FromObservable.prototype._subscribe = function (subscriber) {
         var ish = this.ish;
         var scheduler = this.scheduler;
         if (scheduler == null) {
@@ -85264,7 +85982,7 @@ var FromObservable = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
     };
     return FromObservable;
 }(__WEBPACK_IMPORTED_MODULE_8__Observable__["a" /* Observable */]));
-//# sourceMappingURL=FromObservable.js.map 
+//# sourceMappingURL=FromObservable.js.map
 
 
 /***/ }),
@@ -85327,7 +86045,7 @@ var IteratorObservable = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
         }
         this.schedule(state);
     };
-    IteratorObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ IteratorObservable.prototype._subscribe = function (subscriber) {
         var index = 0;
         var _a = this, iterator = _a.iterator, scheduler = _a.scheduler;
         if (scheduler) {
@@ -85448,7 +86166,7 @@ function sign(value) {
     }
     return valueAsNumber < 0 ? -1 : 1;
 }
-//# sourceMappingURL=IteratorObservable.js.map 
+//# sourceMappingURL=IteratorObservable.js.map
 
 
 /***/ }),
@@ -85511,7 +86229,7 @@ var PromiseObservable = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
     PromiseObservable.create = function (promise, scheduler) {
         return new PromiseObservable(promise, scheduler);
     };
-    PromiseObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ PromiseObservable.prototype._subscribe = function (subscriber) {
         var _this = this;
         var promise = this.promise;
         var scheduler = this.scheduler;
@@ -85581,7 +86299,7 @@ function dispatchError(arg) {
         subscriber.error(err);
     }
 }
-//# sourceMappingURL=PromiseObservable.js.map 
+//# sourceMappingURL=PromiseObservable.js.map
 
 
 /***/ }),
@@ -85633,7 +86351,7 @@ var ScalarObservable = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
         state.done = true;
         this.schedule(state);
     };
-    ScalarObservable.prototype._subscribe = function (subscriber) {
+    /** @deprecated internal use only */ ScalarObservable.prototype._subscribe = function (subscriber) {
         var value = this.value;
         var scheduler = this.scheduler;
         if (scheduler) {
@@ -85650,7 +86368,7 @@ var ScalarObservable = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
     };
     return ScalarObservable;
 }(__WEBPACK_IMPORTED_MODULE_0__Observable__["a" /* Observable */]));
-//# sourceMappingURL=ScalarObservable.js.map 
+//# sourceMappingURL=ScalarObservable.js.map
 
 
 /***/ }),
@@ -85664,7 +86382,7 @@ var ScalarObservable = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
 /** PURE_IMPORTS_START ._ForkJoinObservable PURE_IMPORTS_END */
 
 var forkJoin = __WEBPACK_IMPORTED_MODULE_0__ForkJoinObservable__["a" /* ForkJoinObservable */].create;
-//# sourceMappingURL=forkJoin.js.map 
+//# sourceMappingURL=forkJoin.js.map
 
 
 /***/ }),
@@ -85678,7 +86396,7 @@ var forkJoin = __WEBPACK_IMPORTED_MODULE_0__ForkJoinObservable__["a" /* ForkJoin
 /** PURE_IMPORTS_START ._FromObservable PURE_IMPORTS_END */
 
 var from = __WEBPACK_IMPORTED_MODULE_0__FromObservable__["a" /* FromObservable */].create;
-//# sourceMappingURL=from.js.map 
+//# sourceMappingURL=from.js.map
 
 
 /***/ }),
@@ -85692,7 +86410,7 @@ var from = __WEBPACK_IMPORTED_MODULE_0__FromObservable__["a" /* FromObservable *
 /** PURE_IMPORTS_START ._PromiseObservable PURE_IMPORTS_END */
 
 var fromPromise = __WEBPACK_IMPORTED_MODULE_0__PromiseObservable__["a" /* PromiseObservable */].create;
-//# sourceMappingURL=fromPromise.js.map 
+//# sourceMappingURL=fromPromise.js.map
 
 
 /***/ }),
@@ -85794,7 +86512,7 @@ function merge() {
     }
     return Object(__WEBPACK_IMPORTED_MODULE_3__operators_mergeAll__["a" /* mergeAll */])(concurrent)(new __WEBPACK_IMPORTED_MODULE_1__ArrayObservable__["a" /* ArrayObservable */](observables, scheduler));
 }
-//# sourceMappingURL=merge.js.map 
+//# sourceMappingURL=merge.js.map
 
 
 /***/ }),
@@ -85808,7 +86526,7 @@ function merge() {
 /** PURE_IMPORTS_START ._ArrayObservable PURE_IMPORTS_END */
 
 var of = __WEBPACK_IMPORTED_MODULE_0__ArrayObservable__["a" /* ArrayObservable */].of;
-//# sourceMappingURL=of.js.map 
+//# sourceMappingURL=of.js.map
 
 
 /***/ }),
@@ -85883,7 +86601,7 @@ var of = __WEBPACK_IMPORTED_MODULE_0__ArrayObservable__["a" /* ArrayObservable *
 function _catch(selector) {
     return Object(__WEBPACK_IMPORTED_MODULE_0__operators_catchError__["a" /* catchError */])(selector)(this);
 }
-//# sourceMappingURL=catch.js.map 
+//# sourceMappingURL=catch.js.map
 
 
 /***/ }),
@@ -85948,7 +86666,7 @@ function _catch(selector) {
 function concatAll() {
     return Object(__WEBPACK_IMPORTED_MODULE_0__operators_concatAll__["a" /* concatAll */])()(this);
 }
-//# sourceMappingURL=concatAll.js.map 
+//# sourceMappingURL=concatAll.js.map
 
 
 /***/ }),
@@ -86024,7 +86742,7 @@ function concatAll() {
 function concatMap(project, resultSelector) {
     return Object(__WEBPACK_IMPORTED_MODULE_0__operators_concatMap__["a" /* concatMap */])(project, resultSelector)(this);
 }
-//# sourceMappingURL=concatMap.js.map 
+//# sourceMappingURL=concatMap.js.map
 
 
 /***/ }),
@@ -86054,7 +86772,7 @@ function concatMap(project, resultSelector) {
 function every(predicate, thisArg) {
     return Object(__WEBPACK_IMPORTED_MODULE_0__operators_every__["a" /* every */])(predicate, thisArg)(this);
 }
-//# sourceMappingURL=every.js.map 
+//# sourceMappingURL=every.js.map
 
 
 /***/ }),
@@ -86110,7 +86828,7 @@ function every(predicate, thisArg) {
 function filter(predicate, thisArg) {
     return Object(__WEBPACK_IMPORTED_MODULE_0__operators_filter__["a" /* filter */])(predicate, thisArg)(this);
 }
-//# sourceMappingURL=filter.js.map 
+//# sourceMappingURL=filter.js.map
 
 
 /***/ }),
@@ -86175,7 +86893,7 @@ function filter(predicate, thisArg) {
 function first(predicate, resultSelector, defaultValue) {
     return Object(__WEBPACK_IMPORTED_MODULE_0__operators_first__["a" /* first */])(predicate, resultSelector, defaultValue)(this);
 }
-//# sourceMappingURL=first.js.map 
+//# sourceMappingURL=first.js.map
 
 
 /***/ }),
@@ -86209,7 +86927,7 @@ function first(predicate, resultSelector, defaultValue) {
 function last(predicate, resultSelector, defaultValue) {
     return Object(__WEBPACK_IMPORTED_MODULE_0__operators_last__["a" /* last */])(predicate, resultSelector, defaultValue)(this);
 }
-//# sourceMappingURL=last.js.map 
+//# sourceMappingURL=last.js.map
 
 
 /***/ }),
@@ -86258,7 +86976,7 @@ function last(predicate, resultSelector, defaultValue) {
 function map(project, thisArg) {
     return Object(__WEBPACK_IMPORTED_MODULE_0__operators_map__["a" /* map */])(project, thisArg)(this);
 }
-//# sourceMappingURL=map.js.map 
+//# sourceMappingURL=map.js.map
 
 
 /***/ }),
@@ -86321,7 +87039,7 @@ function mergeAll(concurrent) {
     }
     return Object(__WEBPACK_IMPORTED_MODULE_0__operators_mergeAll__["a" /* mergeAll */])(concurrent)(this);
 }
-//# sourceMappingURL=mergeAll.js.map 
+//# sourceMappingURL=mergeAll.js.map
 
 
 /***/ }),
@@ -86399,7 +87117,7 @@ function mergeMap(project, resultSelector, concurrent) {
     }
     return Object(__WEBPACK_IMPORTED_MODULE_0__operators_mergeMap__["a" /* mergeMap */])(project, resultSelector, concurrent)(this);
 }
-//# sourceMappingURL=mergeMap.js.map 
+//# sourceMappingURL=mergeMap.js.map
 
 
 /***/ }),
@@ -86468,7 +87186,7 @@ function reduce(accumulator, seed) {
     }
     return Object(__WEBPACK_IMPORTED_MODULE_0__operators_reduce__["a" /* reduce */])(accumulator)(this);
 }
-//# sourceMappingURL=reduce.js.map 
+//# sourceMappingURL=reduce.js.map
 
 
 /***/ }),
@@ -86501,7 +87219,7 @@ function share() {
     return Object(__WEBPACK_IMPORTED_MODULE_0__operators_share__["a" /* share */])()(this);
 }
 ;
-//# sourceMappingURL=share.js.map 
+//# sourceMappingURL=share.js.map
 
 
 /***/ }),
@@ -86629,7 +87347,7 @@ var CatchSubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
     };
     return CatchSubscriber;
 }(__WEBPACK_IMPORTED_MODULE_0__OuterSubscriber__["a" /* OuterSubscriber */]));
-//# sourceMappingURL=catchError.js.map 
+//# sourceMappingURL=catchError.js.map
 
 
 /***/ }),
@@ -86693,7 +87411,7 @@ var CatchSubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
 function concatAll() {
     return Object(__WEBPACK_IMPORTED_MODULE_0__mergeAll__["a" /* mergeAll */])(1);
 }
-//# sourceMappingURL=concatAll.js.map 
+//# sourceMappingURL=concatAll.js.map
 
 
 /***/ }),
@@ -86769,7 +87487,7 @@ function concatAll() {
 function concatMap(project, resultSelector) {
     return Object(__WEBPACK_IMPORTED_MODULE_0__mergeMap__["a" /* mergeMap */])(project, resultSelector, 1);
 }
-//# sourceMappingURL=concatMap.js.map 
+//# sourceMappingURL=concatMap.js.map
 
 
 /***/ }),
@@ -86859,7 +87577,7 @@ var DefaultIfEmptySubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
     };
     return DefaultIfEmptySubscriber;
 }(__WEBPACK_IMPORTED_MODULE_0__Subscriber__["a" /* Subscriber */]));
-//# sourceMappingURL=defaultIfEmpty.js.map 
+//# sourceMappingURL=defaultIfEmpty.js.map
 
 
 /***/ }),
@@ -86944,7 +87662,7 @@ var EverySubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
     };
     return EverySubscriber;
 }(__WEBPACK_IMPORTED_MODULE_0__Subscriber__["a" /* Subscriber */]));
-//# sourceMappingURL=every.js.map 
+//# sourceMappingURL=every.js.map
 
 
 /***/ }),
@@ -87049,7 +87767,7 @@ var FilterSubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
     };
     return FilterSubscriber;
 }(__WEBPACK_IMPORTED_MODULE_0__Subscriber__["a" /* Subscriber */]));
-//# sourceMappingURL=filter.js.map 
+//# sourceMappingURL=filter.js.map
 
 
 /***/ }),
@@ -87213,7 +87931,7 @@ var FirstSubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
     };
     return FirstSubscriber;
 }(__WEBPACK_IMPORTED_MODULE_0__Subscriber__["a" /* Subscriber */]));
-//# sourceMappingURL=first.js.map 
+//# sourceMappingURL=first.js.map
 
 
 /***/ }),
@@ -87344,7 +88062,7 @@ var LastSubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
     };
     return LastSubscriber;
 }(__WEBPACK_IMPORTED_MODULE_0__Subscriber__["a" /* Subscriber */]));
-//# sourceMappingURL=last.js.map 
+//# sourceMappingURL=last.js.map
 
 
 /***/ }),
@@ -87444,7 +88162,7 @@ var MapSubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
     };
     return MapSubscriber;
 }(__WEBPACK_IMPORTED_MODULE_0__Subscriber__["a" /* Subscriber */]));
-//# sourceMappingURL=map.js.map 
+//# sourceMappingURL=map.js.map
 
 
 /***/ }),
@@ -87509,7 +88227,7 @@ function mergeAll(concurrent) {
     }
     return Object(__WEBPACK_IMPORTED_MODULE_0__mergeMap__["a" /* mergeMap */])(__WEBPACK_IMPORTED_MODULE_1__util_identity__["a" /* identity */], null, concurrent);
 }
-//# sourceMappingURL=mergeAll.js.map 
+//# sourceMappingURL=mergeAll.js.map
 
 
 /***/ }),
@@ -87700,7 +88418,7 @@ var MergeMapSubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
     };
     return MergeMapSubscriber;
 }(__WEBPACK_IMPORTED_MODULE_1__OuterSubscriber__["a" /* OuterSubscriber */]));
-//# sourceMappingURL=mergeMap.js.map 
+//# sourceMappingURL=mergeMap.js.map
 
 
 /***/ }),
@@ -87768,7 +88486,7 @@ var MulticastOperator = /*@__PURE__*/ (/*@__PURE__*/ function () {
     };
     return MulticastOperator;
 }());
-//# sourceMappingURL=multicast.js.map 
+//# sourceMappingURL=multicast.js.map
 
 
 /***/ }),
@@ -87901,7 +88619,7 @@ var ObserveOnMessage = /*@__PURE__*/ (/*@__PURE__*/ function () {
     }
     return ObserveOnMessage;
 }());
-//# sourceMappingURL=observeOn.js.map 
+//# sourceMappingURL=observeOn.js.map
 
 
 /***/ }),
@@ -87982,7 +88700,7 @@ function reduce(accumulator, seed) {
         }), Object(__WEBPACK_IMPORTED_MODULE_1__takeLast__["a" /* takeLast */])(1))(source);
     };
 }
-//# sourceMappingURL=reduce.js.map 
+//# sourceMappingURL=reduce.js.map
 
 
 /***/ }),
@@ -88029,7 +88747,7 @@ var RefCountSubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
         _super.call(this, destination);
         this.connectable = connectable;
     }
-    RefCountSubscriber.prototype._unsubscribe = function () {
+    /** @deprecated internal use only */ RefCountSubscriber.prototype._unsubscribe = function () {
         var connectable = this.connectable;
         if (!connectable) {
             this.connection = null;
@@ -88078,7 +88796,7 @@ var RefCountSubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
     };
     return RefCountSubscriber;
 }(__WEBPACK_IMPORTED_MODULE_0__Subscriber__["a" /* Subscriber */]));
-//# sourceMappingURL=refCount.js.map 
+//# sourceMappingURL=refCount.js.map
 
 
 /***/ }),
@@ -88212,7 +88930,7 @@ var ScanSubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
     };
     return ScanSubscriber;
 }(__WEBPACK_IMPORTED_MODULE_0__Subscriber__["a" /* Subscriber */]));
-//# sourceMappingURL=scan.js.map 
+//# sourceMappingURL=scan.js.map
 
 
 /***/ }),
@@ -88248,7 +88966,7 @@ function share() {
     return function (source) { return Object(__WEBPACK_IMPORTED_MODULE_1__refCount__["a" /* refCount */])()(Object(__WEBPACK_IMPORTED_MODULE_0__multicast__["a" /* multicast */])(shareSubjectFactory)(source)); };
 }
 ;
-//# sourceMappingURL=share.js.map 
+//# sourceMappingURL=share.js.map
 
 
 /***/ }),
@@ -88370,7 +89088,7 @@ var TakeLastSubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
     };
     return TakeLastSubscriber;
 }(__WEBPACK_IMPORTED_MODULE_0__Subscriber__["a" /* Subscriber */]));
-//# sourceMappingURL=takeLast.js.map 
+//# sourceMappingURL=takeLast.js.map
 
 
 /***/ }),
@@ -88419,7 +89137,7 @@ var iterator = /*@__PURE__*/ symbolIteratorPonyfill(__WEBPACK_IMPORTED_MODULE_0_
  * @deprecated use iterator instead
  */
 var $$iterator = iterator;
-//# sourceMappingURL=iterator.js.map 
+//# sourceMappingURL=iterator.js.map
 
 
 /***/ }),
@@ -88456,7 +89174,7 @@ var observable = /*@__PURE__*/ getSymbolObservable(__WEBPACK_IMPORTED_MODULE_0__
  * @deprecated use observable instead
  */
 var $$observable = observable;
-//# sourceMappingURL=observable.js.map 
+//# sourceMappingURL=observable.js.map
 
 
 /***/ }),
@@ -88477,7 +89195,7 @@ var rxSubscriber = (typeof Symbol === 'function' && typeof Symbol.for === 'funct
  * @deprecated use rxSubscriber instead
  */
 var $$rxSubscriber = rxSubscriber;
-//# sourceMappingURL=rxSubscriber.js.map 
+//# sourceMappingURL=rxSubscriber.js.map
 
 
 /***/ }),
@@ -88515,7 +89233,7 @@ var ArgumentOutOfRangeError = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
     }
     return ArgumentOutOfRangeError;
 }(Error));
-//# sourceMappingURL=ArgumentOutOfRangeError.js.map 
+//# sourceMappingURL=ArgumentOutOfRangeError.js.map
 
 
 /***/ }),
@@ -88553,7 +89271,7 @@ var EmptyError = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
     }
     return EmptyError;
 }(Error));
-//# sourceMappingURL=EmptyError.js.map 
+//# sourceMappingURL=EmptyError.js.map
 
 
 /***/ }),
@@ -88590,7 +89308,7 @@ var ObjectUnsubscribedError = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
     }
     return ObjectUnsubscribedError;
 }(Error));
-//# sourceMappingURL=ObjectUnsubscribedError.js.map 
+//# sourceMappingURL=ObjectUnsubscribedError.js.map
 
 
 /***/ }),
@@ -88625,7 +89343,7 @@ var UnsubscriptionError = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
     }
     return UnsubscriptionError;
 }(Error));
-//# sourceMappingURL=UnsubscriptionError.js.map 
+//# sourceMappingURL=UnsubscriptionError.js.map
 
 
 /***/ }),
@@ -88638,7 +89356,7 @@ var UnsubscriptionError = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
 // typeof any so that it we don't have to cast when comparing a result to the error object
 /** PURE_IMPORTS_START  PURE_IMPORTS_END */
 var errorObject = { e: {} };
-//# sourceMappingURL=errorObject.js.map 
+//# sourceMappingURL=errorObject.js.map
 
 
 /***/ }),
@@ -88652,7 +89370,7 @@ var errorObject = { e: {} };
 function identity(x) {
     return x;
 }
-//# sourceMappingURL=identity.js.map 
+//# sourceMappingURL=identity.js.map
 
 
 /***/ }),
@@ -88664,7 +89382,7 @@ function identity(x) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return isArray; });
 /** PURE_IMPORTS_START  PURE_IMPORTS_END */
 var isArray = Array.isArray || (function (x) { return x && typeof x.length === 'number'; });
-//# sourceMappingURL=isArray.js.map 
+//# sourceMappingURL=isArray.js.map
 
 
 /***/ }),
@@ -88676,7 +89394,7 @@ var isArray = Array.isArray || (function (x) { return x && typeof x.length === '
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return isArrayLike; });
 /** PURE_IMPORTS_START  PURE_IMPORTS_END */
 var isArrayLike = (function (x) { return x && typeof x.length === 'number'; });
-//# sourceMappingURL=isArrayLike.js.map 
+//# sourceMappingURL=isArrayLike.js.map
 
 
 /***/ }),
@@ -88690,7 +89408,7 @@ var isArrayLike = (function (x) { return x && typeof x.length === 'number'; });
 function isFunction(x) {
     return typeof x === 'function';
 }
-//# sourceMappingURL=isFunction.js.map 
+//# sourceMappingURL=isFunction.js.map
 
 
 /***/ }),
@@ -88704,7 +89422,7 @@ function isFunction(x) {
 function isObject(x) {
     return x != null && typeof x === 'object';
 }
-//# sourceMappingURL=isObject.js.map 
+//# sourceMappingURL=isObject.js.map
 
 
 /***/ }),
@@ -88718,7 +89436,7 @@ function isObject(x) {
 function isPromise(value) {
     return value && typeof value.subscribe !== 'function' && typeof value.then === 'function';
 }
-//# sourceMappingURL=isPromise.js.map 
+//# sourceMappingURL=isPromise.js.map
 
 
 /***/ }),
@@ -88732,7 +89450,7 @@ function isPromise(value) {
 function isScheduler(value) {
     return value && typeof value.schedule === 'function';
 }
-//# sourceMappingURL=isScheduler.js.map 
+//# sourceMappingURL=isScheduler.js.map
 
 
 /***/ }),
@@ -88745,7 +89463,7 @@ function isScheduler(value) {
 /* tslint:disable:no-empty */
 /** PURE_IMPORTS_START  PURE_IMPORTS_END */
 function noop() { }
-//# sourceMappingURL=noop.js.map 
+//# sourceMappingURL=noop.js.map
 
 
 /***/ }),
@@ -88779,7 +89497,7 @@ function pipeFromArray(fns) {
         return fns.reduce(function (prev, fn) { return fn(prev); }, input);
     };
 }
-//# sourceMappingURL=pipe.js.map 
+//# sourceMappingURL=pipe.js.map
 
 
 /***/ }),
@@ -88807,7 +89525,7 @@ var _root = __window || __global || __self;
     }
 })();
 
-//# sourceMappingURL=root.js.map 
+//# sourceMappingURL=root.js.map
 
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/global.js")))
 
@@ -88903,7 +89621,7 @@ function subscribeToResult(outerSubscriber, result, outerValue, outerIndex) {
     }
     return null;
 }
-//# sourceMappingURL=subscribeToResult.js.map 
+//# sourceMappingURL=subscribeToResult.js.map
 
 
 /***/ }),
@@ -88934,7 +89652,7 @@ function toSubscriber(nextOrObserver, error, complete) {
     }
     return new __WEBPACK_IMPORTED_MODULE_0__Subscriber__["a" /* Subscriber */](nextOrObserver, error, complete);
 }
-//# sourceMappingURL=toSubscriber.js.map 
+//# sourceMappingURL=toSubscriber.js.map
 
 
 /***/ }),
@@ -88962,7 +89680,7 @@ function tryCatch(fn) {
     return tryCatcher;
 }
 ;
-//# sourceMappingURL=tryCatch.js.map 
+//# sourceMappingURL=tryCatch.js.map
 
 
 /***/ }),
