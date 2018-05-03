@@ -75912,12 +75912,13 @@ module.exports = DBConnection;
 /***/ (function(module, exports, __webpack_require__) {
 
 var urljoin = __webpack_require__("./node_modules/url-join/lib/url-join.js");
+var qs = __webpack_require__("./node_modules/qs/lib/index.js");
 
 var RequestBuilder = __webpack_require__("./node_modules/auth0-js/src/helper/request-builder.js");
-var qs = __webpack_require__("./node_modules/qs/lib/index.js");
 var objectHelper = __webpack_require__("./node_modules/auth0-js/src/helper/object.js");
 var assert = __webpack_require__("./node_modules/auth0-js/src/helper/assert.js");
 var ssodata = __webpack_require__("./node_modules/auth0-js/src/helper/ssodata.js");
+var windowHelper = __webpack_require__("./node_modules/auth0-js/src/helper/window.js");
 var responseHandler = __webpack_require__("./node_modules/auth0-js/src/helper/response-handler.js");
 var parametersWhitelist = __webpack_require__("./node_modules/auth0-js/src/helper/parameters-whitelist.js");
 var Warn = __webpack_require__("./node_modules/auth0-js/src/helper/warn.js");
@@ -75930,7 +75931,7 @@ var DBConnection = __webpack_require__("./node_modules/auth0-js/src/authenticati
  * @constructor
  * @param {Object} options
  * @param {String} options.domain your Auth0 domain
- * @param {String} options.clientID your Auth0 client identifier obtained when creating the client in the Auth0 Dashboard
+ * @param {String} options.clientID the Client ID found on your Application settings page
  * @param {String} [options.redirectUri] url that the Auth0 will redirect after Auth with the Authorization Response
  * @param {String} [options.responseType] type of the response used by OAuth 2.0 flow. It can be any space separated list of the values `code`, `token`, `id_token`. {@link https://openid.net/specs/oauth-v2-multiple-response-types-1_0}
  * @param {String} [options.responseMode] how the Auth response is encoded and redirected back to the client. Supported values are `query`, `fragment` and `form_post`. {@link https://openid.net/specs/oauth-v2-multiple-response-types-1_0.html#ResponseModes}
@@ -76002,7 +76003,7 @@ function Authentication(auth0, options) {
  * @method buildAuthorizeUrl
  * @param {Object} options
  * @param {String} [options.domain] your Auth0 domain
- * @param {String} [options.clientID] your Auth0 client identifier obtained when creating the client in the Auth0 Dashboard
+ * @param {String} [options.clientID] the Client ID found on your Application settings page
  * @param {String} options.redirectUri url that the Auth0 will redirect after Auth with the Authorization Response
  * @param {String} options.responseType type of the response used by OAuth 2.0 flow. It can be any space separated list of the values `code`, `token`, `id_token`. {@link https://openid.net/specs/oauth-v2-multiple-response-types-1_0}
  * @param {String} [options.responseMode] how the Auth response is encoded and redirected back to the client. Supported values are `query`, `fragment` and `form_post`. {@link https://openid.net/specs/oauth-v2-multiple-response-types-1_0.html#ResponseModes}
@@ -76080,11 +76081,11 @@ Authentication.prototype.buildAuthorizeUrl = function(options) {
  *
  * If you want to navigate the user to a specific URL after the logout, set that URL at the returnTo parameter. The URL should be included in any the appropriate Allowed Logout URLs list:
  *
- * - If the client_id parameter is included, the returnTo URL must be listed in the Allowed Logout URLs set at the client level (see Setting Allowed Logout URLs at the App Level).
+ * - If the client_id parameter is included, the returnTo URL must be listed in the Allowed Logout URLs set at the Auth0 Application level (see Setting Allowed Logout URLs at the App Level).
  * - If the client_id parameter is NOT included, the returnTo URL must be listed in the Allowed Logout URLs set at the account level (see Setting Allowed Logout URLs at the Account Level).
  * @method buildLogoutUrl
  * @param {Object} options
- * @param {String} [options.clientID] identifier of your client
+ * @param {String} [options.clientID] the Client ID found on your Application settings page
  * @param {String} [options.returnTo] URL to be redirected after the logout
  * @param {Boolean} [options.federated] tells Auth0 if it should logout the user also from the IdP.
  * @see {@link https://auth0.com/docs/api/authentication#logout}
@@ -76128,7 +76129,7 @@ Authentication.prototype.buildLogoutUrl = function(options) {
  * @param {String} [result.accessToken] token that allows access to the specified resource server (identified by the audience parameter or by default Auth0's /userinfo endpoint)
  * @param {Number} [result.expiresIn] number of seconds until the access token expires
  * @param {String} [result.idToken] token that identifies the user
- * @param {String} [result.refreshToken] token that can be used to get new access tokens from Auth0. Note that not all clients can request them or the resource server might not allow them.
+ * @param {String} [result.refreshToken] token that can be used to get new access tokens from Auth0. Note that not all Auth0 Applications can request them or the resource server might not allow them.
  */
 
 /**
@@ -76138,7 +76139,7 @@ Authentication.prototype.buildLogoutUrl = function(options) {
  * @param {String} result.accessToken token that allows access to the specified resource server (identified by the audience parameter or by default Auth0's /userinfo endpoint)
  * @param {Number} result.expiresIn number of seconds until the access token expires
  * @param {String} [result.idToken] token that identifies the user
- * @param {String} [result.refreshToken] token that can be used to get new access tokens from Auth0. Note that not all clients can request them or the resource server might not allow them.
+ * @param {String} [result.refreshToken] token that can be used to get new access tokens from Auth0. Note that not all Auth0 Applications can request them or the resource server might not allow them.
  */
 
 /**
@@ -76294,6 +76295,10 @@ Authentication.prototype.getSSOData = function(withActiveDirectories, cb) {
     var WebAuth = __webpack_require__("./node_modules/auth0-js/src/web-auth/index.js"); // eslint-disable-line
     this.auth0 = new WebAuth(this.baseOptions);
   }
+  var isHostedLoginPage = windowHelper.getWindow().location.host === this.baseOptions.domain;
+  if (isHostedLoginPage) {
+    return this.auth0._universalLogin.getSSOData(withActiveDirectories, cb);
+  }
   if (typeof withActiveDirectories === 'function') {
     cb = withActiveDirectories;
   }
@@ -76378,11 +76383,11 @@ Authentication.prototype.userInfo = function(accessToken, cb) {
  *
  * @method delegation
  * @param {Object} options
- * @param {String} [options.clientID] client identifier
+  * @param {String} [options.clientID] the Client ID found on your Application settings page
  * @param {String} options.grantType  grant type used for delegation. The only valid value is `urn:ietf:params:oauth:grant-type:jwt-bearer`
  * @param {String} [options.idToken] valid token of the user issued after Auth. If no `refresh_token` is provided this parameter is required
  * @param {String} [options.refreshToken] valid refresh token of the user issued after Auth. If no `id_token` is provided this parameter is required
- * @param {String} [options.target] the target client id of the delegation
+ * @param {String} [options.target] the target ClientID of the delegation
  * @param {String} [options.scope] either `openid` or `openid profile email`
  * @param {String} [options.apiType] the api to be called
  * @param {delegationCallback} cb
@@ -76759,76 +76764,6 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./node_modules/auth0-js/src/helper/cookies.js":
-/***/ (function(module, exports, __webpack_require__) {
-
-var windowHandler = __webpack_require__("./node_modules/auth0-js/src/helper/window.js");
-var base64Url = __webpack_require__("./node_modules/auth0-js/src/helper/base64_url.js");
-
-function create(name, value, days) {
-  var date;
-  var expires;
-
-  if (
-    windowHandler.getDocument().cookie === undefined ||
-    windowHandler.getDocument().cookie === null
-  ) {
-    throw new Error('cookie storage not available');
-  }
-
-  if (days) {
-    var timeToExpire = days * 24 * 60 * 60 * 1000;
-    date = new Date();
-    date.setTime(date.getTime() + timeToExpire);
-    expires = '; expires=' + date.toGMTString();
-  } else {
-    expires = '';
-  }
-
-  windowHandler.getDocument().cookie = name + '=' + base64Url.encode(value) + expires + '; path=/';
-}
-
-function read(name) {
-  var i;
-  var cookie;
-  var cookies;
-  var nameEQ = name + '=';
-
-  if (
-    windowHandler.getDocument().cookie === undefined ||
-    windowHandler.getDocument().cookie === null
-  ) {
-    throw new Error('cookie storage not available');
-  }
-
-  cookies = windowHandler.getDocument().cookie.split(';');
-
-  for (i = 0; i < cookies.length; i++) {
-    cookie = cookies[i];
-    while (cookie.charAt(0) === ' ') {
-      cookie = cookie.substring(1, cookie.length);
-    }
-    if (cookie.indexOf(nameEQ) === 0) {
-      return base64Url.decode(cookie.substring(nameEQ.length, cookie.length));
-    }
-  }
-
-  return null;
-}
-
-function erase(name) {
-  create(name, '', -1);
-}
-
-module.exports = {
-  create: create,
-  read: read,
-  erase: erase
-};
-
-
-/***/ }),
-
 /***/ "./node_modules/auth0-js/src/helper/error.js":
 /***/ (function(module, exports) {
 
@@ -77167,6 +77102,11 @@ module.exports = {
 
 /***/ "./node_modules/auth0-js/src/helper/parameters-whitelist.js":
 /***/ (function(module, exports, __webpack_require__) {
+
+// For future reference:,
+// The only parameters that should be whitelisted are parameters
+// defined by the specification, or existing parameters that we
+// need for compatibility
 
 var objectHelper = __webpack_require__("./node_modules/auth0-js/src/helper/object.js");
 
@@ -77670,28 +77610,28 @@ module.exports = {
 
 var StorageHandler = __webpack_require__("./node_modules/auth0-js/src/helper/storage/handler.js");
 var storage;
-
-function getStorage(force) {
-  if (!storage || force) {
+var getStorage = function() {
+  if (!storage) {
     storage = new StorageHandler();
   }
   return storage;
-}
+};
 
 module.exports = {
   getItem: function(key) {
     var value = getStorage().getItem(key);
-    return value ? JSON.parse(value) : value;
+    try {
+      return JSON.parse(value);
+    } catch (_) {
+      return value;
+    }
   },
   removeItem: function(key) {
     return getStorage().removeItem(key);
   },
-  setItem: function(key, value) {
+  setItem: function(key, value, options) {
     var json = JSON.stringify(value);
-    return getStorage().setItem(key, json);
-  },
-  reload: function() {
-    getStorage(true);
+    return getStorage().setItem(key, json, options);
   }
 };
 
@@ -77701,20 +77641,26 @@ module.exports = {
 /***/ "./node_modules/auth0-js/src/helper/storage/cookie.js":
 /***/ (function(module, exports, __webpack_require__) {
 
-var cookies = __webpack_require__("./node_modules/auth0-js/src/helper/cookies.js");
-
+var Cookie = __webpack_require__("./node_modules/js-cookie/src/js.cookie.js");
+var objectHelper = __webpack_require__("./node_modules/auth0-js/src/helper/object.js");
 function CookieStorage() {}
 
 CookieStorage.prototype.getItem = function(key) {
-  return cookies.read(key);
+  return Cookie.get(key);
 };
 
 CookieStorage.prototype.removeItem = function(key) {
-  cookies.erase(key);
+  Cookie.remove(key);
 };
 
-CookieStorage.prototype.setItem = function(key, value) {
-  cookies.create(key, value, 1);
+CookieStorage.prototype.setItem = function(key, value, options) {
+  var params = objectHelper.extend(
+    {
+      expires: 1 // 1 day
+    },
+    options
+  );
+  Cookie.set(key, value, params);
 };
 
 module.exports = CookieStorage;
@@ -77754,7 +77700,10 @@ function StorageHandler() {
   try {
     // some browsers throw an error when trying to access localStorage
     // when localStorage is disabled.
-    this.storage = windowHandler.getWindow().localStorage;
+    var localStorage = windowHandler.getWindow().localStorage;
+    if (localStorage) {
+      this.storage = localStorage;
+    }
   } catch (e) {
     this.warn.warning(e);
     this.warn.warning("Can't use localStorage. Using CookieStorage instead.");
@@ -77794,17 +77743,26 @@ StorageHandler.prototype.removeItem = function(key) {
   }
 };
 
-StorageHandler.prototype.setItem = function(key, value) {
+StorageHandler.prototype.setItem = function(key, value, options) {
   try {
-    return this.storage.setItem(key, value);
+    return this.storage.setItem(key, value, options);
   } catch (e) {
     this.warn.warning(e);
     this.failover();
-    return this.setItem(key, value);
+    return this.setItem(key, value, options);
   }
 };
 
 module.exports = StorageHandler;
+
+
+/***/ }),
+
+/***/ "./node_modules/auth0-js/src/helper/times.js":
+/***/ (function(module, exports) {
+
+module.exports.MINUTES_15 = 1 / 96;
+module.exports.MINUTES_30 = 1 / 48;
 
 
 /***/ }),
@@ -78036,7 +77994,7 @@ module.exports = Management;
 /***/ "./node_modules/auth0-js/src/version.js":
 /***/ (function(module, exports) {
 
-module.exports = { raw: '9.4.2' };
+module.exports = { raw: '9.5.1' };
 
 
 /***/ }),
@@ -78051,6 +78009,8 @@ var objectHelper = __webpack_require__("./node_modules/auth0-js/src/helper/objec
 var RequestBuilder = __webpack_require__("./node_modules/auth0-js/src/helper/request-builder.js");
 var WebMessageHandler = __webpack_require__("./node_modules/auth0-js/src/web-auth/web-message-handler.js");
 var responseHandler = __webpack_require__("./node_modules/auth0-js/src/helper/response-handler.js");
+var storage = __webpack_require__("./node_modules/auth0-js/src/helper/storage.js");
+var times = __webpack_require__("./node_modules/auth0-js/src/helper/times.js");
 
 function CrossOriginAuthentication(webAuth, options) {
   this.webAuth = webAuth;
@@ -78087,7 +78047,6 @@ function createKey(origin, coId) {
  */
 CrossOriginAuthentication.prototype.login = function(options, cb) {
   var _this = this;
-  var theWindow = windowHelper.getWindow();
   var url = urljoin(this.baseOptions.rootUrl, '/co/authenticate');
   options.username = options.username || options.email;
   delete options.email;
@@ -78128,7 +78087,7 @@ CrossOriginAuthentication.prototype.login = function(options, cb) {
       .merge(options)
       .with({ loginTicket: data.body.login_ticket });
     var key = createKey(_this.baseOptions.rootUrl, data.body.co_id);
-    theWindow.sessionStorage[key] = data.body.co_verifier;
+    storage.setItem(key, data.body.co_verifier, { expires: times.MINUTES_15 });
     if (popupMode) {
       _this.webMessageHandler.run(
         authorizeOptions,
@@ -78142,9 +78101,9 @@ CrossOriginAuthentication.prototype.login = function(options, cb) {
 
 function tryGetVerifier(theWindow, key) {
   try {
-    var verifier = theWindow.sessionStorage[key];
-    theWindow.sessionStorage.removeItem(key);
-    return verifier;
+    var verifier = storage.getItem(key);
+    storage.removeItem(key);
+    return verifier || '';
   } catch (e) {
     return '';
   }
@@ -78188,7 +78147,12 @@ module.exports = CrossOriginAuthentication;
 /***/ "./node_modules/auth0-js/src/web-auth/hosted-pages.js":
 /***/ (function(module, exports, __webpack_require__) {
 
+var urljoin = __webpack_require__("./node_modules/url-join/lib/url-join.js");
+var qs = __webpack_require__("./node_modules/qs/lib/index.js");
+
 var UsernamePassword = __webpack_require__("./node_modules/auth0-js/src/web-auth/username-password.js");
+var RequestBuilder = __webpack_require__("./node_modules/auth0-js/src/helper/request-builder.js");
+var responseHandler = __webpack_require__("./node_modules/auth0-js/src/helper/response-handler.js");
 var objectHelper = __webpack_require__("./node_modules/auth0-js/src/helper/object.js");
 var windowHelper = __webpack_require__("./node_modules/auth0-js/src/helper/window.js");
 var Warn = __webpack_require__("./node_modules/auth0-js/src/helper/warn.js");
@@ -78197,6 +78161,7 @@ var assert = __webpack_require__("./node_modules/auth0-js/src/helper/assert.js")
 function HostedPages(client, options) {
   this.baseOptions = options;
   this.client = client;
+  this.request = new RequestBuilder(this.baseOptions);
 
   this.warn = new Warn({
     disableWarnings: !!options._disableDeprecationWarnings
@@ -78209,7 +78174,7 @@ function HostedPages(client, options) {
  * @param {Object} [result] result of the AuthN request
  * @param {String} result.accessToken token that can be used with {@link userinfo}
  * @param {String} [result.idToken] token that identifies the user
- * @param {String} [result.refreshToken] token that can be used to get new access tokens from Auth0. Note that not all clients can request them or the resource server might not allow them.
+ * @param {String} [result.refreshToken] token that can be used to get new access tokens from Auth0. Note that not all Auth0 Applications can request them or the resource server might not allow them.
  */
 
 /**
@@ -78285,6 +78250,35 @@ HostedPages.prototype.signupAndLogin = function(options, cb) {
   });
 };
 
+HostedPages.prototype.getSSOData = function(withActiveDirectories, cb) {
+  var url;
+  var params = '';
+
+  if (typeof withActiveDirectories === 'function') {
+    cb = withActiveDirectories;
+    withActiveDirectories = false;
+  }
+
+  assert.check(withActiveDirectories, {
+    type: 'boolean',
+    message: 'withActiveDirectories parameter is not valid'
+  });
+  assert.check(cb, { type: 'function', message: 'cb parameter is not valid' });
+
+  if (withActiveDirectories) {
+    params =
+      '?' +
+      qs.stringify({
+        ldaps: 1,
+        client_id: this.baseOptions.clientID
+      });
+  }
+
+  url = urljoin(this.baseOptions.rootUrl, 'user', 'ssodata', params);
+
+  return this.request.get(url, { noHeaders: true }).withCredentials().end(responseHandler(cb));
+};
+
 module.exports = HostedPages;
 
 
@@ -78316,7 +78310,7 @@ var HostedPages = __webpack_require__("./node_modules/auth0-js/src/web-auth/host
  * @constructor
  * @param {Object} options
  * @param {String} options.domain your Auth0 domain
- * @param {String} options.clientID your Auth0 client identifier obtained when creating the client in the Auth0 Dashboard
+ * @param {String} options.clientID the Client ID found on your Application settings page
  * @param {String} [options.redirectUri] url that the Auth0 will redirect after Auth with the Authorization Response
  * @param {String} [options.responseType] type of the response used by OAuth 2.0 flow. It can be any space separated list of the values `code`, `token`, `id_token`. {@link https://openid.net/specs/oauth-v2-multiple-response-types-1_0}
  * @param {String} [options.responseMode] how the Auth response is encoded and redirected back to the client. Supported values are `query`, `fragment` and `form_post`. The `query` value is only supported when `responseType` is `code`. {@link https://openid.net/specs/oauth-v2-multiple-response-types-1_0.html#ResponseModes}
@@ -78418,7 +78412,10 @@ function WebAuth(options) {
  *
  * Only validates id_tokens signed by Auth0 using the RS256 algorithm using the public key exposed
  * by the `/.well-known/jwks.json` endpoint of your account.
- * Tokens signed with other algorithms, e.g. HS256 will not be accepted.
+ * Tokens signed with the HS256 algorithm cannot be properly validated.
+ * Instead, a call to {@link userInfo} will be made with the parsed `access_token`.
+ * If the {@link userInfo} call fails, the {@link userInfo} error will be passed to the callback.
+ * Tokens signed with other algorithms will not be accepted.
  *
  * @method parseHash
  * @param {Object} options
@@ -78496,7 +78493,10 @@ WebAuth.prototype.parseHash = function(options, cb) {
  *
  * Only validates id_tokens signed by Auth0 using the RS256 algorithm using the public key exposed
  * by the `/.well-known/jwks.json` endpoint of your account.
- * Tokens signed with other algorithms, e.g. HS256 will not be accepted.
+ * Tokens signed with the HS256 algorithm cannot be properly validated.
+ * Instead, a call to {@link userInfo} will be made with the parsed `access_token`.
+ * If the {@link userInfo} call fails, the {@link userInfo} error will be passed to the callback.
+ * Tokens signed with other algorithms will not be accepted.
  *
  * @method validateAuthenticationResponse
  * @param {Object} options
@@ -78551,7 +78551,7 @@ WebAuth.prototype.validateAuthenticationResponse = function(options, parsedHash,
       if (!parsedHash.access_token) {
         return callback(null, payload);
       }
-      // id_token's generated by non-oidc clients don't have at_hash
+      // id_token's generated by non-oidc applications don't have at_hash
       if (!payload.at_hash) {
         return callback(null, payload);
       }
@@ -78578,11 +78578,18 @@ WebAuth.prototype.validateAuthenticationResponse = function(options, parsedHash,
     if (decodedToken.header.alg !== 'HS256') {
       return callback(validationError);
     }
+    if (!parsedHash.access_token) {
+      var noAccessTokenError = {
+        error: 'invalid_token',
+        description: 'The id_token cannot be validated because it was signed with the HS256 algorithm and public clients (like a browser) can’t store secrets. Please read the associated doc for possible ways to fix this. Read more: https://auth0.com/docs/errors/libraries/auth0-js/invalid-token#parsing-an-hs256-signed-id-token-without-an-access-token'
+      };
+      return callback(noAccessTokenError);
+    }
     // if the alg is HS256, use the /userinfo endpoint to build the payload
     return _this.client.userInfo(parsedHash.access_token, function(errUserInfo, profile) {
       // if the /userinfo request fails, use the validationError instead
       if (errUserInfo) {
-        return callback(validationError);
+        return callback(errUserInfo);
       }
       return callback(null, profile);
     });
@@ -78644,7 +78651,7 @@ WebAuth.prototype.validateToken = function(token, nonce, cb) {
  * @method renewAuth
  * @param {Object} options
  * @param {String} [options.domain] your Auth0 domain
- * @param {String} [options.clientID] your Auth0 client identifier obtained when creating the client in the Auth0 Dashboard
+ * @param {String} [options.clientID] the Client ID found on your Application settings page
  * @param {String} [options.redirectUri] url that the Auth0 will redirect after Auth with the Authorization Response
  * @param {String} [options.responseType] type of the response used by OAuth 2.0 flow. It can be any space separated list of the values `code`, `token`, `id_token`. {@link https://openid.net/specs/oauth-v2-multiple-response-types-1_0}
  * @param {String} [options.responseMode] how the Auth response is encoded and redirected back to the client. Supported values are `query`, `fragment` and `form_post`. The `query` value is only supported when `responseType` is `code`. {@link https://openid.net/specs/oauth-v2-multiple-response-types-1_0.html#ResponseModes}
@@ -78720,7 +78727,7 @@ WebAuth.prototype.renewAuth = function(options, cb) {
  * @method checkSession
  * @param {Object} options
  * @param {String} [options.domain] your Auth0 domain
- * @param {String} [options.clientID] your Auth0 client identifier obtained when creating the client in the Auth0 Dashboard
+ * @param {String} [options.clientID] the Client ID found on your Application settings page
  * @param {String} [options.responseType] type of the response used by OAuth 2.0 flow. It can be any space separated list of the values `code`, `token`, `id_token`. {@link https://openid.net/specs/oauth-v2-multiple-response-types-1_0}
  * @param {String} [options.state] value used to mitigate XSRF attacks. {@link https://auth0.com/docs/protocols/oauth2/oauth-state}
  * @param {String} [options.nonce] value used to mitigate replay attacks when using Implicit Grant. {@link https://auth0.com/docs/api-auth/tutorials/nonce}
@@ -78826,7 +78833,7 @@ WebAuth.prototype.signup = function(options, cb) {
  * @method authorize
  * @param {Object} options
  * @param {String} [options.domain] your Auth0 domain
- * @param {String} [options.clientID] your Auth0 client identifier obtained when creating the client in the Auth0 Dashboard
+ * @param {String} [options.clientID] the Client ID found on your Application settings page
  * @param {String} options.redirectUri url that the Auth0 will redirect after Auth with the Authorization Response
  * @param {String} options.responseType type of the response used by OAuth 2.0 flow. It can be any space separated list of the values `code`, `token`, `id_token`. {@link https://openid.net/specs/oauth-v2-multiple-response-types-1_0}
  * @param {String} [options.responseMode] how the Auth response is encoded and redirected back to the client. Supported values are `query`, `fragment` and `form_post`. The `query` value is only supported when `responseType` is `code`. {@link https://openid.net/specs/oauth-v2-multiple-response-types-1_0.html#ResponseModes}
@@ -78917,13 +78924,28 @@ WebAuth.prototype.signupAndAuthorize = function(options, cb) {
  * @param {crossOriginLoginCallback} cb Callback function called only when an authentication error, like invalid username or password, occurs. For other types of errors, there will be a redirect to the `redirectUri`.
  */
 WebAuth.prototype.login = function(options, cb) {
+  var params = objectHelper
+    .merge(this.baseOptions, [
+      'clientID',
+      'responseType',
+      'redirectUri',
+      'scope',
+      'audience',
+      '_csrf',
+      'state',
+      '_intstate',
+      'nonce'
+    ])
+    .with(options);
+  params = this.transactionManager.process(params);
+
   var isHostedLoginPage = windowHelper.getWindow().location.host === this.baseOptions.domain;
   if (isHostedLoginPage) {
-    options.connection = options.realm;
-    delete options.realm;
-    this._universalLogin.login(options, cb);
+    params.connection = params.realm;
+    delete params.realm;
+    this._universalLogin.login(params, cb);
   } else {
-    this.crossOriginAuthentication.login(options, cb);
+    this.crossOriginAuthentication.login(params, cb);
   }
 };
 
@@ -78940,18 +78962,33 @@ WebAuth.prototype.login = function(options, cb) {
  * @param {crossOriginLoginCallback} cb Callback function called only when an authentication error, like invalid username or password, occurs. For other types of errors, there will be a redirect to the `redirectUri`.
  */
 WebAuth.prototype.passwordlessLogin = function(options, cb) {
+  var params = objectHelper
+    .merge(this.baseOptions, [
+      'clientID',
+      'responseType',
+      'redirectUri',
+      'scope',
+      'audience',
+      '_csrf',
+      'state',
+      '_intstate',
+      'nonce'
+    ])
+    .with(options);
+  params = this.transactionManager.process(params);
+
   var isHostedLoginPage = windowHelper.getWindow().location.host === this.baseOptions.domain;
   if (isHostedLoginPage) {
-    this.passwordlessVerify(options, cb);
+    this.passwordlessVerify(params, cb);
   } else {
     var crossOriginOptions = objectHelper.extend(
       {
         credentialType: 'http://auth0.com/oauth/grant-type/passwordless/otp',
-        realm: options.connection,
-        username: options.email || options.phoneNumber,
-        otp: options.verificationCode
+        realm: params.connection,
+        username: params.email || params.phoneNumber,
+        otp: params.verificationCode
       },
-      objectHelper.blacklist(options, ['connection', 'email', 'phoneNumber', 'verificationCode'])
+      objectHelper.blacklist(params, ['connection', 'email', 'phoneNumber', 'verificationCode'])
     );
     this.crossOriginAuthentication.login(crossOriginOptions, cb);
   }
@@ -78981,12 +79018,12 @@ WebAuth.prototype.crossOriginVerification = function() {
  *
  * If you want to navigate the user to a specific URL after the logout, set that URL at the returnTo parameter. The URL should be included in any the appropriate Allowed Logout URLs list:
  *
- * - If the client_id parameter is included, the returnTo URL must be listed in the Allowed Logout URLs set at the client level (see Setting Allowed Logout URLs at the App Level).
+ * - If the client_id parameter is included, the returnTo URL must be listed in the Allowed Logout URLs set at the Auth0 Application level (see Setting Allowed Logout URLs at the App Level).
  * - If the client_id parameter is NOT included, the returnTo URL must be listed in the Allowed Logout URLs set at the account level (see Setting Allowed Logout URLs at the Account Level).
  *
  * @method logout
  * @param {Object} options
- * @param {String} [options.clientID] identifier of your client
+ * @param {String} [options.clientID] the Client ID found on your Application settings page
  * @param {String} [options.returnTo] URL to be redirected after the logout
  * @param {Boolean} [options.federated] tells Auth0 if it should logout the user also from the IdP.
  * @see   {@link https://auth0.com/docs/api/authentication#logout}
@@ -79180,7 +79217,7 @@ Popup.prototype.callback = function(options) {
  * @method authorize
  * @param {Object} options
  * @param {String} [options.domain] your Auth0 domain
- * @param {String} [options.clientID] your Auth0 client identifier obtained when creating the client in the Auth0 Dashboard
+ * @param {String} [options.clientID] the Client ID found on your Application settings page
  * @param {String} options.redirectUri url that the Auth0 will redirect after Auth with the Authorization Response
  * @param {String} options.responseType type of the response used by OAuth 2.0 flow. It can be any space separated list of the values `code`, `token`, `id_token`. {@link https://openid.net/specs/oauth-v2-multiple-response-types-1_0}
  * @param {String} [options.responseMode] how the Auth response is encoded and redirected back to the client. Supported values are `query`, `fragment` and `form_post`. The `query` value is only supported when `responseType` is `code`. {@link https://openid.net/specs/oauth-v2-multiple-response-types-1_0.html#ResponseModes}
@@ -79518,6 +79555,7 @@ module.exports = SilentAuthenticationHandler;
 
 var random = __webpack_require__("./node_modules/auth0-js/src/helper/random.js");
 var storage = __webpack_require__("./node_modules/auth0-js/src/helper/storage.js");
+var times = __webpack_require__("./node_modules/auth0-js/src/helper/times.js");
 
 var DEFAULT_NAMESPACE = 'com.auth0.auth.';
 
@@ -79562,12 +79600,16 @@ TransactionManager.prototype.generateTransaction = function(
   state = state || random.randomString(this.keyLength);
   nonce = nonce || (generateNonce ? random.randomString(this.keyLength) : null);
 
-  storage.setItem(this.namespace + state, {
-    nonce: nonce,
-    appState: appState,
-    state: state,
-    lastUsedConnection: lastUsedConnection
-  });
+  storage.setItem(
+    this.namespace + state,
+    {
+      nonce: nonce,
+      appState: appState,
+      state: state,
+      lastUsedConnection: lastUsedConnection
+    },
+    times.MINUTES_30
+  );
   return {
     state: state,
     nonce: nonce
@@ -81765,6 +81807,182 @@ IdTokenVerifier.prototype.validateAccessToken = function (accessToken, alg, atHa
 };
 
 module.exports = IdTokenVerifier;
+
+
+/***/ }),
+
+/***/ "./node_modules/js-cookie/src/js.cookie.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+ * JavaScript Cookie v2.2.0
+ * https://github.com/js-cookie/js-cookie
+ *
+ * Copyright 2006, 2015 Klaus Hartl & Fagner Brack
+ * Released under the MIT license
+ */
+;(function (factory) {
+	var registeredInModuleLoader = false;
+	if (true) {
+		!(__WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) :
+				__WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+		registeredInModuleLoader = true;
+	}
+	if (true) {
+		module.exports = factory();
+		registeredInModuleLoader = true;
+	}
+	if (!registeredInModuleLoader) {
+		var OldCookies = window.Cookies;
+		var api = window.Cookies = factory();
+		api.noConflict = function () {
+			window.Cookies = OldCookies;
+			return api;
+		};
+	}
+}(function () {
+	function extend () {
+		var i = 0;
+		var result = {};
+		for (; i < arguments.length; i++) {
+			var attributes = arguments[ i ];
+			for (var key in attributes) {
+				result[key] = attributes[key];
+			}
+		}
+		return result;
+	}
+
+	function init (converter) {
+		function api (key, value, attributes) {
+			var result;
+			if (typeof document === 'undefined') {
+				return;
+			}
+
+			// Write
+
+			if (arguments.length > 1) {
+				attributes = extend({
+					path: '/'
+				}, api.defaults, attributes);
+
+				if (typeof attributes.expires === 'number') {
+					var expires = new Date();
+					expires.setMilliseconds(expires.getMilliseconds() + attributes.expires * 864e+5);
+					attributes.expires = expires;
+				}
+
+				// We're using "expires" because "max-age" is not supported by IE
+				attributes.expires = attributes.expires ? attributes.expires.toUTCString() : '';
+
+				try {
+					result = JSON.stringify(value);
+					if (/^[\{\[]/.test(result)) {
+						value = result;
+					}
+				} catch (e) {}
+
+				if (!converter.write) {
+					value = encodeURIComponent(String(value))
+						.replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g, decodeURIComponent);
+				} else {
+					value = converter.write(value, key);
+				}
+
+				key = encodeURIComponent(String(key));
+				key = key.replace(/%(23|24|26|2B|5E|60|7C)/g, decodeURIComponent);
+				key = key.replace(/[\(\)]/g, escape);
+
+				var stringifiedAttributes = '';
+
+				for (var attributeName in attributes) {
+					if (!attributes[attributeName]) {
+						continue;
+					}
+					stringifiedAttributes += '; ' + attributeName;
+					if (attributes[attributeName] === true) {
+						continue;
+					}
+					stringifiedAttributes += '=' + attributes[attributeName];
+				}
+				return (document.cookie = key + '=' + value + stringifiedAttributes);
+			}
+
+			// Read
+
+			if (!key) {
+				result = {};
+			}
+
+			// To prevent the for loop in the first place assign an empty array
+			// in case there are no cookies at all. Also prevents odd result when
+			// calling "get()"
+			var cookies = document.cookie ? document.cookie.split('; ') : [];
+			var rdecode = /(%[0-9A-Z]{2})+/g;
+			var i = 0;
+
+			for (; i < cookies.length; i++) {
+				var parts = cookies[i].split('=');
+				var cookie = parts.slice(1).join('=');
+
+				if (!this.json && cookie.charAt(0) === '"') {
+					cookie = cookie.slice(1, -1);
+				}
+
+				try {
+					var name = parts[0].replace(rdecode, decodeURIComponent);
+					cookie = converter.read ?
+						converter.read(cookie, name) : converter(cookie, name) ||
+						cookie.replace(rdecode, decodeURIComponent);
+
+					if (this.json) {
+						try {
+							cookie = JSON.parse(cookie);
+						} catch (e) {}
+					}
+
+					if (key === name) {
+						result = cookie;
+						break;
+					}
+
+					if (!key) {
+						result[name] = cookie;
+					}
+				} catch (e) {}
+			}
+
+			return result;
+		}
+
+		api.set = api;
+		api.get = function (key) {
+			return api.call(api, key);
+		};
+		api.getJSON = function () {
+			return api.apply({
+				json: true
+			}, [].slice.call(arguments));
+		};
+		api.defaults = {};
+
+		api.remove = function (key, attributes) {
+			api(key, '', extend(attributes, {
+				expires: -1
+			}));
+		};
+
+		api.withConverter = init;
+
+		return api;
+	}
+
+	return init(function () {});
+}));
 
 
 /***/ }),
@@ -89903,7 +90121,7 @@ request.types = {
 
 request.serialize = {
   'application/x-www-form-urlencoded': serialize,
-  'application/json': JSON.stringify,
+  'application/json': JSON.stringify
 };
 
 /**
@@ -89917,7 +90135,7 @@ request.serialize = {
 
 request.parse = {
   'application/x-www-form-urlencoded': parseString,
-  'application/json': JSON.parse,
+  'application/json': JSON.parse
 };
 
 /**
@@ -90912,7 +91130,7 @@ RequestBase.prototype.then = function then(resolve, reject) {
   return this._fullfilledPromise.then(resolve, reject);
 };
 
-RequestBase.prototype.catch = function(cb) {
+RequestBase.prototype['catch'] = function(cb) {
   return this.then(undefined, cb);
 };
 
@@ -91494,6 +91712,7 @@ ResponseBase.prototype._setStatusProperties = function(status){
         : false;
 
     // sugar
+    this.created = 201 == status;
     this.accepted = 202 == status;
     this.noContent = 204 == status;
     this.badRequest = 400 == status;
@@ -91501,6 +91720,7 @@ ResponseBase.prototype._setStatusProperties = function(status){
     this.notAcceptable = 406 == status;
     this.forbidden = 403 == status;
     this.notFound = 404 == status;
+    this.unprocessableEntity = 422 == status;
 };
 
 
