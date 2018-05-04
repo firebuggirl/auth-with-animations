@@ -2,17 +2,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-//import { HttpModule } from '@angular/http';
-import { HttpModule, Http, RequestOptions } from '@angular/http';
+
+//import { HttpModule, Http, RequestOptions } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 //import { Ng2Bs3ModalModule } from 'ng2-bs3-modal/ng2-bs3-modal';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
-//import { ROUTES } from './app.routes';
-import { AppRoutingModule } from './app-routing.module';
-//import { AppRoutingModule } from './app-routing.module';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AuthService } from './auth/auth.service';
 import { ContactService } from './contacts/contact.service';
 import { CallbackComponent } from './callback/callback.component';
@@ -24,7 +23,7 @@ import { ContactDetailsComponent } from './contacts/contact-details/contact-deta
 import { ContactListComponent } from './contacts/contact-list/contact-list.component';
 
 //import { JwtModule } from '@auth0/angular-jwt';
-import { HttpClientModule } from '@angular/common/http';
+
 
 
 
@@ -43,7 +42,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
-    HttpModule,
+    //HttpModule,
     AppRoutingModule,
     HttpClientModule
     // JwtModule.forRoot({

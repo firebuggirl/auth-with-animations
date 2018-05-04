@@ -319,7 +319,7 @@ Address all questions regarding this license to:
   Tom Wu
   tjw@cs.Stanford.EDU
 
-qs@6.4.0
+qs@6.5.2
 BSD-3-Clause
 Copyright (c) 2014 Nathan LaFreniere and other contributors.
 All rights reserved.
