@@ -44,7 +44,8 @@
     "mongodb": "^3.0.1",
     "mongoose": "^5.0.6",
     "ng2-meta": "github:vinaygopinath/ng2-meta",
-    "rxjs": "^5.4.2",
+    "rxjs": "^6.1.0",
+    "rxjs-compat": "^6.1.0",
     "snyk": "^1.63.0",
     "zone.js": "^0.8.4"
   },

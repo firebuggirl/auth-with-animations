@@ -131,3 +131,10 @@ https://auth-example-with-anim.herokuapp.com/
   -OR-
 
   - ` nsp check `
+
+
+## RxJS 6 Changes - Quick Fix
+
+  - ` npm install --save rxjs@6 `
+
+  - ` npm install --save rxjs-compat `
