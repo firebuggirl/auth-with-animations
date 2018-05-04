@@ -4,6 +4,7 @@ import { Http, Response } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 import 'rxjs/add/operator/map';
 import {Observable} from "rxjs";
+//import { HttpClientModule } from '@angular/common/http';
 
 
 @Injectable()

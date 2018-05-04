@@ -3,7 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-//import { HttpModule, Http, RequestOptions } from '@angular/http';
+import { HttpModule, Http, RequestOptions } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 //import { Ng2Bs3ModalModule } from 'ng2-bs3-modal/ng2-bs3-modal';
@@ -42,7 +42,7 @@ import { ContactListComponent } from './contacts/contact-list/contact-list.compo
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
-    //HttpModule,
+    HttpModule,
     AppRoutingModule,
     HttpClientModule
     // JwtModule.forRoot({

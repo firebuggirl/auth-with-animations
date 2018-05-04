@@ -6,6 +6,8 @@ import 'rxjs/add/operator/map';
 import {Observable} from "rxjs";
 import { Injectable } from '@angular/core';
 
+(window as any).global = window;
+
 @Component({
   selector: 'contact-list',
   templateUrl: './contact-list.component.html',
