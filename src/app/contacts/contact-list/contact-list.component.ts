@@ -2,8 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Contact } from '../contact';
 import { ContactService } from '../contact.service';
 import { ContactDetailsComponent } from '../contact-details/contact-details.component';
-import 'rxjs/add/operator/map';
-import {Observable} from "rxjs";
+//import 'rxjs/add/operator/map';//Angular 5
+import { map } from 'rxjs/operators';//Angular 6
+import {Observable} from "rxjs";//Angular 6
 import { Injectable } from '@angular/core';
 
 (window as any).global = window;
@@ -39,6 +40,8 @@ export class ContactListComponent implements OnInit {
         });
       });
   }
+
+
 
   private getIndexOfContact = (contactId: String) => {
     return this.contacts.findIndex((contact) => {

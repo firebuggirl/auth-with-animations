@@ -2,8 +2,9 @@ import { Injectable } from '@angular/core';
 import { Contact } from './contact';
 import { Http, Response } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
-import 'rxjs/add/operator/map';
-import {Observable} from "rxjs";
+// import 'rxjs/add/operator/map';//Angular 5
+import { map } from 'rxjs/operators';//Angular 6
+import {Observable} from "rxjs";//Angular 6
 //import { HttpClientModule } from '@angular/common/http';
 
 
