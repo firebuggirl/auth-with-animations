@@ -12,7 +12,8 @@ const mongodb = require("mongodb");
 const ObjectID = mongodb.ObjectID;
 
 //mongoose.connect(process.env.LOCAL_DB || process.env.DATABASE);
-mongoose.connect(process.env.DATABASE);
+mongoose.connect(process.env.DATABASE);//mLab connection string
+//mongoose.connect(process.env.LOCAL_DB);//for Docker development change `localhost`` to `mongodb` in connection string...needs to match name of image container!!!
 mongoose.set('debug', true);
 mongoose.Promise = global.Promise; // Tell Mongoose to use ES6 promises
 mongoose.connection.on('error', (err) => {
