@@ -39,7 +39,7 @@
       <input class="form-control" name="contact-zipcode" [(ngModel)]="contact.zipcode" placeholder="111111"/>
     </div>
     <button class="btn btn-primary" *ngIf="!contact._id" (click)="createContact(contact)">Create</button>
-    <button class="btn btn-info" *ngIf="contact._id" (click)="updateContact(contact)">Update</button>
+    <button class="btn btn-info" *ngIf="contact._id" (click)="updateContact(contact._id)">Update</button>
     <button class="btn btn-danger" *ngIf="contact._id" (click)="deleteContact(contact._id)">Delete</button>
   </form>
 </div>

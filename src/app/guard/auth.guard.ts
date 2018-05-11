@@ -12,7 +12,7 @@ export class AuthGuard implements CanActivate {
 
 }
 canActivate(): boolean {
-let isAuth = this._authService.isAuthenticated();
+const isAuth = this._authService.isAuthenticated();
    if(isAuth)
    return true;
    else {

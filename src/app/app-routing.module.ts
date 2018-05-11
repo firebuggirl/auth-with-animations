@@ -33,8 +33,8 @@ export const ROUTES: Routes = [
   },
   {
     path: 'contacts',
-    component: ContactListComponent,
-    canActivate: [AuthGuard]
+    component: ContactListComponent
+    //canActivate: [AuthGuard]
   },
   // {
   //   path: 'callback',

@@ -11,6 +11,15 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AppComponent implements OnInit{
 
+  title = 'app';
+   ngOnInit() {
+    if (isDevMode()) {
+      console.log('👋 Development!');
+    } else {
+      console.log('💪 Production!');
+    }
+  }
+  
   constructor(public auth: AuthService, public http: HttpClient) {
   //constructor(public auth: AuthService, meta: Meta, title: Title) {
     auth.handleAuthentication();
@@ -36,14 +45,7 @@ export class AppComponent implements OnInit{
   //     );
   // }
 
- title = 'app';
-  ngOnInit() {
-   if (isDevMode()) {
-     console.log('👋 Development!');
-   } else {
-     console.log('💪 Production!');
-   }
- }
+
 
 
 

@@ -53,13 +53,17 @@ img{
 
 .form-control{
   background-color: #cec3af;
+  color: #e21111;
 
 }
 
 .form-control:focus{
   border: 3px solid #f0ad4e;
   background-color: #1b1408;
+
 }
+
+
 
 .form-control[type=text]{
   color:red;

@@ -26,7 +26,6 @@ import { ContactListComponent } from './contacts/contact-list/contact-list.compo
 
 
 
-
 @NgModule({
   declarations: [
     AppComponent,

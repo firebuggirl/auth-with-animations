@@ -3,8 +3,8 @@ var mongoose = require('mongoose');
 var ContactsSchema = new mongoose.Schema({
 
     name: {
-      //type: String,
-      type: mongoose.Schema.ObjectId,
+      type: String,
+      //type: mongoose.Schema.ObjectId,
       required: true,
       trim: true
     },
@@ -22,6 +22,7 @@ var ContactsSchema = new mongoose.Schema({
         type: String
       }
     },
+
     address:{
       type: String
     },
