@@ -543,6 +543,11 @@ let ContactDetailsComponent = class ContactDetailsComponent {
             this.updateHandler(updatedContact);
         });
     }
+    deleteContact(contactId) {
+        this.contactService.deleteContact(contactId).subscribe((deletedContactId) => {
+            this.deleteHandler(deletedContactId);
+        });
+    }
 };
 __decorate([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
@@ -789,7 +794,7 @@ let ContactService = class ContactService {
         return this.http.post(this.contactsUrl, contact, httpOptions).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["tap"])((contact) => this.log(`added contact`)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["catchError"])(this.handleError('addContact')));
     }
     updateContact(contact) {
-        return this.http.put(this.contactsUrl + '/' + contact._id, contact).pipe(
+        return this.http.put(this.contactsUrl + '/' + contact._id, contact).pipe(//http://localhost:7777/api/contacts/undefined
         //return this.http.put(this.contactsUrl, contact._id, httpOptions).pipe(
         Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["tap"])(_ => this.log(`updated contact id=${contact._id}`)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["catchError"])(this.handleError('updateContact')));
     }

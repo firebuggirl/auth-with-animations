@@ -79,5 +79,10 @@ export class ContactDetailsComponent implements OnInit{
      });
    }
 
+   deleteContact(contactId: Contact): void {
+     this.contactService.deleteContact(contactId).subscribe((deletedContactId: Contact) => {
+       this.deleteHandler(deletedContactId);
+     });
+   }
 
 }

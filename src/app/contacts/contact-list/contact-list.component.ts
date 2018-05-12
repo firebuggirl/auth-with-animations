@@ -30,11 +30,8 @@ export class ContactListComponent implements OnInit {
   contacts: Contact[];
   selectedContact: Contact;
   @Input() contact: Contact;
-
-
-
   // errorMessage: string;
-  
+
 
   constructor(//private router: Router,
               //private route: ActivatedRoute,
