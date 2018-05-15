@@ -15,14 +15,8 @@ var ContactsSchema = new mongoose.Schema({
       trim: true
     },
     phone: {
-      mobile: {
-        type: String
-      },
-      work: {
-        type: String
-      }
+      type: String
     },
-
     address:{
       type: String
     },

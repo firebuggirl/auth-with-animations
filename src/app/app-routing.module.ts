@@ -5,8 +5,11 @@ import { CallbackComponent } from './callback/callback.component';
 import { AuthGuard } from "./guard/auth.guard";
 import { UserComponent } from "./user/user.component";
 import { LoginComponent } from "./login/login.component";
-import { ContactListComponent } from "./contacts/contact-list/contact-list.component";
-import { ContactDetailsComponent } from "./contacts/contact-details/contact-details.component";
+
+import { ContactComponent } from './contact/contact.component';
+import { ContactDetailComponent } from './contact-detail/contact-detail.component';
+import { ContactCreateComponent } from './contact-create/contact-create.component';
+import { ContactEditComponent } from './contact-edit/contact-edit.component';
 
 
 export const ROUTES: Routes = [
@@ -33,9 +36,27 @@ export const ROUTES: Routes = [
   },
   {
     path: 'contacts',
-    component: ContactListComponent
-    //canActivate: [AuthGuard]
+    component: ContactComponent
   },
+  {
+     path: 'contact-details/:id',
+     component: ContactDetailComponent
+   },
+  {
+    path: 'contact-create',
+    component: ContactCreateComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'contact-edit/:id',
+    component: ContactEditComponent,
+    canActivate: [AuthGuard]
+  }
+  // {
+  //   path: 'contacts',
+  //   component: ContactListComponent
+  //   //canActivate: [AuthGuard]
+  // },
   // {
   //   path: 'callback',
   //   component: CallbackComponent

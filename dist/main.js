@@ -40,13 +40,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _guard_auth_guard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./guard/auth.guard */ "./src/app/guard/auth.guard.ts");
 /* harmony import */ var _user_user_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./user/user.component */ "./src/app/user/user.component.ts");
 /* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
-/* harmony import */ var _contacts_contact_list_contact_list_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./contacts/contact-list/contact-list.component */ "./src/app/contacts/contact-list/contact-list.component.ts");
+/* harmony import */ var _contact_contact_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./contact/contact.component */ "./src/app/contact/contact.component.ts");
+/* harmony import */ var _contact_detail_contact_detail_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./contact-detail/contact-detail.component */ "./src/app/contact-detail/contact-detail.component.ts");
+/* harmony import */ var _contact_create_contact_create_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./contact-create/contact-create.component */ "./src/app/contact-create/contact-create.component.ts");
+/* harmony import */ var _contact_edit_contact_edit_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./contact-edit/contact-edit.component */ "./src/app/contact-edit/contact-edit.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
 
 
 
@@ -75,9 +81,31 @@ const ROUTES = [
     },
     {
         path: 'contacts',
-        component: _contacts_contact_list_contact_list_component__WEBPACK_IMPORTED_MODULE_6__["ContactListComponent"]
-        //canActivate: [AuthGuard]
+        component: _contact_contact_component__WEBPACK_IMPORTED_MODULE_6__["ContactComponent"]
     },
+    {
+        path: 'contact-details/:id',
+        component: _contact_detail_contact_detail_component__WEBPACK_IMPORTED_MODULE_7__["ContactDetailComponent"]
+    },
+    {
+        path: 'contact-create',
+        component: _contact_create_contact_create_component__WEBPACK_IMPORTED_MODULE_8__["ContactCreateComponent"],
+        canActivate: [_guard_auth_guard__WEBPACK_IMPORTED_MODULE_3__["AuthGuard"]]
+    },
+    {
+        path: 'contact-edit/:id',
+        component: _contact_edit_contact_edit_component__WEBPACK_IMPORTED_MODULE_9__["ContactEditComponent"],
+        canActivate: [_guard_auth_guard__WEBPACK_IMPORTED_MODULE_3__["AuthGuard"]]
+    }
+    // {
+    //   path: 'contacts',
+    //   component: ContactListComponent
+    //   //canActivate: [AuthGuard]
+    // },
+    // {
+    //   path: 'callback',
+    //   component: CallbackComponent
+    // }
 ];
 let AppRoutingModule = class AppRoutingModule {
 };
@@ -199,13 +227,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
 /* harmony import */ var _auth_auth_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./auth/auth.service */ "./src/app/auth/auth.service.ts");
-/* harmony import */ var _contacts_contact_service__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./contacts/contact.service */ "./src/app/contacts/contact.service.ts");
+/* harmony import */ var _contact_service__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./contact.service */ "./src/app/contact.service.ts");
 /* harmony import */ var _callback_callback_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./callback/callback.component */ "./src/app/callback/callback.component.ts");
 /* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
 /* harmony import */ var _guard_auth_guard__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./guard/auth.guard */ "./src/app/guard/auth.guard.ts");
 /* harmony import */ var _user_user_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./user/user.component */ "./src/app/user/user.component.ts");
-/* harmony import */ var _contacts_contact_details_contact_details_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./contacts/contact-details/contact-details.component */ "./src/app/contacts/contact-details/contact-details.component.ts");
-/* harmony import */ var _contacts_contact_list_contact_list_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./contacts/contact-list/contact-list.component */ "./src/app/contacts/contact-list/contact-list.component.ts");
+/* harmony import */ var _contact_contact_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./contact/contact.component */ "./src/app/contact/contact.component.ts");
+/* harmony import */ var _contact_create_contact_create_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./contact-create/contact-create.component */ "./src/app/contact-create/contact-create.component.ts");
+/* harmony import */ var _contact_detail_contact_detail_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./contact-detail/contact-detail.component */ "./src/app/contact-detail/contact-detail.component.ts");
+/* harmony import */ var _contact_edit_contact_edit_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./contact-edit/contact-edit.component */ "./src/app/contact-edit/contact-edit.component.ts");
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/index.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -230,6 +261,9 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+
+
 //import { JwtModule } from '@auth0/angular-jwt';
 let AppModule = class AppModule {
 };
@@ -241,8 +275,10 @@ AppModule = __decorate([
             _login_login_component__WEBPACK_IMPORTED_MODULE_12__["LoginComponent"],
             _callback_callback_component__WEBPACK_IMPORTED_MODULE_11__["CallbackComponent"],
             _user_user_component__WEBPACK_IMPORTED_MODULE_14__["UserComponent"],
-            _contacts_contact_details_contact_details_component__WEBPACK_IMPORTED_MODULE_15__["ContactDetailsComponent"],
-            _contacts_contact_list_contact_list_component__WEBPACK_IMPORTED_MODULE_16__["ContactListComponent"]
+            _contact_contact_component__WEBPACK_IMPORTED_MODULE_15__["ContactComponent"],
+            _contact_create_contact_create_component__WEBPACK_IMPORTED_MODULE_16__["ContactCreateComponent"],
+            _contact_detail_contact_detail_component__WEBPACK_IMPORTED_MODULE_17__["ContactDetailComponent"],
+            _contact_edit_contact_edit_component__WEBPACK_IMPORTED_MODULE_18__["ContactEditComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -250,7 +286,8 @@ AppModule = __decorate([
             _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
             _angular_http__WEBPACK_IMPORTED_MODULE_4__["HttpModule"],
             _app_routing_module__WEBPACK_IMPORTED_MODULE_8__["AppRoutingModule"],
-            _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"]
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"],
+            _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_19__["NgbModule"].forRoot()
             // JwtModule.forRoot({
             //   config: {
             //     tokenGetter: () => {
@@ -263,7 +300,7 @@ AppModule = __decorate([
             //RouterModule.forRoot(ROUTES)
             //  RouterModule.forRoot(AppRoutingModule)
         ],
-        providers: [_auth_auth_service__WEBPACK_IMPORTED_MODULE_9__["AuthService"], _guard_auth_guard__WEBPACK_IMPORTED_MODULE_13__["AuthGuard"], _contacts_contact_service__WEBPACK_IMPORTED_MODULE_10__["ContactService"]],
+        providers: [_auth_auth_service__WEBPACK_IMPORTED_MODULE_9__["AuthService"], _guard_auth_guard__WEBPACK_IMPORTED_MODULE_13__["AuthGuard"], _contact_service__WEBPACK_IMPORTED_MODULE_10__["ContactService"]],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]]
     })
 ], AppModule);
@@ -450,45 +487,30 @@ CallbackComponent = __decorate([
 
 /***/ }),
 
-/***/ "./src/app/contacts/contact-details/contact-details.component.css":
-/*!************************************************************************!*\
-  !*** ./src/app/contacts/contact-details/contact-details.component.css ***!
-  \************************************************************************/
+/***/ "./src/app/contact-create/contact-create.component.html":
+/*!**************************************************************!*\
+  !*** ./src/app/contact-create/contact-create.component.html ***!
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".form-control{\n  background-color: #cec3af;\n\n}\n\n.form-control:focus{\n  border: 3px solid #f0ad4e;\n  background-color: #1b1408;\n}\n\n.form-control[type=text]{\n  color:red;\n}\n\ninput::-webkit-input-placeholder{/* Chrome/Opera/Safari */\n  color:red;\n}\n\ninput::-moz-placeholder{/* Firefox 19+ */\n  color:red;\n}\n\ninput:-ms-input-placeholder{/* IE 10+ */\n  color:red;\n  }\n\ninput:-moz-placeholder{/* Firefox 18- */\n    color:red;\n  }\n"
+module.exports = "<div class=\"row\">\n      <form #contactForm=\"ngForm\" (ngSubmit)=\"saveContact()\">\n          <h1 class=\"form-title\">Add New Contact</h1>\n        <div class=\"form-group \">\n          <label for=\"name\" class=\"col-2 col-form-label\">Name</label>\n          <div>\n            <input required name=\"name\" id=\"title\" [(ngModel)]=\"contact.name\" type=\"text\" class=\"input\" placeholder=\"Name\">\n          </div>\n        </div>\n        <div class=\"form-group \">\n          <label for=\"email\" class=\"col-2 col-form-label\">Email</label>\n          <div>\n            <input  required name=\"email\" id=\"email\" [(ngModel)]=\"contact.email\" type=\"text\" class=\"input\" placeholder=\"support@mlab.com\">\n          </div>\n        </div>\n        <div class=\"form-group \">\n          <label for=\"phone\" class=\"col-2 col-form-label\">Phone</label>\n          <div>\n            <input  required name=\"phone\" id=\"phone\" [(ngModel)]=\"contact.phone\" type=\"text\" class=\"input\" placeholder=\"1234567890\">\n          </div>\n        </div>\n        <div class=\"form-group \">\n          <label for=\"address\" class=\"col-2 col-form-label\">Address</label>\n          <div>\n            <input  required name=\"address\" id=\"address\" [(ngModel)]=\"contact.address\" type=\"text\" class=\"input\" placeholder=\"123 Tumbleweed Dr.\">\n          </div>\n        </div>\n        <div class=\"form-group \">\n          <label for=\"city\" class=\"col-2 col-form-label\">City</label>\n          <div>\n            <input  required name=\"city\" id=\"city\" [(ngModel)]=\"contact.city\" type=\"text\" class=\"input\" placeholder=\"Desert Springs\">\n          </div>\n        </div>\n        <div class=\"form-group \">\n          <label for=\"state\" class=\"col-2 col-form-label\">State</label>\n          <div>\n            <input  required name=\"state\" id=\"state\" [(ngModel)]=\"contact.state\" type=\"text\" class=\"input\" placeholder=\"CA\">\n          </div>\n        </div>\n        <div class=\"form-group \">\n          <label for=\"zipcode\" class=\"col-2 col-form-label\">Zipcode</label>\n          <div>\n            <input  required name=\"zipcode\" id=\"zipcode\" [(ngModel)]=\"contact.zipcode\" type=\"text\" class=\"input\" placeholder=\"90011\">\n          </div>\n        </div>\n\n        <div class=\"field\">\n          <div class=\"control\">\n            <button class=\"button back\" routerLink=\"/contacts\"><i class=\"fas fa-arrow-left\"></i>Back</button>\n            <button class=\"button create\" type=\"submit\" [disabled]=\"!contactForm.valid\">Create</button>\n          </div>\n        </div>\n\n      </form>\n\n</div>\n"
 
 /***/ }),
 
-/***/ "./src/app/contacts/contact-details/contact-details.component.html":
-/*!*************************************************************************!*\
-  !*** ./src/app/contacts/contact-details/contact-details.component.html ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<div *ngIf=\"contact\" class=\"row\">\n  <div class=\"col-md-12\">\n    <h2 *ngIf=\"contact._id\">Contact Details</h2>\n    <h2 *ngIf=\"!contact._id\">New Contact</h2>\n  </div>\n</div>\n<div *ngIf=\"contact\" class=\"row\">\n  <form class=\"col-md-12\">\n    <div class=\"form-group\">\n      <label for=\"contact-name\">Name</label>\n      <input class=\"form-control\" name=\"contact-name\" [(ngModel)]=\"contact.name\" placeholder=\"Name\"/>\n    </div>\n    <div class=\"form-group\">\n      <label for=\"contact-email\">Email</label>\n      <input class=\"form-control\" name=\"contact-email\" [(ngModel)]=\"contact.email\" placeholder=\"support@mlab.com\"/>\n    </div>\n    <div class=\"form-group\">\n      <label for=\"contact-phone-mobile\">Mobile</label>\n      <input class=\"form-control\" name=\"contact-phone-mobile\" [(ngModel)]=\"contact.phone.mobile\" placeholder=\"1234567890\"/>\n    </div>\n    <div class=\"form-group\">\n      <label for=\"contact-phone-work\">Work</label>\n      <input class=\"form-control\" name=\"contact-phone-work\" [(ngModel)]=\"contact.phone.work\" placeholder=\"0123456789\"/>\n    </div>\n    <div class=\"form-group\">\n      <label for=\"contact-address\">Address</label>\n      <input class=\"form-control\" name=\"contact-address\" [(ngModel)]=\"contact.address\" placeholder=\"123 Dreamer Lane\"/>\n    </div>\n    <div class=\"form-group\">\n      <label for=\"contact-address\">City</label>\n      <input class=\"form-control\" name=\"contact-city\" [(ngModel)]=\"contact.city\" placeholder=\"City\"/>\n    </div>\n    <div class=\"form-group\">\n      <label for=\"contact-address\">State</label>\n      <input class=\"form-control\" name=\"contact-state\" [(ngModel)]=\"contact.state\" placeholder=\"State\"/>\n    </div>\n    <div class=\"form-group\">\n      <label for=\"contact-address\">Zipcode</label>\n      <input class=\"form-control\" name=\"contact-zipcode\" [(ngModel)]=\"contact.zipcode\" placeholder=\"111111\"/>\n    </div>\n    <button class=\"btn btn-primary\" *ngIf=\"!contact._id\" (click)=\"createContact(contact)\">Create</button>\n    <button class=\"btn btn-info\" *ngIf=\"contact._id\" (click)=\"updateContact(contact._id)\">Update</button>\n    <button class=\"btn btn-danger\" *ngIf=\"contact._id\" (click)=\"deleteContact(contact._id)\">Delete</button>\n  </form>\n</div>\n"
-
-/***/ }),
-
-/***/ "./src/app/contacts/contact-details/contact-details.component.ts":
-/*!***********************************************************************!*\
-  !*** ./src/app/contacts/contact-details/contact-details.component.ts ***!
-  \***********************************************************************/
-/*! exports provided: ContactDetailsComponent */
+/***/ "./src/app/contact-create/contact-create.component.ts":
+/*!************************************************************!*\
+  !*** ./src/app/contact-create/contact-create.component.ts ***!
+  \************************************************************/
+/*! exports provided: ContactCreateComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactDetailsComponent", function() { return ContactDetailsComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactCreateComponent", function() { return ContactCreateComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../contact */ "./src/app/contacts/contact.ts");
-/* harmony import */ var _contact_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../contact.service */ "./src/app/contacts/contact.service.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
-/* harmony import */ var rxjs_add_operator_toPromise__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs/add/operator/toPromise */ "./node_modules/rxjs-compat/_esm2015/add/operator/toPromise.js");
-/* harmony import */ var rxjs_add_operator_toPromise__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(rxjs_add_operator_toPromise__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _contact_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../contact.service */ "./src/app/contact.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -501,129 +523,121 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+let ContactCreateComponent = class ContactCreateComponent {
+    constructor(router, contactService) {
+        this.router = router;
+        this.contactService = contactService;
+        this.contact = {};
+    }
+    saveContact() {
+        this.contactService.insertContact(this.contact)
+            .subscribe((res) => { this.router.navigate(['/contacts']); }, (err) => console.log(err));
+    }
+};
+ContactCreateComponent = __decorate([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+        selector: 'app-contact-create',
+        template: __webpack_require__(/*! ./contact-create.component.html */ "./src/app/contact-create/contact-create.component.html"),
+        styles: []
+    }),
+    __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"], _contact_service__WEBPACK_IMPORTED_MODULE_2__["ContactService"]])
+], ContactCreateComponent);
 
 
 
-//import 'rxjs/add/operator/toPromise';
-let ContactDetailsComponent = class ContactDetailsComponent {
-    constructor(router, route, contactService, location) {
+/***/ }),
+
+/***/ "./src/app/contact-detail/contact-detail.component.html":
+/*!**************************************************************!*\
+  !*** ./src/app/contact-detail/contact-detail.component.html ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"contactDetail\">\n  <section >\n    <div >\n      <div class=\"detail-container\">\n        <h1 class=\"title\">{{ contact?.name }}</h1>\n        <h2 class=\"subtitle\">Email {{ contact?.email }}</h2>\n        <h2 class=\"subtitle\">Phone {{ contact?.phone }}</h2>\n        <h2 class=\"subtitle\">Address {{ contact?.address }}</h2>\n        <h2 class=\"subtitle\">City {{ contact?.city }}</h2>\n        <h2 class=\"subtitle\">State {{ contact?.state }}</h2>\n        <h2 class=\"subtitle\">Zipcode {{ contact?.zipcode }}</h2>\n        <!-- <h2 class=\"subtitle\">work phone {{ contact?.phone.work }}</h2>\n        <h2 class=\"subtitle\">mobile phone {{ contact?.phone.mobile }}</h2> -->\n      </div>\n    </div>\n    <div class=\"btn-column\">\n      <div class=\"column\">\n        <button class=\"btn btn-danger btn-lg btn-detail\" routerLink=\"/contacts\">Back</button>\n        <button *ngIf=\"contact\" class=\"btn btn-warning btn-lg btn-detail\" [routerLink]=\"['/contact-edit', contact?._id]\">Edit</button>\n        <button *ngIf=\"!contact\"  class=\"btn btn-warning btn-lg btn-detail\">Edit</button>\n        <button class=\"btn btn-danger btn-lg btn-detail\" (click)=\"deleteContact(contact?._id)\">Delete</button>\n      </div>\n    </div>\n  </section>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/contact-detail/contact-detail.component.ts":
+/*!************************************************************!*\
+  !*** ./src/app/contact-detail/contact-detail.component.ts ***!
+  \************************************************************/
+/*! exports provided: ContactDetailComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactDetailComponent", function() { return ContactDetailComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _contact_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../contact.service */ "./src/app/contact.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+let ContactDetailComponent = class ContactDetailComponent {
+    constructor(router, route, contactService) {
         this.router = router;
         this.route = route;
         this.contactService = contactService;
-        this.location = location;
-        this.contactsUrl = '/api/contacts';
-        this.getIndexOfContact = (contactId) => {
-            return this.contacts.findIndex((contact) => {
-                return contact._id === contactId;
-            });
-        };
     }
     ngOnInit() {
-        const id = this.route.snapshot.params['id'];
-        if (id !== '0') {
-            //this.operationText = 'Update';
-            this.getContacts();
-        }
-        //this.getContact();
+        this.getContactDetails(this.route.snapshot.params['id']);
     }
-    getContacts() {
-        this.contactService.getContacts()
-            .subscribe(contacts => this.contacts = contacts);
+    getContactDetails(id) {
+        this.contactService.getContact(id)
+            .subscribe((data) => this.contact = data);
     }
-    createContact(contact) {
-        this.contactService.addContact(contact).subscribe((newContact) => {
-            this.createHandler(newContact);
-        });
-    }
-    goBack() {
-        this.location.back();
-    }
-    updateContact(id) {
-        this.contactService.updateContact(id).subscribe((updatedContact) => {
-            this.updateHandler(updatedContact);
-        });
-    }
-    deleteContact(contactId) {
-        this.contactService.deleteContact(contactId).subscribe((deletedContactId) => {
-            this.deleteHandler(deletedContactId);
-        });
+    deleteContact(id) {
+        this.contactService.deleteContact(id)
+            .subscribe((res) => { this.router.navigate(['/contacts']); }, (err) => console.log(err));
     }
 };
-__decorate([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
-    __metadata("design:type", Array)
-], ContactDetailsComponent.prototype, "contacts", void 0);
-__decorate([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
-    __metadata("design:type", _contact__WEBPACK_IMPORTED_MODULE_1__["Contact"])
-], ContactDetailsComponent.prototype, "selectedContact", void 0);
-__decorate([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
-    __metadata("design:type", _contact__WEBPACK_IMPORTED_MODULE_1__["Contact"])
-], ContactDetailsComponent.prototype, "contact", void 0);
-__decorate([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
-    __metadata("design:type", Function)
-], ContactDetailsComponent.prototype, "createHandler", void 0);
-__decorate([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
-    __metadata("design:type", Function)
-], ContactDetailsComponent.prototype, "updateHandler", void 0);
-__decorate([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
-    __metadata("design:type", Function)
-], ContactDetailsComponent.prototype, "deleteHandler", void 0);
-ContactDetailsComponent = __decorate([
+ContactDetailComponent = __decorate([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-        selector: 'contact-details',
-        template: __webpack_require__(/*! ./contact-details.component.html */ "./src/app/contacts/contact-details/contact-details.component.html"),
-        styles: [__webpack_require__(/*! ./contact-details.component.css */ "./src/app/contacts/contact-details/contact-details.component.css")]
+        selector: 'app-contact-detail',
+        template: __webpack_require__(/*! ./contact-detail.component.html */ "./src/app/contact-detail/contact-detail.component.html"),
+        styles: []
     }),
-    __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
-        _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"],
-        _contact_service__WEBPACK_IMPORTED_MODULE_2__["ContactService"],
-        _angular_common__WEBPACK_IMPORTED_MODULE_4__["Location"]])
-], ContactDetailsComponent);
+    __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"], _contact_service__WEBPACK_IMPORTED_MODULE_2__["ContactService"]])
+], ContactDetailComponent);
 
 
 
 /***/ }),
 
-/***/ "./src/app/contacts/contact-list/contact-list.component.css":
-/*!******************************************************************!*\
-  !*** ./src/app/contacts/contact-list/contact-list.component.css ***!
-  \******************************************************************/
+/***/ "./src/app/contact-edit/Contact-edit.component.html":
+/*!**********************************************************!*\
+  !*** ./src/app/contact-edit/Contact-edit.component.html ***!
+  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".list-group-item{\n  background-color: #cec3af;\n  color: red;\n}\n\n.list-group-item.active{\n  border: 3px solid #f0ad4e;\n  background-color: #1b1408;\n}\n"
+module.exports = "<div class=\"contactEdit\">\n  <h1 class=\"form-title\">Update Contact</h1>\n  <div >\n    <div>\n      <form #contactForm=\"ngForm\" (ngSubmit)=\"updateContact(contact._id)\">\n        <div class=\"field\">\n          <div class=\"control\">\n            <label for=\"name\">Name</label>\n            <input *ngIf=\"contact\" required name=\"name\" id=\"name\" [(ngModel)]=\"contact.name\" type=\"text\" class=\"input\">\n            <input *ngIf=\"!contact\" required name=\"name\" id=\"name\" type=\"text\" class=\"input\">\n          </div>\n        </div>\n        <div class=\"field\">\n          <div class=\"control\">\n            <label for=\"email\">Email</label>\n            <input *ngIf=\"contact\" required name=\"email\" id=\"email\" [(ngModel)]=\"contact.email\" type=\"text\" class=\"input\">\n            <input *ngIf=\"!contact\" required name=\"email\" id=\"email\" type=\"text\" class=\"input\">\n          </div>\n        </div>\n        <div class=\"field\">\n          <div class=\"control\">\n            <label for=\"phone\">Phone</label>\n            <input *ngIf=\"contact\" required name=\"phone\" id=\"phone\" [(ngModel)]=\"contact.phone\" type=\"text\" class=\"input\">\n            <input *ngIf=\"!contact\" required name=\"phone\" id=\"phone\" type=\"text\" class=\"input\">\n          </div>\n        </div>\n       <div class=\"control\">\n          <div class=\"field\">\n            <label for=\"address\">Address</label>\n            <input *ngIf=\"contact\" required name=\"address\" id=\"address\" [(ngModel)]=\"contact.address\" type=\"text\" class=\"input\">\n            <input *ngIf=\"!contact\" required name=\"address\" id=\"address\" type=\"text\" class=\"input\">\n          </div>\n       </div>\n      <div class=\"control\">\n          <div class=\"field\">\n            <label for=\"city\">City</label>\n            <input *ngIf=\"contact\" required name=\"city\" id=\"city\" [(ngModel)]=\"contact.city\" type=\"text\" class=\"input\">\n            <input *ngIf=\"!contact\" required name=\"city\" id=\"city\" type=\"text\" class=\"input\">\n          </div>\n      </div>\n      <div class=\"control\">\n          <div class=\"field\">\n            <label for=\"state\">State</label>\n            <input *ngIf=\"contact\" required name=\"state\" id=\"state\" [(ngModel)]=\"contact.state\" type=\"text\" class=\"input\">\n            <input *ngIf=\"!contact\" required name=\"state\" id=\"state\" type=\"text\" class=\"input\">\n        </div>\n      </div>\n      <div class=\"control\">\n            <div class=\"field\">\n              <label for=\"zipcode\">Zipcode</label>\n              <input *ngIf=\"contact\" required name=\"zipcode\" id=\"zipcode\" [(ngModel)]=\"contact.zipcode\" type=\"text\" class=\"input\">\n              <input *ngIf=\"!contact\" required name=\"zipcode\" id=\"zipcode\" type=\"text\" class=\"input\">\n           </div>\n      </div>\n      <div class=\"btn-column\">\n          <div class=\"control\">\n            <button class=\"btn btn-danger btn-edit\" routerLink=\"/contacts\"><i class=\"fas fa-arrow-left\"></i>Back</button>\n            <button class=\"btn btn-warning\" type=\"submit\" [disabled]=\"!contactForm.valid\">Update</button>\n          </div>\n      </div>\n      </form>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
-/***/ "./src/app/contacts/contact-list/contact-list.component.html":
-/*!*******************************************************************!*\
-  !*** ./src/app/contacts/contact-list/contact-list.component.html ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"row\">\n  <div class=\"col-md-5\">\n    <h2>Contacts</h2>\n    <ul class=\"list-group\">\n      <li class=\"list-group-item\"\n        *ngFor=\"let contact of contacts\"\n        (click)=\"selectContact(contact)\"\n        [class.active]=\"contact === selectedContact\">\n        {{contact.name}}\n      </li>\n    </ul>\n    <button class=\"btn btn-warning\" (click)=\"createNewContact()\">New</button>\n  </div>\n  <div class=\"col-md-5 col-md-offset-2\">\n    <contact-details\n      [contact]=\"selectedContact\"\n      [createHandler]=\"addContact\"\n      [updateHandler]=\"updateContact\"\n      [deleteHandler]=\"deleteContact\">\n   </contact-details>\n  </div>\n</div>\n"
-
-/***/ }),
-
-/***/ "./src/app/contacts/contact-list/contact-list.component.ts":
-/*!*****************************************************************!*\
-  !*** ./src/app/contacts/contact-list/contact-list.component.ts ***!
-  \*****************************************************************/
-/*! exports provided: ContactListComponent */
+/***/ "./src/app/contact-edit/contact-edit.component.ts":
+/*!********************************************************!*\
+  !*** ./src/app/contact-edit/contact-edit.component.ts ***!
+  \********************************************************/
+/*! exports provided: ContactEditComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactListComponent", function() { return ContactListComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactEditComponent", function() { return ContactEditComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _contact_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../contact.service */ "./src/app/contacts/contact.service.ts");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _contact_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../contact.service */ "./src/app/contact.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -634,107 +648,43 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-//import { Contact, ContactResponse } from '../shared/interfaces';
 
 
-window.global = window;
-let ContactListComponent = 
-// @Injectable()
-class ContactListComponent {
-    // errorMessage: string;
-    constructor(//private router: Router,
-    //private route: ActivatedRoute,
-    contactService, location) {
+let ContactEditComponent = class ContactEditComponent {
+    constructor(router, route, contactService) {
+        this.router = router;
+        this.route = route;
         this.contactService = contactService;
-        this.location = location;
-        this.contactsUrl = '/api/contacts';
-        this.getIndexOfContact = (contactId) => {
-            return this.contacts.findIndex((contact) => {
-                return contact._id === contactId;
-            });
-        };
-        this.deleteContact = (contactId) => {
-            var idx = this.getIndexOfContact(contactId);
-            if (idx !== -1) {
-                this.contacts.splice(idx, 1);
-                this.selectContact(null);
-            }
-            return this.contacts;
-        };
-        this.addContact = (contact) => {
-            this.contacts.push(contact);
-            this.selectContact(contact);
-            return this.contacts;
-        };
     }
     ngOnInit() {
-        this.getContacts();
+        this.getContactDetails(this.route.snapshot.params['id']);
     }
-    //
-    getContacts() {
-        this.contactService.getContacts()
-            .subscribe(contacts => this.contacts = contacts);
+    getContactDetails(id) {
+        this.contactService.getContact(id)
+            .subscribe((data) => this.contact = data);
     }
-    selectContact(contact) {
-        this.selectedContact = contact;
-    }
-    createNewContact() {
-        var contact = {
-            name: '',
-            email: '',
-            phone: {
-                work: '',
-                mobile: ''
-            },
-            address: '',
-            city: '',
-            state: '',
-            zipcode: ''
-        };
-        // By default, a newly-created contact will have the selected state.
-        this.selectContact(contact);
-    }
-    // updateContact = (contact: Contact) => {
-    //   var idx = this.getIndexOfContact(this.contacts);
-    //   if (idx !== -1) {
-    //     this.contacts[idx] = contact;
-    //     this.selectContact(contact);
-    //   }
-    //   return this.contacts;
-    // }
-    goBack() {
-        this.location.back();
-    }
-    updateContact() {
-        this.contactService.updateContact(this.contact)
-            .subscribe(() => this.goBack());
+    updateContact(id) {
+        this.contactService.updateContact(id, this.contact)
+            .subscribe((res) => this.router.navigate(['/contacts']), (err) => console.log(err));
     }
 };
-__decorate([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
-    __metadata("design:type", Object)
-], ContactListComponent.prototype, "contact", void 0);
-ContactListComponent = __decorate([
+ContactEditComponent = __decorate([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-        selector: 'contact-list',
-        template: __webpack_require__(/*! ./contact-list.component.html */ "./src/app/contacts/contact-list/contact-list.component.html"),
-        styles: [__webpack_require__(/*! ./contact-list.component.css */ "./src/app/contacts/contact-list/contact-list.component.css")],
-        providers: [_contact_service__WEBPACK_IMPORTED_MODULE_1__["ContactService"]]
-    })
-    // @Injectable()
-    ,
-    __metadata("design:paramtypes", [_contact_service__WEBPACK_IMPORTED_MODULE_1__["ContactService"],
-        _angular_common__WEBPACK_IMPORTED_MODULE_2__["Location"]])
-], ContactListComponent);
+        selector: 'app-Contact-edit',
+        template: __webpack_require__(/*! ./Contact-edit.component.html */ "./src/app/contact-edit/Contact-edit.component.html"),
+        styles: []
+    }),
+    __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"], _contact_service__WEBPACK_IMPORTED_MODULE_2__["ContactService"]])
+], ContactEditComponent);
 
 
 
 /***/ }),
 
-/***/ "./src/app/contacts/contact.service.ts":
-/*!*********************************************!*\
-  !*** ./src/app/contacts/contact.service.ts ***!
-  \*********************************************/
+/***/ "./src/app/contact.service.ts":
+/*!************************************!*\
+  !*** ./src/app/contact.service.ts ***!
+  \************************************/
 /*! exports provided: ContactService */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -743,9 +693,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactService", function() { return ContactService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
-/* harmony import */ var _message_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./message.service */ "./src/app/contacts/message.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -757,131 +704,91 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
-
-
-
-const httpOptions = {
-    headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({ 'Content-Type': 'application/json' })
-};
 let ContactService = class ContactService {
-    constructor(http, messageService) {
+    constructor(http) {
         this.http = http;
-        this.messageService = messageService;
-        this.contactsUrl = 'api/contacts'; // URL to web api
-        this.contactUrl = 'api/contacts/:id;';
     }
-    /** GET contacts from the server */
-    getContacts() {
-        return this.http.get(this.contactsUrl)
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["tap"])(contacts => this.log(`fetched contacts`)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["catchError"])(this.handleError('getContacts', [])));
+    // GET ALL ContactS
+    getAllContacts() {
+        return this.http.get('api/contact');
     }
-    /** GET contact by id. Return `undefined` when id not found */
-    getContactNo404(id) {
-        const url = `${this.contactUrl}/?id=${id}`;
-        return this.http.get(url)
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(contacts => contacts[0]), // returns a {0|1} element array
-        Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["tap"])(c => {
-            const outcome = c ? `fetched` : `did not find`;
-            this.log(`${outcome} contact id=${id}`);
-        }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["catchError"])(this.handleError(`getContact id=${id}`)));
-    }
-    /** GET contact by id. Will 404 if id not found */
+    // GET A Contact
     getContact(id) {
-        const url = `${this.contactUrl}/${id}`;
-        return this.http.get(url).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["tap"])(_ => this.log(`fetched contact id=${id}`)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["catchError"])(this.handleError(`getContact id=${id}`)));
+        return this.http.get(`api/contact/${id}`);
     }
-    addContact(contact) {
-        return this.http.post(this.contactsUrl, contact, httpOptions).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["tap"])((contact) => this.log(`added contact`)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["catchError"])(this.handleError('addContact')));
+    // SAVE A Contact
+    insertContact(contact) {
+        return this.http.post('api/contact', contact);
     }
-    updateContact(contact) {
-        return this.http.put(this.contactsUrl + '/' + contact._id, contact).pipe(//http://localhost:7777/api/contacts/undefined
-        //return this.http.put(this.contactsUrl, contact._id, httpOptions).pipe(
-        Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["tap"])(_ => this.log(`updated contact id=${contact._id}`)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["catchError"])(this.handleError('updateContact')));
+    // UPDATE A Contact
+    updateContact(id, contact) {
+        return this.http.put(`api/contact/${id}`, contact);
     }
-    deleteContact(contact) {
-        //const id = contact._id;
-        const url = `${this.contactsUrl}`;
-        return this.http.delete(url, httpOptions).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["tap"])(_ => this.log(`deleted contact id=${contact}`)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["catchError"])(this.handleError('deleteContact')));
-    }
-    /**
-     * Handle Http operation that failed.
-     * Let the app continue.
-     * @param operation - name of the operation that failed
-     * @param result - optional value to return as the observable result
-     */
-    handleError(operation = 'operation', result) {
-        return (error) => {
-            // TODO: send the error to remote logging infrastructure
-            console.error(error); // log to console instead
-            // TODO: better job of transforming error for user consumption
-            this.log(`${operation} failed: ${error.message}`);
-            // Let the app keep running by returning an empty result.
-            return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(result);
-        };
-    }
-    /** Log a contactService message with the MessageService */
-    log(message) {
-        this.messageService.add('ContactService: ' + message);
+    // DELETE A Contact
+    deleteContact(id) {
+        return this.http.delete(`api/Contact/${id}`);
     }
 };
 ContactService = __decorate([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({ providedIn: 'root' }),
-    __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"],
-        _message_service__WEBPACK_IMPORTED_MODULE_4__["MessageService"]])
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
+    __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
 ], ContactService);
 
 
 
 /***/ }),
 
-/***/ "./src/app/contacts/contact.ts":
-/*!*************************************!*\
-  !*** ./src/app/contacts/contact.ts ***!
-  \*************************************/
-/*! exports provided: Contact */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./src/app/contact/contact.component.html":
+/*!************************************************!*\
+  !*** ./src/app/contact/contact.component.html ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Contact", function() { return Contact; });
-class Contact {
-}
-
+module.exports = "<div class=\"contactlist\" >\n  <h1 class=\"title\">Contact List\n    <a [routerLink]=\"['/contact-create']\" class=\"button is-link is-outlined\"><i class=\"fas fa-plus\"></i>Add</a>\n  </h1>\n  <table class=\"table is-striped is-hoverable is-fullwidth\" >\n    <thead>\n      <tr>\n        <th>Name</th>\n        <th>Email</th>\n        <th>Phone</th>\n        <th>Address</th>\n        <th>City</th>\n        <th>State</th>\n        <th>Zipcode</th>\n        <!-- <th>Work</th>\n        <th>Mobile</th> -->\n      </tr>\n    </thead>\n    <tbody>\n      <tr *ngFor=\"let contact of contacts\">\n        <td><a class=\"button is-text\" [routerLink]=\"['/contact-details', contact._id]\">{{ contact.name }}</a></td>\n        <td>{{ contact.email }}</td>\n        <td>{{ contact.phone }}</td>\n        <td>{{ contact.address }}</td>\n        <td>{{ contact.city }}</td>\n        <td>{{ contact.state }}</td>\n        <td>{{ contact.zipcode }}</td>\n      </tr>\n    </tbody>\n  </table>\n</div>\n"
 
 /***/ }),
 
-/***/ "./src/app/contacts/message.service.ts":
-/*!*********************************************!*\
-  !*** ./src/app/contacts/message.service.ts ***!
-  \*********************************************/
-/*! exports provided: MessageService */
+/***/ "./src/app/contact/contact.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/contact/contact.component.ts ***!
+  \**********************************************/
+/*! exports provided: ContactComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MessageService", function() { return MessageService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactComponent", function() { return ContactComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _contact_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../contact.service */ "./src/app/contact.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 
-let MessageService = class MessageService {
-    constructor() {
-        this.messages = [];
+
+let ContactComponent = class ContactComponent {
+    constructor(contactService) {
+        this.contactService = contactService;
     }
-    add(message) {
-        this.messages.push(message);
-    }
-    clear() {
-        this.messages = [];
+    ngOnInit() {
+        this.contactService.getAllContacts()
+            .subscribe((data) => this.contacts = data);
     }
 };
-MessageService = __decorate([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({ providedIn: 'root' })
-], MessageService);
+ContactComponent = __decorate([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+        selector: 'app-contact',
+        template: __webpack_require__(/*! ./contact.component.html */ "./src/app/contact/contact.component.html"),
+        styles: []
+    }),
+    __metadata("design:paramtypes", [_contact_service__WEBPACK_IMPORTED_MODULE_1__["ContactService"]])
+], ContactComponent);
 
 
 

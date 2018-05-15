@@ -13,14 +13,17 @@ import { HomeComponent } from './home/home.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AuthService } from './auth/auth.service';
-import { ContactService } from './contacts/contact.service';
+import { ContactService } from './contact.service';
 import { CallbackComponent } from './callback/callback.component';
 import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './guard/auth.guard';
 import { UserComponent } from './user/user.component';
+import { ContactComponent } from './contact/contact.component';
+import { ContactCreateComponent } from './contact-create/contact-create.component';
+import { ContactDetailComponent } from './contact-detail/contact-detail.component';
+import { ContactEditComponent } from './contact-edit/contact-edit.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
-import { ContactDetailsComponent } from './contacts/contact-details/contact-details.component';
-import { ContactListComponent } from './contacts/contact-list/contact-list.component';
 
 //import { JwtModule } from '@auth0/angular-jwt';
 
@@ -33,8 +36,10 @@ import { ContactListComponent } from './contacts/contact-list/contact-list.compo
     LoginComponent,
     CallbackComponent,
     UserComponent,
-    ContactDetailsComponent,
-    ContactListComponent
+    ContactComponent,
+    ContactCreateComponent,
+    ContactDetailComponent,
+    ContactEditComponent
 
   ],
   imports: [
@@ -43,7 +48,8 @@ import { ContactListComponent } from './contacts/contact-list/contact-list.compo
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule.forRoot()
     // JwtModule.forRoot({
     //   config: {
     //     tokenGetter: () => {

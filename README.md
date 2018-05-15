@@ -59,7 +59,9 @@ If you have found a bug or if you have a feature request, please report them at 
 
 This project is licensed under the MIT license. See the [LICENSE](LICENSE.txt) file for more info.
 
+## NOTE: This project uses Node.js version 8.9
 
+    ` nvm use 8.9 ` //NVM Node version manager
 
 
 ## Create Angular router guard (https://angular.io/guide/router#milestone-5-route-guards):

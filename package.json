@@ -14,7 +14,9 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "prepublish": "npm run snyk-protect",
+    "sample": "node ./data/load-sample-data.js",
+    "blowitallaway": "node ./data/load-sample-data.js --delete"
   },
   "private": true,
   "dependencies": {
@@ -29,6 +31,7 @@
     "@angular/platform-browser": "6.0.0",
     "@angular/platform-browser-dynamic": "6.0.0",
     "@angular/router": "6.0.0",
+    "@ng-bootstrap/ng-bootstrap": "^2.0.0",
     "auth0-js": "^9.5.1",
     "body-parser": "^1.18.2",
     "bootstrap": "^3.3.7",

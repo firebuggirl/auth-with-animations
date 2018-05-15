@@ -1,15 +1,13 @@
-export class Contact {
-  _id?: string;
+export interface Contact {
+  //_id?: string;
+  //id: number;
   name: string;
   email: string;
-  phone: {
-    mobile: string;
-    work: string;
-  };
+  phone: string;
   address: string;
   city: string;
   state: string;
   zipcode: string;
 
-  
+
 }

@@ -8,7 +8,10 @@ const jwtAuthz = require('express-jwt-authz');
 const jwksRsa = require('jwks-rsa');
 const cors = require('cors');
 
-const routes = require('./routes/index');
+//const routes = require('./routes/index');
+const angular = require('./routes/angular');
+const api = require('./routes/api');
+
 //const helpers = require('./helpers');
 require('dotenv').config();
 
@@ -17,7 +20,14 @@ const mongoose = require('mongoose');
 //const cookieParser = require('cookie-parser');
 //
 
-app.use('/', routes);
+//app.use('/', routes);
+
+// Route for Angular
+app.use('/', angular);
+
+// Route for APIs go here
+app.use('/api', api);
+
 
 // app.use((req, res, next) => {
 //   res.locals.h = helpers;
