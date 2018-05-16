@@ -81,11 +81,13 @@ const ROUTES = [
     },
     {
         path: 'contacts',
-        component: _contact_contact_component__WEBPACK_IMPORTED_MODULE_6__["ContactComponent"]
+        component: _contact_contact_component__WEBPACK_IMPORTED_MODULE_6__["ContactComponent"],
+        canActivate: [_guard_auth_guard__WEBPACK_IMPORTED_MODULE_3__["AuthGuard"]]
     },
     {
         path: 'contact-details/:id',
-        component: _contact_detail_contact_detail_component__WEBPACK_IMPORTED_MODULE_7__["ContactDetailComponent"]
+        component: _contact_detail_contact_detail_component__WEBPACK_IMPORTED_MODULE_7__["ContactDetailComponent"],
+        canActivate: [_guard_auth_guard__WEBPACK_IMPORTED_MODULE_3__["AuthGuard"]]
     },
     {
         path: 'contact-create',

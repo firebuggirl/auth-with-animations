@@ -36,11 +36,13 @@ export const ROUTES: Routes = [
   },
   {
     path: 'contacts',
-    component: ContactComponent
+    component: ContactComponent,
+    canActivate: [AuthGuard]
   },
   {
      path: 'contact-details/:id',
-     component: ContactDetailComponent
+     component: ContactDetailComponent,
+     canActivate: [AuthGuard]
    },
   {
     path: 'contact-create',
