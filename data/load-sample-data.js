@@ -4,8 +4,8 @@ const fs = require('fs');
 const mongoose = require('mongoose');
 
 //mongoose.connect(process.env.LOCAL_DB);
-mongoose.connect(process.env.MONGODB_URI);//mLab connection string
-//mongoose.connect(process.env.DOCKER_DB);//for Docker development change `localhost`` to `mongodb` in connection string...needs to match name of image container!!!
+//mongoose.connect(process.env.MONGODB_URI);//mLab connection string
+mongoose.connect(process.env.DOCKER_DB);//for Docker development change `localhost`` to `mongodb` in connection string...needs to match name of image container!!!
 mongoose.Promise = global.Promise; // Tell Mongoose to use ES6 promises
 
 

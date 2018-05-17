@@ -182,7 +182,9 @@ https://auth-example-with-anim.herokuapp.com/
 
     ` docker-compose logs `//get all associated activity for containers linked with this docker-compose
 
+# Note:
 
+  - For editing locally in Docker shell change auth0 url to `localhost`, and the DB connection strings in `routes/api.js` + `data/load-sample-data.js` to `mongodb` instead of `localhost` in connection string(s)
 
 ## Editing files in Docker shell
 
@@ -199,3 +201,11 @@ https://auth-example-with-anim.herokuapp.com/
     ` :w! `//write/save
 
     ` :q! ` //exit/quit Vim
+
+## Push to Docker
+
+    ` docker login `
+
+    ` docker tag angularnodeapp <your_dockerhub_name>/angularnodeapp `
+
+    ` docker push <your_dockerhub_name>/angularnodeapp `
